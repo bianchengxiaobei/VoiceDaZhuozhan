@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 3225580151
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 72d047f2f3fb0756cb30552639d6dd8a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 21f0dc8ebad690f009368069428e0a1a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Textures/Common1/moneyIcon.png
+- Assets/Textures/Common1/ads.png
+- Assets/Textures/Common1/logo.png
+- Assets/Textures/Common1/ButtonBG.png
+- Assets/Textures/Common1/levelItem.png
+- Assets/Textures/Common1/unlock.png
+- Assets/Textures/Common1/levelBg.png
+- Assets/Textures/Common1/moneyBG.png
+- Assets/Textures/Common1/levelItemHigh.png
+Dependencies: []

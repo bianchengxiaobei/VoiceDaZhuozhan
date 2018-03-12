@@ -1,0 +1,90 @@
+
+wenshennan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shangbi1
+  rotate: true
+  xy: 803, 185
+  size: 69, 164
+  orig: 69, 164
+  offset: 0, 0
+  index: -1
+shangbi2
+  rotate: true
+  xy: 610, 126
+  size: 47, 140
+  orig: 47, 140
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 2, 92
+  size: 162, 272
+  orig: 162, 272
+  offset: 0, 0
+  index: -1
+shou1
+  rotate: true
+  xy: 575, 2
+  size: 37, 58
+  orig: 37, 58
+  offset: 0, 0
+  index: -1
+shou2
+  rotate: false
+  xy: 969, 197
+  size: 33, 57
+  orig: 33, 57
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 433, 15
+  size: 115, 140
+  orig: 115, 140
+  offset: 0, 0
+  index: -1
+tui11
+  rotate: true
+  xy: 433, 132
+  size: 122, 175
+  orig: 122, 175
+  offset: 0, 0
+  index: -1
+tui12
+  rotate: true
+  xy: 610, 175
+  size: 79, 191
+  orig: 79, 191
+  offset: 0, 0
+  index: -1
+tui22
+  rotate: false
+  xy: 276, 101
+  size: 155, 153
+  orig: 155, 153
+  offset: 0, 0
+  index: -1
+tui23
+  rotate: true
+  xy: 2, 16
+  size: 74, 214
+  orig: 74, 214
+  offset: 0, 0
+  index: -1
+xiaobi1
+  rotate: true
+  xy: 575, 79
+  size: 45, 118
+  orig: 45, 118
+  offset: 0, 0
+  index: -1
+xiaobi2
+  rotate: true
+  xy: 575, 41
+  size: 36, 85
+  orig: 36, 85
+  offset: 0, 0
+  index: -1

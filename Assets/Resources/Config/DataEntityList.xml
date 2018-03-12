@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    public enum EntityType
+    {
+        主角 = 1,
+        纹身男,
+        胖子男,
+        跳跳男,
+        飞机男,
+        挖掘机,
+        瞬移怪,
+        匍匐怪
+    }
+-->
+<root>
+  <EntityList>
+    <Id_i>1</Id_i>
+    <Name>主角</Name>
+    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <EntityInfo>风间</EntityInfo>
+  </EntityList>
+  <EntityList>
+    <Id_i>2</Id_i>
+    <Name> 纹身男</Name>
+    <ModelFile_s>Assets.Prefabs.Characters.WenShenNan.prefab</ModelFile_s>
+    <EntityInfo>风间</EntityInfo>
+  </EntityList>
+  <EntityList>
+    <Id_i>3</Id_i>
+    <Name>胖子男</Name>
+    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <EntityInfo>风间</EntityInfo>
+  </EntityList>
+  <EntityList>
+    <Id_i>4</Id_i>
+    <Name>跳跳男</Name>
+    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <EntityInfo>风间</EntityInfo>
+  </EntityList>
+  <EntityList>
+    <Id_i>5</Id_i>
+    <Name>飞机男</Name>
+    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <EntityInfo>风间</EntityInfo>
+  </EntityList>
+  <EntityList>
+    <Id_i>6</Id_i>
+    <Name>挖掘机</Name>
+    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <EntityInfo>风间</EntityInfo>
+  </EntityList>
+  <EntityList>
+    <Id_i>7</Id_i>
+    <Name>瞬移怪</Name>
+    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <EntityInfo>风间</EntityInfo>
+  </EntityList>
+  <EntityList>
+    <Id_i>8</Id_i>
+    <Name>匍匐怪</Name>
+    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <EntityInfo>风间</EntityInfo>
+  </EntityList>
+</root>

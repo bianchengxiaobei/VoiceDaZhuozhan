@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2e8d4a466e2e62d47b34fc2265c5176b
+timeCreated: 1519812350
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: AaWanWan
+  fontNames:
+  - AaWanWan
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

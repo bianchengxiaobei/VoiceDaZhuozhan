@@ -1,0 +1,133 @@
+{
+"skeleton": { "hash": "E45Nj65MebvOlqZWfGLUGbDyAYw", "spine": "3.6.46", "width": 0, "height": 0, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "shouji", "parent": "root", "scaleX": 5, "scaleY": 5 }
+],
+"slots": [
+	{ "name": "shouji", "bone": "shouji" }
+],
+"skins": {
+	"default": {
+		"shouji": {
+			"shouji0001": { "width": 134, "height": 148 },
+			"shouji0002": { "width": 134, "height": 148 },
+			"shouji0003": { "width": 134, "height": 148 },
+			"shouji0004": { "width": 134, "height": 148 }
+		}
+	}
+},
+"animations": {
+	"bai": {
+		"slots": {
+			"shouji": {
+				"attachment": [
+					{ "time": 0, "name": "shouji0001" },
+					{ "time": 0.0667, "name": "shouji0002" },
+					{ "time": 0.1333, "name": "shouji0003" },
+					{ "time": 0.2, "name": "shouji0004" },
+					{ "time": 0.2667, "name": null },
+					{ "time": 0.3333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"shouji": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.3333, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 0.3333 }
+		]
+	},
+	"cheng": {
+		"slots": {
+			"shouji": {
+				"color": [
+					{ "time": 0, "color": "ff9c00ff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "shouji0001" },
+					{ "time": 0.0667, "name": "shouji0002" },
+					{ "time": 0.1333, "name": "shouji0003" },
+					{ "time": 0.2, "name": "shouji0004" },
+					{ "time": 0.2667, "name": null },
+					{ "time": 0.3333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"shouji": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.3333, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 0.3333 }
+		]
+	},
+	"hong": {
+		"slots": {
+			"shouji": {
+				"color": [
+					{ "time": 0, "color": "e30a0aff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "shouji0001" },
+					{ "time": 0.0667, "name": "shouji0002" },
+					{ "time": 0.1333, "name": "shouji0003" },
+					{ "time": 0.2, "name": "shouji0004" },
+					{ "time": 0.2667, "name": null },
+					{ "time": 0.3333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"shouji": {
+				"translate": [
+					{ "time": 0.3333, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 0.3333 }
+		]
+	},
+	"zi": {
+		"slots": {
+			"shouji": {
+				"color": [
+					{ "time": 0, "color": "d1bdffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "shouji0001" },
+					{ "time": 0.0667, "name": "shouji0002" },
+					{ "time": 0.1333, "name": "shouji0003" },
+					{ "time": 0.2, "name": "shouji0004" },
+					{ "time": 0.2667, "name": null },
+					{ "time": 0.3333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"shouji": {
+				"translate": [
+					{ "time": 0.3333, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 0.3333 }
+		]
+	}
+}
+}

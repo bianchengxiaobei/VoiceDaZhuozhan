@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 813176687
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 97c60a72cb563aadea50a8cbfa2b131a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Audios/Effects/uiclose.wav
+Dependencies: []

@@ -1,0 +1,996 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 11500000, guid: 7b433a0db90d9744893af13a2120384e, type: 3}
+  m_Name: makeLevel
+  m_EditorClassIdentifier: 
+  exprotFormat: 2
+  levels:
+  - levelId: 1
+    valid: 1
+    levelName: "\u5173\u53611"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 5
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 5
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 5
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 2
+    valid: 1
+    levelName: "\u5173\u53612"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 10
+        speed: 1
+        maxHp: 0
+        demage: 0
+        num: 0
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 10
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 10
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 3
+    valid: 1
+    levelName: "\u5173\u53613"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 10
+      - type: 3
+        duration: 0
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 1
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 10
+      - type: 3
+        duration: 0
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 1
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 10
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 2
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 4
+    valid: 1
+    levelName: "\u5173\u53614"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 2
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 2
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 4
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 5
+    valid: 1
+    levelName: "\u5173\u53615"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 10
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 4
+      duration: 0
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 10
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 4
+      duration: 0
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 6
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 6
+    valid: 1
+    levelName: "\u5173\u53616"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 5
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 5
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 8
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 7
+    valid: 1
+    levelName: "\u5173\u53617"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 3
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 1
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 3
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 1
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      - type: 0
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 5
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 2
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 8
+    valid: 1
+    levelName: "\u5173\u53618"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 18
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 4
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 2
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 5
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 2
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 25
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 6
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 4
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 9
+    valid: 1
+    levelName: "\u5173\u53619"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 8
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 3
+      - type: 5
+        duration: 5
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 5
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 8
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 3
+      - type: 5
+        duration: 5
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 5
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      - type: 3
+        duration: 8
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 4
+      - type: 5
+        duration: 5
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 8
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 10
+    valid: 1
+    levelName: "\u5173\u536110"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 10
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 2
+      - type: 5
+        duration: 0
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 1
+      - type: 4
+        duration: 3
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 5
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 13
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 2
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 2
+      - type: 4
+        duration: 3
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 5
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 4
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 2
+      - type: 4
+        duration: 3
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 8
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 11
+    valid: 1
+    levelName: "\u5173\u536111"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 5
+      - type: 5
+        duration: 0
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 1
+      - type: 4
+        duration: 3
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 8
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 5
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 2
+      - type: 4
+        duration: 3
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 10
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 5
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 2
+      - type: 4
+        duration: 3
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 12
+    valid: 1
+    levelName: "\u5173\u536112"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 5
+      - type: 4
+        duration: 2
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      duration: 0
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 5
+      - type: 4
+        duration: 2
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      duration: 0
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 3
+        duration: 5
+        speed: 0
+        maxHp: 0
+        demage: 0
+        num: 8
+      - type: 4
+        duration: 2
+        speed: 0
+        maxHp: 0
+        demage: 0
+        num: 20
+      - type: 5
+        duration: 8
+        speed: 0
+        maxHp: 0
+        demage: 0
+        num: 3
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 13
+    valid: 1
+    levelName: "\u5173\u536113"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 6
+        duration: 0
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 1
+      - type: 4
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 2
+        duration: 3
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 10
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 6
+        duration: 1
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 1
+      - type: 4
+        duration: 3
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 8
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 4
+        duration: 2
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 5
+      - type: 6
+        duration: 8
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 2
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 14
+    valid: 1
+    levelName: "\u5173\u536114"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 6
+        duration: 8
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 2
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 5
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 6
+        duration: 8
+        speed: 0
+        maxHp: 0
+        demage: 0
+        num: 2
+      - type: 5
+        duration: 8
+        speed: 0
+        maxHp: 0
+        demage: 0
+        num: 5
+      - type: 4
+        duration: 2
+        speed: 0
+        maxHp: 0
+        demage: 0
+        num: 15
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 6
+        duration: 8
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 3
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 6
+      - type: 4
+        duration: 2
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3
+  - levelId: 15
+    valid: 1
+    levelName: "\u5173\u536115"
+    levelPath: Assets/LevelConfig
+    waves:
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      - type: 4
+        duration: 3
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 4
+      - type: 6
+        duration: 8
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 2
+      duration: 59.999996
+      name: "\u6CE2\u65701"
+      index: 1
+    - entitys:
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      - type: 4
+        duration: 3
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 10
+      - type: 5
+        duration: 8
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 4
+      - type: 6
+        duration: 8
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 2
+      duration: 59.999996
+      name: "\u6CE2\u65702"
+      index: 2
+    - entitys:
+      - type: 3
+        duration: 5
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 5
+      - type: 6
+        duration: 8
+        speed: 50
+        maxHp: 0
+        demage: 0
+        num: 3
+      - type: 2
+        duration: 1
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 20
+      - type: 4
+        duration: 3
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 15
+      - type: 5
+        duration: 5
+        speed: 100
+        maxHp: 0
+        demage: 0
+        num: 6
+      duration: 0
+      name: "\u6CE2\u65703"
+      index: 3

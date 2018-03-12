@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 376393539
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 004035c11ddf34f9dde57c5f3f7e8d43
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Audios/Effects/uibutton.wav
+Dependencies: []

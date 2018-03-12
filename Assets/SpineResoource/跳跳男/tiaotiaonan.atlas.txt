@@ -1,0 +1,83 @@
+
+tiaotiaonan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 934, 83
+  size: 86, 48
+  orig: 86, 48
+  offset: 0, 0
+  index: -1
+arm11
+  rotate: false
+  xy: 958, 133
+  size: 57, 121
+  orig: 57, 121
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: false
+  xy: 806, 2
+  size: 100, 60
+  orig: 100, 60
+  offset: 0, 0
+  index: -1
+arm22
+  rotate: false
+  xy: 749, 2
+  size: 55, 125
+  orig: 55, 125
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 378, 86
+  size: 168, 235
+  orig: 168, 235
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 615, 129
+  size: 125, 170
+  orig: 125, 170
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: true
+  xy: 787, 175
+  size: 79, 169
+  orig: 79, 169
+  offset: 0, 0
+  index: -1
+leg11
+  rotate: true
+  xy: 615, 2
+  size: 125, 132
+  orig: 125, 132
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: true
+  xy: 378, 16
+  size: 68, 165
+  orig: 68, 165
+  offset: 0, 0
+  index: -1
+leg22
+  rotate: false
+  xy: 806, 64
+  size: 126, 109
+  orig: 126, 109
+  offset: 0, 0
+  index: -1
+tiaotiaoji
+  rotate: true
+  xy: 2, 31
+  size: 223, 374
+  orig: 223, 374
+  offset: 0, 0
+  index: -1

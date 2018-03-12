@@ -1,0 +1,111 @@
+
+pangzinan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hair
+  rotate: false
+  xy: 266, 73
+  size: 132, 167
+  orig: 132, 167
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 2, 31
+  size: 209, 262
+  orig: 209, 262
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 888, 146
+  size: 94, 114
+  orig: 94, 114
+  offset: 0, 0
+  index: -1
+youjiao1
+  rotate: false
+  xy: 745, 101
+  size: 86, 49
+  orig: 86, 49
+  offset: 0, 0
+  index: -1
+youjiao2
+  rotate: true
+  xy: 576, 132
+  size: 108, 167
+  orig: 108, 167
+  offset: 0, 0
+  index: -1
+youjiao3
+  rotate: true
+  xy: 266, 2
+  size: 69, 113
+  orig: 69, 113
+  offset: 0, 0
+  index: -1
+youshou1
+  rotate: true
+  xy: 745, 152
+  size: 88, 141
+  orig: 88, 141
+  offset: 0, 0
+  index: -1
+youshou2
+  rotate: true
+  xy: 381, 9
+  size: 59, 110
+  orig: 59, 110
+  offset: 0, 0
+  index: -1
+youshou3
+  rotate: false
+  xy: 833, 101
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+zuojiao1
+  rotate: false
+  xy: 880, 100
+  size: 64, 44
+  orig: 64, 44
+  offset: 0, 0
+  index: -1
+zuojiao2
+  rotate: true
+  xy: 400, 135
+  size: 105, 174
+  orig: 105, 174
+  offset: 0, 0
+  index: -1
+zuojiao3
+  rotate: true
+  xy: 635, 68
+  size: 62, 97
+  orig: 62, 97
+  offset: 0, 0
+  index: -1
+zuoshou1
+  rotate: false
+  xy: 946, 102
+  size: 45, 42
+  orig: 45, 42
+  offset: 0, 0
+  index: -1
+zuoshou2
+  rotate: true
+  xy: 535, 64
+  size: 66, 98
+  orig: 66, 98
+  offset: 0, 0
+  index: -1
+zuoshou3
+  rotate: true
+  xy: 400, 70
+  size: 63, 133
+  orig: 63, 133
+  offset: 0, 0
+  index: -1

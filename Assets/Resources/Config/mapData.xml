@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <MapData>
+    <ID_i>1</ID_i>
+    <InitPos>0,0,0</InitPos>
+    <InitRotation>0,0,0</InitRotation>
+    <SceneName_s>GameMain</SceneName_s>
+    <MapPath_s>Map/Map_1_0</MapPath_s>
+  </MapData>
+  <MapData>
+    <ID_i>2</ID_i>
+    <InitPos>0,0,0</InitPos>
+    <InitRotation>0,0,0</InitRotation>
+    <SceneName_s>GameMain</SceneName_s>
+    <MapPath_s>Map/Map_1_1</MapPath_s>
+  </MapData>
+</root>

@@ -1,0 +1,97 @@
+
+feijinan.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+baozhashanguang0001
+  rotate: false
+  xy: 575, 817
+  size: 229, 191
+  orig: 229, 191
+  offset: 0, 0
+  index: -1
+baozhashanguang0002
+  rotate: false
+  xy: 2, 283
+  size: 229, 191
+  orig: 229, 191
+  offset: 0, 0
+  index: -1
+baozhashanguang0003
+  rotate: false
+  xy: 233, 476
+  size: 229, 191
+  orig: 229, 191
+  offset: 0, 0
+  index: -1
+baozhashanguang0004
+  rotate: false
+  xy: 2, 90
+  size: 229, 191
+  orig: 229, 191
+  offset: 0, 0
+  index: -1
+baozhashanguang0005
+  rotate: false
+  xy: 233, 283
+  size: 229, 191
+  orig: 229, 191
+  offset: 0, 0
+  index: -1
+baozhashanguang0006
+  rotate: false
+  xy: 2, 476
+  size: 229, 191
+  orig: 229, 191
+  offset: 0, 0
+  index: -1
+feiji
+  rotate: false
+  xy: 2, 669
+  size: 571, 339
+  orig: 571, 339
+  offset: 0, 0
+  index: -1
+hand
+  rotate: true
+  xy: 806, 824
+  size: 31, 60
+  orig: 31, 60
+  offset: 0, 0
+  index: -1
+jiang0001
+  rotate: false
+  xy: 464, 581
+  size: 38, 86
+  orig: 38, 86
+  offset: 0, 0
+  index: -1
+jiang0002
+  rotate: false
+  xy: 2, 2
+  size: 38, 86
+  orig: 38, 86
+  offset: 0, 0
+  index: -1
+jiang0003
+  rotate: false
+  xy: 233, 195
+  size: 38, 86
+  orig: 38, 86
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 806, 857
+  size: 173, 151
+  orig: 173, 151
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 575, 699
+  size: 116, 177
+  orig: 116, 177
+  offset: 0, 0
+  index: -1

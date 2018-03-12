@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 2364395431
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c1d6a9dba9d7b89fa813c0fe8cab8503
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 396d4f74f5fc8196e6bc2f23b368ebc3
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- "Assets/SpineResoource/\u4E3B\u89D2/zhujue_SkeletonData.asset"
+Dependencies:
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/5db8d196a830ec883fa056bfca708c90fb37ca28.ab

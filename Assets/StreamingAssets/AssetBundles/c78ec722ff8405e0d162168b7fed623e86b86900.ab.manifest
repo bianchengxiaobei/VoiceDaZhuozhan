@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1754426905
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1141431957792a772b8a9cbeb7aeff5f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Audios/Effects/matchstart_battle.wav
+Dependencies: []
