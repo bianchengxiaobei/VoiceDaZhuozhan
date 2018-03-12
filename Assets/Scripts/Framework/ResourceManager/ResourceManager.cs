@@ -276,7 +276,6 @@ namespace CaomaoFramework
                     }
                     break;
                 case RuntimePlatform.OSXPlayer:
-                case RuntimePlatform.OSXDashboardPlayer:
                 case RuntimePlatform.WindowsPlayer:
                     if (bIsWWW)
                     {

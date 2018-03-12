@@ -116,8 +116,7 @@ public class GameAssetResource : IDisposable,IAssetResource
         {
             if (this.m_wwwObject != null)
             {
-                //return this.m_wwwObject.audioClip;
-                return WWWAudioExtensions.GetAudioClip(this.m_wwwObject);
+                return this.m_wwwObject.GetAudioClip();
             }
             return null;
         }
