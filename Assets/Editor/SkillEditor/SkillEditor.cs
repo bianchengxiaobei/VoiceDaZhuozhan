@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEditorInternal;
 using System.IO;
+using Newtonsoft.Json;
+using CaomaoFramework.Data;
 /*----------------------------------------------------------------
 // 模块名：SkillEditor
 // 创建者：chen
@@ -44,7 +46,7 @@ public class SkillEditor : EditorWindow
             GUILayout.FlexibleSpace();
             if (GUILayout.Button("导出技能", EditorStyles.toolbarButton))
             {
-                
+                this.ExportSkill();
             }
         }
         GUILayout.EndHorizontal();
@@ -119,5 +121,14 @@ public class SkillEditor : EditorWindow
         {
             EditorUtility.SetDirty(config);
         }
+    }
+    public void ExportSkill()
+    {
+        string json = JsonConvert.SerializeObject(this.config);
+        if (!string.IsNullOrEmpty(json))
+        {
+            XMLParser.SaveText(Application.dataPath + "/Resources/skills.txt", json);
+        }
+
     }
 }
