@@ -226,7 +226,7 @@ public class SkillDetailEditor : EditorWindow
                 m_oSkill.type = (ESkillType)EditorGUILayout.EnumPopup(m_oSkill.type);
             }
             GUILayout.EndHorizontal();
-            if (m_oSkill.type == ESkillType.直线有范围 || m_oSkill.type == ESkillType.固定区域)
+            if (m_oSkill.type == ESkillType.直线有范围 || m_oSkill.type == ESkillType.固定区域 || m_oSkill.type == ESkillType.全屏 || m_oSkill.type == ESkillType.锁定)
             {
                 GUILayout.Space(10);
                 paramsrollPosition = GUILayout.BeginScrollView(paramsrollPosition);

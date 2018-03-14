@@ -37,7 +37,8 @@ public enum ESkillType
     直线有范围,
     固定区域,
     选择方向,
-    选择固定位置
+    选择固定位置,
+    锁定
 }
 public enum EffectBindPos
 {
