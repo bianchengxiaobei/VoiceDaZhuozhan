@@ -28,7 +28,8 @@ public class Skill
     public List<Demage> demage = new List<Demage>();//根据等级
     public string animation;//动画
     public string effectPath;//特效路劲
-    public EffectBindPos effectPos;
+    public EffectBindPos effectPos;//特效出生位置
+    public string iconPath;//技能icon名称
 }
 public enum ESkillType
 {

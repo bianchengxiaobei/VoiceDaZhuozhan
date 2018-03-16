@@ -202,6 +202,13 @@ public class SkillDetailEditor : EditorWindow
         GUILayout.Space(10);
         GUILayout.BeginHorizontal();
         {
+            EditorGUILayout.PrefixLabel("技能图标名字");
+            m_oSkill.iconPath = EditorGUILayout.TextField(m_oSkill.iconPath);
+        }
+        GUILayout.EndHorizontal();
+        GUILayout.Space(10);
+        GUILayout.BeginHorizontal();
+        {
             EditorGUILayout.PrefixLabel("技能动作名称");
             m_oSkill.animation = EditorGUILayout.TextField(m_oSkill.animation);
         }
