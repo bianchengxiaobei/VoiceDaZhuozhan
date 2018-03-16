@@ -72,6 +72,12 @@ public class SkillEditor : EditorWindow
     }
     public void InitConfig()
     {
+        if (File.Exists(Application.dataPath + "/Resources/skills.txt"))
+        {
+            string content = UnityTool.LoadTxtFile(Application.dataPath + "/Resources/skills.txt");
+            config = JsonConvert.DeserializeObject<SkillConfig>(content);
+            return;
+        }
         config = AssetDatabase.LoadAssetAtPath<SkillConfig>(savePath);
         if (config == null)
         {
