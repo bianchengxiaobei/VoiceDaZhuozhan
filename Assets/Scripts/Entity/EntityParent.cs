@@ -114,6 +114,27 @@ public class EntityParent
             this.Dead();
         }
     }
+    public void ApplySlowDown(int downValue)
+    {
+        float value = this.speed;
+        switch (downValue)
+        {
+            case 1:
+                value = this.speed * 0.3f;
+                break;
+            case 2:
+                value = this.speed * 0.5f;
+                break;
+            case 3:
+                value = this.speed * 0.7f;
+                break;
+        }
+        this.SetMoveSpeed(value);
+    }
+    public void ApplyControl(float timeValue)
+    {
+        this.ChangeMotionState(MotionState.Controll, timeValue);
+    }
     public void OnHit()
     {
         if (this.currentMotionState != MotionState.HIT)
@@ -133,6 +154,11 @@ public class EntityParent
     public void SetSpeed(float speed)
     {
         this.animator.SetFloat("Speed", speed);
+    }
+    public void SetMoveSpeed(float speedValue)
+    {
+        this.speed = speedValue;
+        //更改动画速度
     }
     public Vector3 GetBindNodePos(string bind)
     {
@@ -166,7 +192,7 @@ public static class MotionState
 {
     static readonly public string IDLE = "idle";
     static readonly public string WALKING = "walking";
-    static readonly public string FORCEMOVE = "forcemove";
+    static readonly public string Controll = "Controll";
 
     static readonly public string ReleaseSkill = "ReleaseSkill";
     static readonly public string DEAD = "dead";

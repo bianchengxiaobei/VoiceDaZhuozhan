@@ -54,6 +54,60 @@ public class SkillManager : Singleton<SkillManager>
             }         
         }
     }
+    public void SlowDown(int skillId, bool allMonster)
+    {
+        if (skills.ContainsKey(skillId))
+        {
+            GameSkillBase skill = this.skills[skillId];
+            int level = skill.level;
+            if (level == 0)
+            {
+                Debug.LogError("level == 0");
+                return ;
+            }
+            float slowValue = skill.skillConfig.param[level + 1].param;
+            if (slowValue <= 0)
+            {
+                Debug.LogError("减速==0");
+                return;
+            }
+            if (allMonster)
+            {
+                List<EntityParent> entitys = PlayerManager.singleton.allVisiableMonster;
+                foreach (var moster in entitys)
+                {
+                    moster.ApplySlowDown((int)slowValue);
+                }
+            }
+        }
+    }
+    public void Control(int skillId, bool allMonster)
+    {
+        if (skills.ContainsKey(skillId))
+        {
+            GameSkillBase skill = this.skills[skillId];
+            int level = skill.level;
+            if (level == 0)
+            {
+                Debug.LogError("level == 0");
+                return;
+            }
+            float slowValue = skill.skillConfig.param[level + 1].param;
+            if (slowValue <= 0)
+            {
+                Debug.LogError("减速==0");
+                return;
+            }
+            if (allMonster)
+            {
+                List<EntityParent> entitys = PlayerManager.singleton.allVisiableMonster;
+                foreach (var moster in entitys)
+                {
+                    moster.ApplySlowDown((int)slowValue);
+                }
+            }
+        }
+    }
     public GameSkillBase MakeSkill(Skill skill)
     {
         switch (skill.type)

@@ -14,6 +14,7 @@ public class GameSkillBase
 {
     public bool bLocked;
     public Skill skillConfig;
+    public int level;
     public SkillActor actor;
 
     public void Init(Skill skill)

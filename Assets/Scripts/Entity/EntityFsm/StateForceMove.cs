@@ -12,7 +12,7 @@ using CaomaoFramework.EntityFsm;
 /// <summary>
 /// 
 /// </summary>
-public class StateForceMove : IEntityState
+public class StateControll : IEntityState
 {
     /// <summary>
     ///  进入该状态
@@ -21,7 +21,7 @@ public class StateForceMove : IEntityState
     /// <param name="args"></param>
     public void Enter(EntityParent theOwner, params object[] args)
     {
-        theOwner.CurrentMotionState = MotionState.FORCEMOVE;
+        theOwner.CurrentMotionState = MotionState.Controll;
     }
 
     // 离开状态
@@ -32,7 +32,16 @@ public class StateForceMove : IEntityState
     // 状态处理
     public void Process(EntityParent theOwner, params object[] args)
     {
-        
+        theOwner.SetSpeed(0);
+        Vector3 oldDir = theOwner.entityActor.moveDir;
+        theOwner.entityActor.moveDir = Vector3.zero;
+        //创建眩晕特效
+        uint time = (uint)((float)args[0] * 1000);
+        TimerManager.AddTimer(time, 0, () => 
+        {
+            theOwner.entityActor.moveDir = oldDir;
+            theOwner.ChangeMotionState(MotionState.WALKING);
+        });
     }
     public void Execute(EntityParent theOwner)
     {

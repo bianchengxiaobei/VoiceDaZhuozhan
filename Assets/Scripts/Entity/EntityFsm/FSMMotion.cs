@@ -10,12 +10,12 @@ public class FSMMotion : FSMParent
         m_theFSM.Add(MotionState.IDLE, new StateIdle());
         m_theFSM.Add(MotionState.WALKING, new StateWalking());
         m_theFSM.Add(MotionState.DEAD, new StateDead());
-        m_theFSM.Add(MotionState.FORCEMOVE, new StateForceMove());
+        m_theFSM.Add(MotionState.Controll, new StateControll());
         m_theFSM.Add(MotionState.ReleaseSkill, new StateReleaseSkill());
     }
     public override void ChangeStatus(EntityParent owner, string newState, params object[] args)
     {
-        if (owner.CurrentMotionState == newState && !newState.Equals(MotionState.FORCEMOVE))
+        if (owner.CurrentMotionState == newState && !newState.Equals(MotionState.Controll))
         {
             //Debug.Log("重复状态：" + newState);
             return;
