@@ -95,7 +95,7 @@ public class AndroidSDKToolImpl : ISDKTool
     private void steamExportFinished()
     {
         //导出ab文件后，接下来就是版本检测相关的
-        DefaultUI.Instance.SetTipContent("版本检测中...");
+        //DefaultUI.Instance.SetTipContent("版本检测中...");
         SDKTool.Singleton.PushEvent(EnumSDKEventType.eSDKEventType_Install_Success);
     }
     public virtual void Login()

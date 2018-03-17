@@ -76,31 +76,31 @@ namespace CaomaoFramework.SDK
         }
         private void OnFileCompress(bool finished)
         {
-            UnityMonoDriver.s_instance.Invoke(() => 
-            {
-                if (finished)
-                {
-                    DefaultUI.Instance.SetTipContent("正在更新本地文件");
-                }
-                else
-                {
-                    DefaultUI.Instance.SetTipContent("数据读取中");
-                }
-            });
+            //UnityMonoDriver.s_instance.Invoke(() => 
+            //{
+            //    if (finished)
+            //    {
+            //        DefaultUI.Instance.SetTipContent("正在更新本地文件");
+            //    }
+            //    else
+            //    {
+            //        DefaultUI.Instance.SetTipContent("数据读取中");
+            //    }
+            //});
         }
         private void OnProgress(float percentage, long totalRec, long received)
         {
-            UnityMonoDriver.s_instance.Invoke(() =>
-            {
-                DefaultUI.Instance.SetProgress(percentage);
-            });
+            //UnityMonoDriver.s_instance.Invoke(() =>
+            //{
+            //    DefaultUI.Instance.SetProgress(percentage);
+            //});
         }
         private void OnTaskProgress(int total, int index, string fileName)
         {
-            UnityMonoDriver.s_instance.Invoke(() =>
-            {
-                DefaultUI.Instance.SetTipContent(string.Format("正在下载更新文件（{0}/{1}:{2}）", index + 1, total, fileName));
-            });
+            //UnityMonoDriver.s_instance.Invoke(() =>
+            //{
+            //    DefaultUI.Instance.SetTipContent(string.Format("正在下载更新文件（{0}/{1}:{2}）", index + 1, total, fileName));
+            //});
         }
         private void OnDownloadError(Exception e)
         {
@@ -114,7 +114,7 @@ namespace CaomaoFramework.SDK
         private void OnFinish()
         {
             //DefaultUI.Instance.Release();
-            DefaultUI.Instance.ShowProgressBar(false);
+            //DefaultUI.Instance.ShowProgressBar(false);
             //进入到登陆界面
             UnityMonoDriver.s_instance.LaterInit();
         }

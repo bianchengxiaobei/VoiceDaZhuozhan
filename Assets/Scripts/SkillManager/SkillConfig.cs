@@ -30,6 +30,7 @@ public class Skill
     public string effectPath;//特效路劲
     public EffectBindPos effectPos;//特效出生位置
     public string iconPath;//技能icon名称
+    public string audioPath;//音频
 }
 public enum ESkillType
 {

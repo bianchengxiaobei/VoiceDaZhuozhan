@@ -221,6 +221,13 @@ public class SkillDetailEditor : EditorWindow
         }
         GUILayout.EndHorizontal();
         GUILayout.Space(10);
+        GUILayout.BeginHorizontal();
+        {
+            EditorGUILayout.PrefixLabel("技能音频名称");
+            m_oSkill.audioPath = EditorGUILayout.TextField(m_oSkill.audioPath);
+        }
+        GUILayout.EndHorizontal();
+        GUILayout.Space(10);
         this.ShowShapeType();
     }
     private void ShowShapeType()
