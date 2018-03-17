@@ -48,8 +48,7 @@ namespace CaomaoFramework
     {
         GuideStepNull = 0,
         PrimaryGuide = 1001,
-        BuyHeroGuide,
-        BattleAiGuide
+        WatchAds
     }
     /// <summary>
     /// 任务检查类型

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+public static string fileName = "DataGuideTaskInfo";
+    public string GuideText { get; set; }
+    public string UIInfoFrame { get; set; }
+    public string BtnName { get; set; }
+    public Vector3 InfoPos { get; set; }
+    public Vector3 BtnPos { get; set; }
+    public string GuideEffectPath { get; set; }
+    public int GuideType { get; set; }
+    public int BtnTriggerType { get; set; }
+    public int TaskTime { get; set; }
+-->
+<root>
+  <TaskInfo>
+    <id_i>2001</id_i>
+    <GuideText_s>点击此处进入练功房学习技能吧！</GuideText_s>
+    <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
+    <BtnName_s>bt_test</BtnName_s>
+    <InfoPos_v>220,108,0</InfoPos_v>
+    <GuideEffectPath_s>Assets.Prefabs.Effects.UI.UITipHand.prefab</GuideEffectPath_s>
+    <BtnTriggerType_i>0</BtnTriggerType_i>
+    <TaskTime_i>1</TaskTime_i>
+  </TaskInfo>
+  <TaskInfo>
+    <id_i>2002</id_i>
+    <GuideText_s>选择需要解锁的技能,点击解锁!</GuideText_s>
+    <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
+    <BtnName_s>0000</BtnName_s>
+    <InfoPos_v>220,108,0</InfoPos_v>
+    <GuideEffectPath_s>Assets.Prefabs.Effects.UI.UITipHand.prefab</GuideEffectPath_s>
+    <BtnTriggerType_i>0</BtnTriggerType_i>
+    <TaskTime_i>1</TaskTime_i>
+  </TaskInfo>
+  <TaskInfo>
+    <id_i>2003</id_i>
+    <GuideText_s>点击跟我学,学习官方技能口令发音</GuideText_s>
+    <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
+    <BtnName_s>bt_test</BtnName_s>
+    <InfoPos_v>220,108,0</InfoPos_v>
+    <GuideEffectPath_s>Assets.Prefabs.Effects.UI.UITipHand.prefab</GuideEffectPath_s>
+    <BtnTriggerType_i>0</BtnTriggerType_i>
+    <TaskTime_i>1</TaskTime_i>
+  </TaskInfo>
+</root>
+

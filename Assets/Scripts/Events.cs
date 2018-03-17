@@ -26,4 +26,14 @@ public class Events : EventsBase
     public static readonly string DlgMainShow = "DlgMainShow";
     public static readonly string DlgMainHide = "DlgMainHide";
     public static readonly string DlgMainShowMask = "DlgMainShowMask";
+
+    public static readonly string DlgPlayGuideShow = "DlgPlayGuideShow";
+    public static readonly string DlgPlayGuideHide = "DlgPlayGuideHide";
+    public static readonly string DlgAddGuideEvent = "DlgAddGuideEvent";
+    public static readonly string DlgGuideExecuteNextTask = "DlgGuideExecuteNextTask";
+    public static readonly string DlgGuideChildTaskFinished = "DlgGuideChildTaskFinished";
+
+    public static readonly string DlgTextShow = "DlgTextShow";
+    public static readonly string DlgTextHide = "DlgTextHide";
+    public static readonly string DlgTextEnterLearn = "DlgTextEnterLearn";
 }

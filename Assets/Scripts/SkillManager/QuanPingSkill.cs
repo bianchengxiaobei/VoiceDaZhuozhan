@@ -40,6 +40,8 @@ public class QuanPingSkill : GameSkillBase
                 }
                 
             }
+            //音频
+            
         }
     }
     public override void OnUpdate()

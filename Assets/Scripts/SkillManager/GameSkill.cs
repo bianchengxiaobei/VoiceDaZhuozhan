@@ -12,7 +12,7 @@ using System.Collections.Generic;
 /// </summary>
 public class GameSkillBase
 {
-    public bool bLocked;
+    public bool bLocked = false;
     public Skill skillConfig;
     public int level;
     public SkillActor actor;

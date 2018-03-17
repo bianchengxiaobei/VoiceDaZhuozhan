@@ -16,7 +16,7 @@ public class SkillManager : Singleton<SkillManager>
 {
     public Dictionary<int, GameSkillBase> skills = new Dictionary<int, GameSkillBase>();
     public Dictionary<string, GameSkillBase> skillStrings = new Dictionary<string, GameSkillBase>();
-    public void LoadSkill(string filePath)
+    public void LoadSkill()
     {
         string content = UnityTool.LoadTxtFile(Application.dataPath + "/Resources/skills.txt");
         SkillConfig config = JsonConvert.DeserializeObject<SkillConfig>(content);
@@ -31,6 +31,19 @@ public class SkillManager : Singleton<SkillManager>
             gameSkill.Init(skill);
             this.skills.Add(skill.skillId, gameSkill);
             this.skillStrings.Add(skill.skillToken, gameSkill);
+        }
+        if (PlayerPrefs.HasKey("lockedskills"))
+        {
+            string[] lockedSkillcontent = PlayerPrefs.GetString("lockedskills").Split(',');
+            foreach (var locked in lockedSkillcontent)
+            {
+                GameSkillBase skill = null;
+                int skillId = int.Parse(locked);
+                if (this.skills.TryGetValue(skillId, out skill))
+                {
+                    skill.bLocked = true;
+                }
+            }
         }
     }
     public void Attack(int skillId,bool allMonster)
@@ -122,6 +135,14 @@ public class SkillManager : Singleton<SkillManager>
         if (skillStrings.ContainsKey(token))
         {
             return skillStrings[token];
+        }
+        return null;
+    }
+    public GameSkillBase GetSkill(int skillId)
+    {
+        if (skills.ContainsKey(skillId))
+        {
+            return skills[skillId];
         }
         return null;
     }

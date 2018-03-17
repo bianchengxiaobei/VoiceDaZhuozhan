@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <TipInfo>
+    <id_i>3001</id_i>
+    <Content_s>欢迎进入足球战场！接下来我将带你完成比赛的胜利！</Content_s>
+    <TipPath_s>Assets.Prefabs.Effects.UI.TipContent.prefab</TipPath_s>
+    <LabelPos_v>0,84,0</LabelPos_v>
+  </TipInfo>
+  <TipInfo>
+    <id_i>3002</id_i>
+    <Content_s>干的漂亮！赛场上的法球出现了,赶快去抢夺它！</Content_s>
+    <TipPath_s>Assets.Prefabs.Effects.UI.TipContent.prefab</TipPath_s>
+    <LabelPos_v>0,84,0</LabelPos_v>
+  </TipInfo>
+  <TipInfo>
+    <id_i>3003</id_i>
+    <Content_s>前方注意！对方英雄出现了！</Content_s>
+    <TipPath_s>Assets.Prefabs.Effects.UI.TipContent.prefab</TipPath_s>
+    <LabelPos_v>0,84,0</LabelPos_v>
+  </TipInfo>
+</root>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <element id="mutesound" value="0" />
+  <element id="bgsoundvalue" value="1" />
+  <element id="soundvalue" value="1" />
+  <element id="voicevalue" value="1.00" />
+  <element id="qualitysetting" value="1" />
+  <element id="enablemusic" value="1" />
+  <element id="enableeffect" value="1" />
+  <element id="guidefinish" value="null"/>
+</root>

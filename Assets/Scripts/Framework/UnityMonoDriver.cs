@@ -36,7 +36,10 @@ namespace CaomaoFramework
             {
                 uiManager.Init();
                 //Login.singleton.RequestAnnouncement();
+                UserPrefsBase.Singleton.LoadUserConfig();
                 LevelManager.singleton.LoadLevel();
+                SkillManager.singleton.LoadSkill();
+                GuideController.singleton.GuideFinishModelList(UserPrefsBase.Singleton.guideFinishedId);
                 WWWResourceManager.Instance.SetAllLoadFinishedEventHandler((ok) =>
                 {
                     clientGameStateManager.EnterDefaultState();

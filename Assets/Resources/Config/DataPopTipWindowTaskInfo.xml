@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+public string Content { get; set; }
+    public string Path { get; set; }
+    public Vector3 Pos { get; set; }
+    public Vector3 ToScale { get; set; }
+    public float Duration { get; set; }
+-->
+<root>
+  <PopWindow>
+    <id_i>5001</id_i>
+    <Content_s>
+      任务一：
+      移动到指定区域
+    </Content_s>
+    <Path_s>Assets.Prefabs.Effects.UI.PopTipWindow1.prefab</Path_s>
+    <Pos_v>279,88,0</Pos_v>
+    <ToScale_v>0.9,0.9,0.9</ToScale_v>
+    <Duration_f>2</Duration_f>
+  </PopWindow>
+  <PopWindow>
+      <id_i>5002</id_i>
+      <Content_s>
+        任务二：
+        抢夺赛场上的法球
+      </Content_s>
+      <Path_s>Assets.Prefabs.Effects.UI.PopTipWindow1.prefab</Path_s>
+      <Pos_v>279,88,0</Pos_v>
+      <ToScale_v>0.9,0.9,0.9</ToScale_v>
+      <Duration_f>2</Duration_f>
+   </PopWindow>
+  <PopWindow>
+    <id_i>5003</id_i>
+    <Content_s>
+      任务三：
+      击杀对方英雄
+    </Content_s>
+    <Path_s>Assets.Prefabs.Effects.UI.PopTipWindow1.prefab</Path_s>
+    <Pos_v>279,88,0</Pos_v>
+    <ToScale_v>0.9,0.9,0.9</ToScale_v>
+    <Duration_f>2</Duration_f>
+  </PopWindow>
+</root>

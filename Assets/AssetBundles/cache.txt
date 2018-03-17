@@ -1,4 +1,9 @@
 0.1.0
+Assets\Prefabs\Guis\DlgGuide.prefab
+13df548c5c9f5df25c9520f24ddf670f0a5c51ec
+0
+904594d3f4fb7920c2084353ff55ff50
+0
 Assets\Prefabs\Guis\DlgLevel.prefab
 085c44178061a45c5ca74b4b100be3fa8341cbea
 0
@@ -119,8 +124,8 @@ a6b70f1db9776674815480ad4dbf16bcbb2d1927
 e6eb0d5b6347294cbf5af139385aed8c
 3
 Assets\Spine\spine-unity\Editor\GUI\SkeletonDataAsset Icon.png
-Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
 Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
+Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
 Assets\Audios\SkillEffects\98K.wav
 864dac41546add8bf509a17df081adeb7908344a
 0
@@ -186,28 +191,23 @@ caf917347d31aeb3bc6b5b6e3237190605c27f20
 0
 6e38e50dfa3a42a170127302c3bb880c
 0
+Assets\Prefabs\Effects\UI\UITipHand.prefab
+6402b87e1ac26564b517a197364af15143fbf581
+0
+9aa14bab3d6154c99ceeef19d5ba2816
+0
 Assets\Font\字体管家湾湾体.ttf
 443f8262c58453a988fee9c335d77a65880ff79e
 0
 bf9bffa42809c39c57e45034a7193395
 0
-Assets\Textures\Common1\levelItem.png
-c67932368cfb8a62fb375f48e94b161bf3ad99b7
-0
-
-0
-Assets\Textures\Common1\levelBg.png
-e03efce79e29edf7d3bdacec050c154836d5021f
-0
-
-0
-Assets\Textures\Common1\ButtonBG.png
-e8bd3a03cbd76633c1f4f68caac2ea6cd1d40939
-0
-
-0
 Assets\Textures\Common1\levelItemHigh.png
 ddb76ef853f6af4af535e5e5e5b48980c1abab6d
+0
+
+0
+Assets\Textures\Common1\levelItem.png
+c67932368cfb8a62fb375f48e94b161bf3ad99b7
 0
 
 0
@@ -216,26 +216,25 @@ e2b03e2045d34d31c4380a38f977b16c468b96ca
 0
 15ea322fb679b1d7efc8340b5aa3ae2d
 0
-Assets\SpineResoource\主角\zhujue_Controller.controller
-59c12d3fc8383960fc686746672c2f538e93eb3d
+Assets\Textures\Common1\ButtonBG.png
+e8bd3a03cbd76633c1f4f68caac2ea6cd1d40939
 0
 
 0
-Assets\SpineResoource\主角\zhujue_SkeletonData.asset
-496f28891f616ae2b36622698e95337d0bb0b006
+Assets\Textures\Common1\levelBg.png
+e03efce79e29edf7d3bdacec050c154836d5021f
 0
-777e85be55ed847336ac49c298c0451b
-3
-Assets\Spine\spine-unity\Editor\GUI\SkeletonDataAsset Icon.png
+
+0
+Assets\SpineResoource\主角\zhujue_Atlas.asset
+83837cd695e20c137e00598587f900dbf337288c
+0
+
+2
 Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
 Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
-Assets\SpineResoource\主角\zhujue.atlas.txt
-0626b231ef37715505aeffd473ad9440a49c8aeb
-0
-
-0
-Assets\SpineResoource\主角\zhujue_zhujue3.mat
-2750dd2acf8e0159f16a345565871e75e93adb00
+Assets\SpineResoource\主角\zhujue_zhujue.mat
+92754a8c0704631b4d4a96c9a486f73d44b561cf
 0
 
 1
@@ -245,6 +244,17 @@ Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
 0
 9ed0f7d2d4795d36a5a3970c629c90f4
 0
+Assets\SpineResoource\主角\zhujue.png
+d7a4833a1469ce2f15d266ea06207c541612efc6
+0
+
+0
+Assets\SpineResoource\主角\zhujue_zhujue3.mat
+2750dd2acf8e0159f16a345565871e75e93adb00
+0
+
+1
+Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
 Assets\SpineResoource\主角\zhujue3.png
 e88af005b755cdbc5679ce95c11dcb645ad125ac
 0
@@ -261,6 +271,11 @@ c5855dec9b5db3fd612dc347f20f933aa5824102
 0
 
 0
+Assets\SpineResoource\主角\zhujue.atlas.txt
+0626b231ef37715505aeffd473ad9440a49c8aeb
+0
+
+0
 Assets\SpineResoource\主角\zhujue_zhujue2.mat
 d32f7f2d9edd0b552086156f56dcacbc4d27d267
 0
@@ -272,43 +287,33 @@ a6632e961c2f03dfa689e82d01e83bfca7b37161
 0
 
 0
-Assets\SpineResoource\主角\zhujue.json
-1481c46ae7456fb222bf7bea0d13264781a9f3b9
-0
-
-0
-Assets\SpineResoource\主角\zhujue_zhujue.mat
-92754a8c0704631b4d4a96c9a486f73d44b561cf
-0
-
-1
-Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
-Assets\SpineResoource\主角\zhujue.png
-d7a4833a1469ce2f15d266ea06207c541612efc6
-0
-
-0
-Assets\SpineResoource\主角\zhujue_Atlas.asset
-83837cd695e20c137e00598587f900dbf337288c
-0
-
-2
-Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
-Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
 Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
 fab95d8f4bf48a6c9e4ab2ed69b96b9652d0e480
 0
 0e94a4e69fd587f9c904d53bc7779282
 0
+Assets\SpineResoource\主角\zhujue_Controller.controller
+59c12d3fc8383960fc686746672c2f538e93eb3d
+0
+
+0
+Assets\SpineResoource\主角\zhujue_SkeletonData.asset
+496f28891f616ae2b36622698e95337d0bb0b006
+0
+777e85be55ed847336ac49c298c0451b
+3
+Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
+Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
+Assets\Spine\spine-unity\Editor\GUI\SkeletonDataAsset Icon.png
+Assets\SpineResoource\主角\zhujue.json
+1481c46ae7456fb222bf7bea0d13264781a9f3b9
+0
+
+0
 Assets\Spine\spine-unity\Editor\GUI\SkeletonDataAsset Icon.png
 7b9b6da6a8f3a425c75322bdb2617f5bfc70616e
 0
 86058abfdd49a67c7863826df265a2e5
-0
-Assets\Textures\Common1\moneyBG.png
-004d9d93990b8a3815348e8230133685740561d6
-0
-
 0
 Assets\Textures\Common1\ads.png
 faafe53c3bbf1e7b2559838fa6c5db121f3faeff
@@ -320,8 +325,8 @@ c7ff180af8b61a7d4ba3333f0fcbdc513767bbab
 0
 
 0
-Assets\Textures\Common1\锁.png
-6d22021c8f780bcbcdd966fbd839684031a6396f
+Assets\Textures\Common1\moneyBG.png
+004d9d93990b8a3815348e8230133685740561d6
 0
 
 0
@@ -335,13 +340,8 @@ Assets\Textures\Common1\召唤圣主高飞.png
 0
 
 0
-Assets\SpineResoource\纹身男\wenshennan.atlas.txt
-43292a57c0ec993d089c7edd049cedd8639fd2ef
-0
-
-0
-Assets\SpineResoource\纹身男\wenshennan.json
-4d22bf274dc01adfd806a4a32e3e5a5c1bf30d88
+Assets\Textures\Common1\锁.png
+6d22021c8f780bcbcdd966fbd839684031a6396f
 0
 
 0
@@ -351,15 +351,20 @@ Assets\SpineResoource\纹身男\wenshennan_SkeletonData.asset
 
 3
 Assets\Spine\spine-unity\Editor\GUI\SkeletonDataAsset Icon.png
-Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
 Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
+Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
 Assets\SpineResoource\纹身男\wenshennan_Atlas.asset
 a79891f6b67ea7fcd631c992ca1de31b2ec408d8
 0
 
 2
-Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
 Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
+Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
+Assets\SpineResoource\纹身男\wenshennan.atlas.txt
+43292a57c0ec993d089c7edd049cedd8639fd2ef
+0
+
+0
 Assets\SpineResoource\纹身男\wenshennan_Material.mat
 6f822ca95d7d712ebfaeb956399410ced53309b6
 0
@@ -371,8 +376,33 @@ Assets\SpineResoource\纹身男\wenshennan.png
 0
 
 0
+Assets\SpineResoource\纹身男\wenshennan.json
+4d22bf274dc01adfd806a4a32e3e5a5c1bf30d88
+0
+
+0
 Assets\SpineResoource\纹身男\wenshennan_Controller.controller
 5bf4a25755e7059d8db692b001a751f17fade514
+0
+
+0
+Assets\Materials\UIEffect\UIRing.mat
+cb5a63e2799b4dcdda63104e88917e1b5c6cb862
+0
+
+0
+Assets\Materials\UIEffect\RingGlowWhite9.png
+7e3004cf2dd0c0ede8f6737b585195589408eeba
+0
+
+0
+Assets\Materials\UIEffect\UIHand.mat
+50724d31bef7e8bb54a3fc4d92cfd3ddf5eaf3bd
+0
+
+0
+Assets\Materials\UIEffect\MazUIAtlas_62.png
+507171548a6fdce3a69a08901e6920c3c0fd0164
 0
 
 0

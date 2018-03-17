@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+public static string fileName = "DataGuideShowTipContinueInfo";
+    public string TipBtnPath { get; set; }
+    public Vector3 TipBtnPos { get; set; }
+    public string SpriteName { get; set; }
+    public Vector3 SpritePos { get; set; }
+    public string TipContent { get; set; }
+    public int NextId { get; set; }
+-->
+<root>
+  <ShowTip>
+    <id_i>8001</id_i>
+    <TipBtnPath_s>Assets.Prefabs.Guis.ContinueTip.prefab</TipBtnPath_s>
+    <TipBtnPos_s>15.3,34.7,0</TipBtnPos_s>
+    <SpriteName>leftTeambg</SpriteName>
+    <TipContent>注意到上方的数字了吗，当你抢的法球，你的队伍会相应的增加分数</TipContent>
+    <NextId>8002</NextId>
+  </ShowTip>
+  <ShowTip>
+    <id_i>8002</id_i>
+    <TipBtnPath_s>Assets.Prefabs.Guis.ContinueTip.prefab</TipBtnPath_s>
+    <TipBtnPos_s>15.3,34.7,0</TipBtnPos_s>
+    <SpriteName>timebg</SpriteName>
+    <TipContent>这是游戏的战斗时常,当时间为0时,哪方抢夺法球进度多,哪方获胜。</TipContent>
+    <NextId>8003</NextId>
+  </ShowTip>
+  <ShowTip>
+    <id_i>8003</id_i>
+    <TipBtnPath_s>Assets.Prefabs.Guis.ContinueTip.prefab</TipBtnPath_s>
+    <TipBtnPos_s>15.3,34.7,0</TipBtnPos_s>
+    <SpriteName>timebg</SpriteName>
+    <TipContent>虽然夺得法球能增加分数，但是持球的会被减速。接下来移动主角试试吧。</TipContent>
+    <NextId>-1</NextId>
+  </ShowTip>
+  <ShowTip>
+    <id_i>8004</id_i>
+    <TipBtnPath_s>Assets.Prefabs.Guis.ContinueTip.prefab</TipBtnPath_s>
+    <TipBtnPos_s>15.3,34.7,0</TipBtnPos_s>
+    <SpriteName>timebg</SpriteName>
+    <TipContent>成功击杀敌方英雄。注意当持球超过一分钟会自动丢弃法球。接下来我将时间设置为倒数5秒,迎接比赛的胜利吧！</TipContent>
+    <NextId>-1</NextId>
+  </ShowTip>
+</root>

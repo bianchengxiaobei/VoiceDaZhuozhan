@@ -25,3 +25,6 @@ MonoBehaviour:
   - valid: 1
     path: Assets/Audios/SkillEffects
     filter: '*.wav'
+  - valid: 1
+    path: Assets/Prefabs/Effects
+    filter: '*.prefab'

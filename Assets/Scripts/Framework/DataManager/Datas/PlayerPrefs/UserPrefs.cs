@@ -2,6 +2,7 @@
 using System.Xml;
 using System.IO;
 using UnityEngine;
+using System.Collections.Generic;
 namespace CaomaoFramework
 {
     public class UserPrefsBase
@@ -13,6 +14,7 @@ namespace CaomaoFramework
         private float m_fBGSoundValue = 1f;
         private float m_fSoundValue = 1f;
         private float m_fVoiceValue = 1f;
+        public List<int> guideFinishedId = new List<int>();
         private GraphicsQuality m_eGraphicsQuality = GraphicsQuality.Medium;
         private static UserPrefsBase s_instance = null;
         private IXLog m_log = XLog.GetLog<UserPrefsBase>();
@@ -151,6 +153,19 @@ namespace CaomaoFramework
             xmlElement14.SetAttribute("id", "enableeffect");
             xmlElement14.SetAttribute("value", this.m_bEnableEffect ? 1.ToString() : 0.ToString());
             xmlElement.AppendChild(xmlElement14);
+            XmlElement xmlElement15 = xmlDocument.CreateElement("element");         
+            if (GuideModel.singleton.GuideFinishedList.Count > 0)
+            {
+                string content = "";
+                foreach (var guide in GuideModel.singleton.GuideFinishedList)
+                {
+                    content += guide + ",";
+                }
+                content.Remove(content.LastIndexOf(","));
+                xmlElement14.SetAttribute("id", "guidefinish");
+                xmlElement14.SetAttribute("value", content);
+                xmlElement.AppendChild(xmlElement14);
+            }       
             xmlDocument.Save(fullPath);
         }
         public virtual void LoadUserConfig()
@@ -193,6 +208,18 @@ namespace CaomaoFramework
                                     case "enableeffect":
                                         this.m_bEnableEffect = (Convert.ToInt32(attribute) != 0);
                                         break;
+                                    case "guidefinish":
+                                        if (attribute.Equals("null"))
+                                        {
+                                            GuideModel.singleton.bIsGuideAllComp = false;
+                                            break;
+                                        }
+                                        string[] content = attribute.Split(',');
+                                        foreach (var id in content)
+                                        {
+                                            this.guideFinishedId.Add(Convert.ToInt32(id));
+                                        }
+                                        break;                             
                                 }
                             }
                         }
