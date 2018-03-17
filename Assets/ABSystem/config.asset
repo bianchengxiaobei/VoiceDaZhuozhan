@@ -22,3 +22,6 @@ MonoBehaviour:
   - valid: 1
     path: Assets/Prefabs/Characters
     filter: '*.prefab'
+  - valid: 1
+    path: Assets/Audios/SkillEffects
+    filter: '*.wav'

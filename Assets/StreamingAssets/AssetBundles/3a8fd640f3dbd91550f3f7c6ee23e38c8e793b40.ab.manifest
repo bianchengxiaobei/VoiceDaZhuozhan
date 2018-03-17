@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2256474854
+CRC: 4186160473
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 59d0825577cf417bf04a6f683c95054c
+    Hash: ebdb3194bef75372d4e4a5d7722f676d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: f3013113e49ea271ac8c208c75f303d7
+    Hash: 5dd9fd1d69e7be6ee097b921c9803086
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -41,5 +41,5 @@ Assets:
 - Assets/Prefabs/Guis/DlgLoading.prefab
 Dependencies:
 - E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/c255f37f5d98fca32809bc3e4377a59c04ef9501.ab
-- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/5db8d196a830ec883fa056bfca708c90fb37ca28.ab
 - E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/4857d4ddbe7da8e44cbee1b601c6d3a8175682e9.ab
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/5db8d196a830ec883fa056bfca708c90fb37ca28.ab

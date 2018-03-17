@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3066651016
+CRC: 2471096021
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 13188999510b24f0b4ca5fb67be9efd8
+    Hash: e131822ec02d9766215284aba8216477
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 2c85cea2c173ff941eae14346c834225
+    Hash: f1821c3710bc299faaff41dc1f18ffdd
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -38,5 +38,5 @@ ClassTypes:
 Assets:
 - Assets/Prefabs/Characters/MySelf.prefab
 Dependencies:
-- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/5db8d196a830ec883fa056bfca708c90fb37ca28.ab
 - E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/4857d4ddbe7da8e44cbee1b601c6d3a8175682e9.ab
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/5db8d196a830ec883fa056bfca708c90fb37ca28.ab

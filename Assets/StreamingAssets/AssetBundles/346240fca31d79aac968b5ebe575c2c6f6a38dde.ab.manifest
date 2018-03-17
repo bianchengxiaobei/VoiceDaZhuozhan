@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 923351961
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e759d6b7565347246fe67707aeac48aa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- "Assets/Audios/SkillEffects/\u6240\u6709\u7684\u6325\u5200\u97F3\u6548.wav"
+Dependencies: []
