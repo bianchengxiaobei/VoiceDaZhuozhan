@@ -18,7 +18,12 @@ public class SkillManager : Singleton<SkillManager>
     public Dictionary<string, GameSkillBase> skillStrings = new Dictionary<string, GameSkillBase>();
     public void LoadSkill()
     {
-        string content = UnityTool.LoadTxtFile(Application.dataPath + "/Resources/skills.txt");
+        string content = (Resources.Load("skills") as TextAsset).text;
+        if (string.IsNullOrEmpty(content))
+        {
+            Debug.LogError("SkillContent == null");
+            return;
+        }
         SkillConfig config = JsonConvert.DeserializeObject<SkillConfig>(content);
         foreach (var skill in config.skills)
         {

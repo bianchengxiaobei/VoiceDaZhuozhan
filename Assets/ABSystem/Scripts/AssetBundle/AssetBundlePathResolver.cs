@@ -100,8 +100,8 @@ namespace Tangzx.ABSystem
 #if UNITY_EDITOR || UNITY_STANDALONE_WIN
                     string dir = string.Format("{0}/{1}", Application.streamingAssetsPath, BundleSaveDirName);
 #else
-					//string dir = string.Format("{0}/AssetBundles", Application.persistentDataPath);
-                    string dir = string.Format("{0}/{1}", Application.streamingAssetsPath, BundleSaveDirName);
+					string dir = string.Format("{0}/AssetBundles", Application.persistentDataPath);
+                    //string dir = string.Format("{0}/{1}", Application.streamingAssetsPath, BundleSaveDirName);
 #endif
                     cachePath = dir;
                 }

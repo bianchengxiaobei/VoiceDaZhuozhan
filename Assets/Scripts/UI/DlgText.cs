@@ -18,9 +18,11 @@ public class DlgText : UIBase
     public GameObject SKillView;
     public GameObject MySelf;
     public GameObject SkillLearn;
+    public GameObject SpeakToken;
     public Image m_Iamge_SkillIcon;
     public Text m_Text_SkillInfo;
     public Text m_Text_SkillName;
+    public Text m_Text_Token;
     public Button m_Button_Close;
     public Button m_Button_Test;
     public Button m_Button_Learn;
@@ -48,6 +50,7 @@ public class DlgText : UIBase
         this.SKillView.SetActive(true);
         this.SkillLearn.SetActive(false);
         this.MySelf.SetActive(false);
+        this.SpeakToken.SetActive(false);
         this.ShowLockedSkill();
     }
 
@@ -61,10 +64,12 @@ public class DlgText : UIBase
         this.SKillView = this.mRoot.Find("SkillView").gameObject;
         this.SkillLearn = this.mRoot.Find("SkillLearn").gameObject;
         this.MySelf = this.mRoot.Find("MySelf").gameObject;
+        this.SpeakToken = this.mRoot.Find("sp_token").gameObject;
         this.anim = this.MySelf.GetComponent<Animator>();
         this.m_Iamge_SkillIcon = this.mRoot.Find("SkillLearn/SkillIcon").GetComponent<Image>();
         this.m_Text_SkillInfo = this.mRoot.Find("SkillLearn/SkillInfo/lb_info").GetComponent<Text>();
         this.m_Text_SkillName = this.mRoot.Find("SkillLearn/SkillName/Text").GetComponent<Text>();
+        this.m_Text_Token = this.mRoot.Find("sp_token/lb_info").GetComponent<Text>();
         this.m_Button_Close = this.mRoot.Find("SkillView/bt_close").GetComponent<Button>();
         this.m_List_Skills = this.mRoot.Find("SkillView/Viewport/Content").GetComponent<XUIList>();
         this.m_List_Skills.RegisterListSelectEventHandler(this.OnSelectSkillItem);
@@ -190,12 +195,29 @@ public class DlgText : UIBase
     }
     public void OnClickButtonSpeakTest()
     {
-        //出现口令
+        GameSkillBase skill = SkillManager.singleton.GetSkill(this.selectSkillId);
         //等音频播放结束后,然后角色播放动作
-        if (anim != null)
-        {
-            GameSkillBase skill = SkillManager.singleton.GetSkill(this.selectSkillId);
+        if (anim != null && skill != null)
+        {         
+            //出现口令
+            this.ShowToken(skill.skillConfig.skillToken);
             anim.CrossFade(skill.skillConfig.skillName,0);
+            TimerManager.AddTimer(4000, 0, () => 
+            {
+                this.ShowToken("", false);
+            });
+        }
+    }
+    private void ShowToken(string token,bool Visible = true)
+    {
+        if (Visible)
+        {
+            this.m_Text_Token.text = token;
+            this.SpeakToken.SetActive(true);
+        }
+        else
+        {
+            this.SpeakToken.SetActive(false);
         }
     }
 }

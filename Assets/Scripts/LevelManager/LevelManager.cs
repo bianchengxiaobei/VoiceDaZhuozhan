@@ -38,7 +38,12 @@ public class LevelManager : Singleton<LevelManager>
     }
     public void LoadLevel()
     {
-        string content = UnityTool.LoadTxtFile(Application.dataPath + "/Resources/levels.txt");
+        string content = (Resources.Load("levels") as TextAsset).text;
+        if (string.IsNullOrEmpty(content))
+        {
+            Debug.LogError("content == null");
+            return;
+        }
         LevelConfig config = JsonConvert.DeserializeObject<LevelConfig>(content);
         foreach (var level in config.levels)
         {

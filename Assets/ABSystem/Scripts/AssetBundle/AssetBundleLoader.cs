@@ -250,6 +250,7 @@ public class MobileAssetBundleLoader : AssetBundleLoader
             }
             else
             {
+                Debug.LogError(www.error);
                 Error();
             }
 

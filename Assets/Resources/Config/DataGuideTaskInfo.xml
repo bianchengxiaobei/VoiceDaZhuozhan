@@ -35,7 +35,7 @@ public static string fileName = "DataGuideTaskInfo";
   </TaskInfo>
   <TaskInfo>
     <id_i>2003</id_i>
-    <GuideText_s>点击跟我学,学习官方技能口令发音</GuideText_s>
+    <GuideText_s>点击跟我说,学习官方技能口令发音</GuideText_s>
     <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
     <BtnName_s>bt_speakTest</BtnName_s>
     <InfoPos_v>220,108,0</InfoPos_v>

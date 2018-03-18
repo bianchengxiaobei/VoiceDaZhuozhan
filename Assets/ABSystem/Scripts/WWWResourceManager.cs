@@ -192,10 +192,10 @@ public class WWWResourceManager : MonoBehaviour
     public void LoadAtlas(string atlaName)
     {
         string path = string.Format("{0}/{1}", AssetBundlePathResolver.instance.BundleCacheDir, atlaName);
-        //if (!File.Exists(path))
-        //{
-        //    Debug.LogError("不存在路径");
-        //}
+        if (!File.Exists(path))
+        {
+            path = AssetBundlePathResolver.instance.GetBundleSourceFile(atlaName, false);
+        }
         if (!this.m_dicAtlasCache.ContainsKey(atlaName))
         {
             AssetBundle ab = AssetBundle.LoadFromFile(path);

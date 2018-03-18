@@ -17,10 +17,17 @@ namespace Tangzx.ABSystem
 #else
             //直接用 LoadFromFile
             _assetBundleSourceFile = bundleManager.pathResolver.GetBundleSourceFile(bundleName, false);
-            Debug.Log("3432432");
+            Debug.Log("3432432:"+_assetBundleSourceFile);
             AssetBundleCreateRequest req = AssetBundle.LoadFromFileAsync(_assetBundleSourceFile);
             yield return req;
-            _bundle = req.assetBundle;
+            if (req.isDone)
+            {
+                _bundle = req.assetBundle;
+            }
+            else
+            {
+                Debug.Log("fefeef");
+            }
 #endif
             Complete();
         }

@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1712862984
+CRC: 3337140272
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d0d043556519b6c12d8080ac4855e641
+    Hash: 58a0c43e6f4d01529150864597486b0e
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 460b4f5d62b6facbccf7c01637df8f00
+    Hash: 21f0dc8ebad690f009368069428e0a1a
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -31,6 +31,7 @@ Assets:
 - Assets/Textures/Common1/levelBg.png
 - "Assets/Textures/Common1/\u9B3C\u70E7.png"
 - Assets/Textures/Common1/moneyBG.png
+- Assets/Textures/Common1/Token.png
 - "Assets/Textures/Common1/\u53EC\u5524\u5723\u4E3B\u9AD8\u98DE.png"
 - "Assets/Textures/Common1/\u9F99\u9B42\u4E4B\u7BAD.png"
 - Assets/Textures/Common1/speakBg.png
