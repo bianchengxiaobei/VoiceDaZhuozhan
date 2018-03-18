@@ -97,7 +97,14 @@ public class GuideController : Singleton<GuideController>
             //NetworkManager.singleton.SendGuideModuleComp(GuideModel.singleton.TaskMrgData.TaskType);
             //保存下
             string finished = PlayerPrefs.GetString("guidefinish");
-            finished += ","+GuideModel.singleton.TaskMrgData.TaskType;
+            if (string.IsNullOrEmpty(finished))
+            {
+                finished = GuideModel.singleton.TaskMrgData.TaskType.ToString();
+            }
+            else
+            {
+                finished += "," + GuideModel.singleton.TaskMrgData.TaskType;
+            }
             PlayerPrefs.SetString("guidefinish",finished);
             if ((EGuideStepInfo)GuideModel.singleton.TaskMrgData.TaskType == EGuideStepInfo.WatchAds)
             {

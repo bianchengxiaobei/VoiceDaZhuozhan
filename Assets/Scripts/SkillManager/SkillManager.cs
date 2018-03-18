@@ -34,6 +34,11 @@ public class SkillManager : Singleton<SkillManager>
         }
         if (PlayerPrefs.HasKey("lockedskills"))
         {
+            if (!GuideModel.singleton.bIsGuideAllComp)
+            {
+                PlayerPrefs.DeleteKey("lockedskills");
+                return;
+            }
             string[] lockedSkillcontent = PlayerPrefs.GetString("lockedskills").Split(',');
             foreach (var locked in lockedSkillcontent)
             {
@@ -157,5 +162,23 @@ public class SkillManager : Singleton<SkillManager>
             return skills[skillId];
         }
         return null;
+    }
+    public void LockSkill(int skillId)
+    {
+        GameSkillBase skill = SkillManager.singleton.GetSkill(skillId);
+        if (skill != null)
+        {
+            skill.bLocked = true;
+            if (!PlayerPrefs.HasKey("lockedskills"))
+            {
+                PlayerPrefs.SetString("lockedskills", skillId.ToString());
+            }
+            else
+            {
+                string content = PlayerPrefs.GetString("lockedskills");
+                content += "," + skillId;
+                PlayerPrefs.SetString("lockedskills", content);
+            }
+        }
     }
 }

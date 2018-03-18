@@ -205,6 +205,10 @@ public class SkillDetailEditor : EditorWindow
         {
             EditorGUILayout.PrefixLabel("技能图标名字");
             m_oSkill.iconPath = EditorGUILayout.TextField(m_oSkill.iconPath);
+            if (string.IsNullOrEmpty(m_oSkill.iconPath))
+            {
+                m_oSkill.iconPath = m_oSkill.skillName;
+            }
         }
         GUILayout.EndHorizontal();
         GUILayout.Space(10);

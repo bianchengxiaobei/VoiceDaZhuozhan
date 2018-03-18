@@ -78,7 +78,8 @@ public class GuideForceClick : GuideTaskBase
                 {
                     this.ForceEffect = asset.Instantiate();
                     this.ForceEffect.transform.SetParent(EventButton.transform);
-                    this.ForceEffect.transform.localPosition = Vector3.zero;
+                    this.ForceEffect.transform.localPosition = Vector3.back;
+                    this.ForceEffect.transform.localRotation = Quaternion.identity;
                     this.ForceEffect.transform.localScale = Vector3.one * 100;
                 }
             });
@@ -124,7 +125,9 @@ public class GuideForceClick : GuideTaskBase
     {
         this.Black = this.mRoot.transform.Find("sp_mask").gameObject;
         this.EventButtonTempParent = EventButton.transform.parent;
+        Vector3 pos = this.EventButton.transform.position;
         EventButton.transform.SetParent(this.Black.transform);
+        EventButton.transform.position = pos;
         if (this.data.BtnPos != null && this.data.BtnPos != Vector3.zero)
         {
             EventButton.transform.localPosition = this.data.BtnPos;

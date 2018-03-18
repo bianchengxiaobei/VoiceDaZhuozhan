@@ -26,7 +26,7 @@
     <ChildTaskType_l>2</ChildTaskType_l><!--关联到DataGuideTaskInfo的id-->
     <ChildTaskId_l>2001</ChildTaskId_l>
     <EndTaskChildId_i>2001</EndTaskChildId_i>
-    <NextTaskId_i>-1</NextTaskId_i>
+    <NextTaskId_i>6002</NextTaskId_i>
     <TaskType_i>1001</TaskType_i>
     <Moduleend_b>false</Moduleend_b><!--是否是模块的最后一个任务-->
   </GuideModel>
@@ -36,7 +36,7 @@
     <!--关联到DataGuideTaskInfo的id-->
     <ChildTaskId_l>2002</ChildTaskId_l>
     <EndTaskChildId_i>2002</EndTaskChildId_i>
-    <NextTaskId_i>-1</NextTaskId_i>
+    <NextTaskId_i>6003</NextTaskId_i>
     <TaskType_i>1001</TaskType_i>
     <Moduleend_b>false</Moduleend_b>
   </GuideModel>
@@ -45,7 +45,7 @@
     <ChildTaskType_l>10</ChildTaskType_l>
     <ChildTaskId_l>10001</ChildTaskId_l>
     <EndTaskChildId_i>10001</EndTaskChildId_i>
-    <NextTaskId_i>-1</NextTaskId_i>
+    <NextTaskId_i>6004</NextTaskId_i>
     <TaskType_i>1001</TaskType_i>
     <Moduleend_b>false</Moduleend_b>
   </GuideModel>

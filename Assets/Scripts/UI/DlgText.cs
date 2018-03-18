@@ -22,7 +22,9 @@ public class DlgText : UIBase
     public Text m_Text_SkillInfo;
     public Text m_Text_SkillName;
     public Button m_Button_Close;
-
+    public Button m_Button_Test;
+    public Button m_Button_Learn;
+    public Animator anim;
     private int selectSkillId = int.MinValue;
     public DlgText()
     {
@@ -59,12 +61,17 @@ public class DlgText : UIBase
         this.SKillView = this.mRoot.Find("SkillView").gameObject;
         this.SkillLearn = this.mRoot.Find("SkillLearn").gameObject;
         this.MySelf = this.mRoot.Find("MySelf").gameObject;
+        this.anim = this.MySelf.GetComponent<Animator>();
         this.m_Iamge_SkillIcon = this.mRoot.Find("SkillLearn/SkillIcon").GetComponent<Image>();
         this.m_Text_SkillInfo = this.mRoot.Find("SkillLearn/SkillInfo/lb_info").GetComponent<Text>();
         this.m_Text_SkillName = this.mRoot.Find("SkillLearn/SkillName/Text").GetComponent<Text>();
         this.m_Button_Close = this.mRoot.Find("SkillView/bt_close").GetComponent<Button>();
         this.m_List_Skills = this.mRoot.Find("SkillView/Viewport/Content").GetComponent<XUIList>();
         this.m_List_Skills.RegisterListSelectEventHandler(this.OnSelectSkillItem);
+        this.m_Button_Test = this.mRoot.Find("SkillLearn/bt_speakTest").GetComponent<Button>();
+        this.m_Button_Test.onClick.AddListener(this.OnClickButtonSpeakTest);
+        GuideController.singleton.AddGuideEventButton(this.m_Button_Test.gameObject);
+        this.m_Button_Learn = this.mRoot.Find("SkillLearn/bt_learn").GetComponent<Button>();
     }
 
     protected override void OnAddListener()
@@ -115,19 +122,22 @@ public class DlgText : UIBase
             if (item != null)
             {
                 item.Id = soreSkills[i].skillConfig.skillId;
-                if (item.Index == 0)
-                {
-                    GuideController.singleton.AddGuideEventButton(item.gameObject);
-                }
-                item.SetSprite("sp_icon", "common1.ab", soreSkills[i].skillConfig.iconPath);
+
+                item.SetSprite("sp_icon", "common1.ab", soreSkills[i].skillConfig.skillName);
                 item.SetText("lb_name", soreSkills[i].skillConfig.skillName);
                 bool hasLocked = soreSkills[i].bLocked;
                 item.GetChild("sp_lock").gameObject.SetActive(!hasLocked);
                 item.toggle.interactable = hasLocked;
                 string btName = hasLocked ? "学习" : "解锁";
                 item.SetText("bt_click/Text", btName);
-                item.GetButton("bt_click").onClick.AddListener(()=> 
+                Button clickButton = item.GetButton("bt_click");
+                if (item.Index == 0)
                 {
+                    GuideController.singleton.AddGuideEventButton(clickButton.gameObject);
+                }
+                clickButton.onClick.AddListener(()=> 
+                {
+                    this.m_List_Skills.SelectItem(item, true);
                     if (hasLocked)
                     {
                         //进入学习
@@ -149,7 +159,7 @@ public class DlgText : UIBase
         GameSkillBase skill = SkillManager.singleton.GetSkill(skillId);
         if (skill != null)
         {
-            this.m_Iamge_SkillIcon.sprite = WWWResourceManager.Instance.LoadSpriteFormAtla("common1.ab", skill.skillConfig.iconPath);
+            this.m_Iamge_SkillIcon.sprite = WWWResourceManager.Instance.LoadSpriteFormAtla("common1.ab", skill.skillConfig.skillName);
             this.m_Text_SkillInfo.text = skill.skillConfig.skillInfo;
             this.m_Text_SkillName.text = skill.skillConfig.skillName;
             this.SkillLearn.SetActive(true);
@@ -163,7 +173,11 @@ public class DlgText : UIBase
     {
         if (!GuideModel.singleton.bIsGuideAllComp)
         {
-
+            if (skillId > 0)
+            {
+                SkillManager.singleton.LockSkill(skillId);
+                EventDispatch.Broadcast(Events.DlgGuideExecuteNextTask);
+            }
         }
     }
     public void OnSelectSkillItem(XUIListItem list)
@@ -173,5 +187,15 @@ public class DlgText : UIBase
             return;
         }
         this.selectSkillId = list.Id;
+    }
+    public void OnClickButtonSpeakTest()
+    {
+        //出现口令
+        //等音频播放结束后,然后角色播放动作
+        if (anim != null)
+        {
+            GameSkillBase skill = SkillManager.singleton.GetSkill(this.selectSkillId);
+            anim.CrossFade(skill.skillConfig.skillName,0);
+        }
     }
 }
