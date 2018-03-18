@@ -32,7 +32,8 @@ public class DlgText : UIBase
     }
     public override void Init()
     {
-        
+        EventDispatch.AddListener(Events.DlgTextShow, this.Show);
+        EventDispatch.AddListener(Events.DlgTextHide, this.Hide);
     }
 
     public override void OnDisable()
@@ -60,8 +61,10 @@ public class DlgText : UIBase
         this.MySelf = this.mRoot.Find("MySelf").gameObject;
         this.m_Iamge_SkillIcon = this.mRoot.Find("SkillLearn/SkillIcon").GetComponent<Image>();
         this.m_Text_SkillInfo = this.mRoot.Find("SkillLearn/SkillInfo/lb_info").GetComponent<Text>();
-        this.m_Text_SkillName = this.mRoot.Find("SkillName/Text").GetComponent<Text>();
+        this.m_Text_SkillName = this.mRoot.Find("SkillLearn/SkillName/Text").GetComponent<Text>();
         this.m_Button_Close = this.mRoot.Find("SkillView/bt_close").GetComponent<Button>();
+        this.m_List_Skills = this.mRoot.Find("SkillView/Viewport/Content").GetComponent<XUIList>();
+        this.m_List_Skills.RegisterListSelectEventHandler(this.OnSelectSkillItem);
     }
 
     protected override void OnAddListener()
@@ -85,7 +88,7 @@ public class DlgText : UIBase
         {
             foreach (var skillconfig in SkillManager.singleton.skills)
             {
-                if (skillconfig.Value.bLocked)
+                if (skillconfig.Value.bLocked || skillconfig.Value.skillConfig.skillId == 5)
                 {
                     soreSkills.Insert(0,skillconfig.Value);
                     continue;
@@ -112,6 +115,10 @@ public class DlgText : UIBase
             if (item != null)
             {
                 item.Id = soreSkills[i].skillConfig.skillId;
+                if (item.Index == 0)
+                {
+                    GuideController.singleton.AddGuideEventButton(item.gameObject);
+                }
                 item.SetSprite("sp_icon", "common1.ab", soreSkills[i].skillConfig.iconPath);
                 item.SetText("lb_name", soreSkills[i].skillConfig.skillName);
                 bool hasLocked = soreSkills[i].bLocked;
@@ -158,5 +165,13 @@ public class DlgText : UIBase
         {
 
         }
+    }
+    public void OnSelectSkillItem(XUIListItem list)
+    {
+        if (list == null && list.Id <= 0)
+        {
+            return;
+        }
+        this.selectSkillId = list.Id;
     }
 }

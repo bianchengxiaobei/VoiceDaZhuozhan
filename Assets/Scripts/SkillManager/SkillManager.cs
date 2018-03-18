@@ -127,6 +127,18 @@ public class SkillManager : Singleton<SkillManager>
         {
             case ESkillType.全屏:
                 return new QuanPingSkill();
+            case ESkillType.直线:
+                return new LineSkill();
+            case ESkillType.直线有范围:
+                return new LineRangeSkill();
+            case ESkillType.锁定:
+                return new LockSkill();
+            case ESkillType.选择方向:
+                return new SelectDirSkill();
+            case ESkillType.选择固定位置:
+                return new SelectFixAreaSkill();
+            case ESkillType.固定区域:
+                return new FixAreaSkill();
         }
         return null;
     }

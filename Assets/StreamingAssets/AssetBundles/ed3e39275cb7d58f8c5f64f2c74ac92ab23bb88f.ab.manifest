@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 1296662029
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f9a09382ade802212039be38da8e7abe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a833ecfb9105e6779cf0bfd7aec98763
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 2109663825, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71e11ad22b7c870428dee2b6562cb44d, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/Guis/Item_Skill.prefab
+Dependencies:
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/c255f37f5d98fca32809bc3e4377a59c04ef9501.ab
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/common1.ab

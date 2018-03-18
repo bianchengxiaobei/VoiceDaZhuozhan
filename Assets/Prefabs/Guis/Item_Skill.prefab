@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 222887964310416994}
   - component: {fileID: 114631884099741052}
   - component: {fileID: 114444570271056494}
+  - component: {fileID: 114855197703669484}
   m_Layer: 5
   m_Name: Item_Skill
   m_TagString: Untagged
@@ -306,6 +307,21 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114855197703669484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1533670922361898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e11ad22b7c870428dee2b6562cb44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 0}
+  sprite: {fileID: 0}
+  texture: {fileID: 0}
+  button: {fileID: 0}
 --- !u!114 &114877557704706650
 MonoBehaviour:
   m_ObjectHideFlags: 1

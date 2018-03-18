@@ -34,11 +34,11 @@ Assets\Font\字体管家湾湾体.ttf
 Assets\Audios\Effects\uibutton.wav
 Assets\Textures\startBg.jpg
 Assets\Prefabs\Guis\DlgTest.prefab
-9d32e1017db5d926c0a79bed191093f1dae50d16
+94d9463db683dfe418d0260df693f685b797ad7a
 0
-a7cd74425d1fb914568e32ab908c79ce
+480009ff62f2cc8c783f64dbfe1be111
 2
-Assets\Font\字体管家湾湾体.ttf
+Assets\Prefabs\Guis\Item_Skill.prefab
 Assets\SpineResoource\主角\zhujue_SkeletonData.asset
 Assets\Prefabs\Guis\item_level.prefab
 ab58d9064c68c6830553f187466473394195225f
@@ -47,6 +47,24 @@ efc66b49a96187fd33f104cea5eb6067
 2
 Assets\Font\字体管家湾湾体.ttf
 Assets\Audios\Effects\uitap.wav
+Assets\Prefabs\Guis\Item_Skill.prefab
+d53c4fcc5743eb15e03b2c6e373c89c82229a676
+0
+f9a09382ade802212039be38da8e7abe
+1
+Assets\Font\字体管家湾湾体.ttf
+Assets\Prefabs\Guis\sp_tipInfo.prefab
+03b05d619bb7098635acc2cac987dc1ace06a3d2
+0
+b7f7aaed978a175542666f52b9f4f3de
+1
+Assets\Font\字体管家湾湾体.ttf
+Assets\Prefabs\Guis\UIGuideSelectable.prefab
+6352083b4944950af8285175f3ae8d44efcd18e0
+0
+16d781c809a199028c82f0aea8d85f6f
+1
+Assets\Font\字体管家湾湾体.ttf
 Assets\Audios\Effects\battleWin.wav
 6097bbde531d7b5650a07e92f46f70cafa637cd3
 0
@@ -192,17 +210,12 @@ caf917347d31aeb3bc6b5b6e3237190605c27f20
 6e38e50dfa3a42a170127302c3bb880c
 0
 Assets\Prefabs\Effects\UI\UITipHand.prefab
-6402b87e1ac26564b517a197364af15143fbf581
+92a0907c08fc1ab961d6208508158c5a86260b95
 0
-9aa14bab3d6154c99ceeef19d5ba2816
+06e6ef515798645435ea79281c564796
 0
-Assets\Font\字体管家湾湾体.ttf
-443f8262c58453a988fee9c335d77a65880ff79e
-0
-bf9bffa42809c39c57e45034a7193395
-0
-Assets\Textures\Common1\levelItemHigh.png
-ddb76ef853f6af4af535e5e5e5b48980c1abab6d
+Assets\Textures\Common1\ButtonBG.png
+e8bd3a03cbd76633c1f4f68caac2ea6cd1d40939
 0
 
 0
@@ -211,21 +224,54 @@ c67932368cfb8a62fb375f48e94b161bf3ad99b7
 0
 
 0
-Assets\Textures\startBg.jpg
-e2b03e2045d34d31c4380a38f977b16c468b96ca
+Assets\Font\字体管家湾湾体.ttf
+443f8262c58453a988fee9c335d77a65880ff79e
 0
-15ea322fb679b1d7efc8340b5aa3ae2d
-0
-Assets\Textures\Common1\ButtonBG.png
-e8bd3a03cbd76633c1f4f68caac2ea6cd1d40939
-0
-
+bf9bffa42809c39c57e45034a7193395
 0
 Assets\Textures\Common1\levelBg.png
 e03efce79e29edf7d3bdacec050c154836d5021f
 0
 
 0
+Assets\Textures\Common1\levelItemHigh.png
+ddb76ef853f6af4af535e5e5e5b48980c1abab6d
+0
+
+0
+Assets\Textures\startBg.jpg
+e2b03e2045d34d31c4380a38f977b16c468b96ca
+0
+15ea322fb679b1d7efc8340b5aa3ae2d
+0
+Assets\SpineResoource\主角\zhujue_Controller.controller
+59c12d3fc8383960fc686746672c2f538e93eb3d
+0
+
+0
+Assets\Spine\spine-unity\Editor\GUI\SkeletonDataAsset Icon.png
+7b9b6da6a8f3a425c75322bdb2617f5bfc70616e
+0
+86058abfdd49a67c7863826df265a2e5
+0
+Assets\SpineResoource\主角\zhujue.atlas.txt
+0626b231ef37715505aeffd473ad9440a49c8aeb
+0
+
+0
+Assets\SpineResoource\主角\zhujue.json
+1481c46ae7456fb222bf7bea0d13264781a9f3b9
+0
+
+0
+Assets\SpineResoource\主角\zhujue_SkeletonData.asset
+496f28891f616ae2b36622698e95337d0bb0b006
+0
+777e85be55ed847336ac49c298c0451b
+3
+Assets\Spine\spine-unity\Editor\GUI\SkeletonDataAsset Icon.png
+Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
+Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
 Assets\SpineResoource\主角\zhujue_Atlas.asset
 83837cd695e20c137e00598587f900dbf337288c
 0
@@ -246,6 +292,17 @@ Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
 0
 Assets\SpineResoource\主角\zhujue.png
 d7a4833a1469ce2f15d266ea06207c541612efc6
+0
+
+0
+Assets\SpineResoource\主角\zhujue_zhujue2.mat
+d32f7f2d9edd0b552086156f56dcacbc4d27d267
+0
+
+1
+Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
+Assets\SpineResoource\主角\zhujue2.png
+a6632e961c2f03dfa689e82d01e83bfca7b37161
 0
 
 0
@@ -271,49 +328,15 @@ c5855dec9b5db3fd612dc347f20f933aa5824102
 0
 
 0
-Assets\SpineResoource\主角\zhujue.atlas.txt
-0626b231ef37715505aeffd473ad9440a49c8aeb
-0
-
-0
-Assets\SpineResoource\主角\zhujue_zhujue2.mat
-d32f7f2d9edd0b552086156f56dcacbc4d27d267
-0
-
-1
-Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
-Assets\SpineResoource\主角\zhujue2.png
-a6632e961c2f03dfa689e82d01e83bfca7b37161
-0
-
-0
 Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
 fab95d8f4bf48a6c9e4ab2ed69b96b9652d0e480
 0
 0e94a4e69fd587f9c904d53bc7779282
 0
-Assets\SpineResoource\主角\zhujue_Controller.controller
-59c12d3fc8383960fc686746672c2f538e93eb3d
+Assets\Textures\Common1\moneyBG.png
+004d9d93990b8a3815348e8230133685740561d6
 0
 
-0
-Assets\SpineResoource\主角\zhujue_SkeletonData.asset
-496f28891f616ae2b36622698e95337d0bb0b006
-0
-777e85be55ed847336ac49c298c0451b
-3
-Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader
-Assets\Spine\spine-unity\Editor\GUI\AtlasAsset Icon.png
-Assets\Spine\spine-unity\Editor\GUI\SkeletonDataAsset Icon.png
-Assets\SpineResoource\主角\zhujue.json
-1481c46ae7456fb222bf7bea0d13264781a9f3b9
-0
-
-0
-Assets\Spine\spine-unity\Editor\GUI\SkeletonDataAsset Icon.png
-7b9b6da6a8f3a425c75322bdb2617f5bfc70616e
-0
-86058abfdd49a67c7863826df265a2e5
 0
 Assets\Textures\Common1\ads.png
 faafe53c3bbf1e7b2559838fa6c5db121f3faeff
@@ -325,8 +348,8 @@ c7ff180af8b61a7d4ba3333f0fcbdc513767bbab
 0
 
 0
-Assets\Textures\Common1\moneyBG.png
-004d9d93990b8a3815348e8230133685740561d6
+Assets\Textures\Common1\锁.png
+6d22021c8f780bcbcdd966fbd839684031a6396f
 0
 
 0
@@ -335,13 +358,18 @@ fbcd5d2c14eb9995a3668090a22a86862ac2e6f1
 0
 
 0
+Assets\Textures\Common1\X.png
+c363ebc0a083e4efeea468fc637a8fd8e2bef96b
+0
+
+0
 Assets\Textures\Common1\召唤圣主高飞.png
 5123260c7e59c7ff8c641df1b9b54bdeaf6a2d5e
 0
 
 0
-Assets\Textures\Common1\锁.png
-6d22021c8f780bcbcdd966fbd839684031a6396f
+Assets\Textures\Common1\speakBg.png
+7b34de7bff5684f3edf8c32f38e4b8df06768fb0
 0
 
 0
@@ -386,6 +414,16 @@ Assets\SpineResoource\纹身男\wenshennan_Controller.controller
 0
 
 0
+Assets\Materials\UIEffect\UIHand.mat
+6db6721ca8401f0fab96adb3bba8087c4e437a14
+0
+
+0
+Assets\Materials\UIEffect\指头.png
+ba6ae086f9af4c4c65428c26eeaa46d350a51e23
+0
+
+0
 Assets\Materials\UIEffect\UIRing.mat
 cb5a63e2799b4dcdda63104e88917e1b5c6cb862
 0
@@ -393,16 +431,6 @@ cb5a63e2799b4dcdda63104e88917e1b5c6cb862
 0
 Assets\Materials\UIEffect\RingGlowWhite9.png
 7e3004cf2dd0c0ede8f6737b585195589408eeba
-0
-
-0
-Assets\Materials\UIEffect\UIHand.mat
-50724d31bef7e8bb54a3fc4d92cfd3ddf5eaf3bd
-0
-
-0
-Assets\Materials\UIEffect\MazUIAtlas_62.png
-507171548a6fdce3a69a08901e6920c3c0fd0164
 0
 
 0

@@ -16,6 +16,7 @@ using UnityEngine.UI;
 public class DlgStart : UIBase
 {
     public Button m_Button_Start;
+    public Button m_Button_Text;
     public DlgStart()
     {
         this.mResName = "Assets.Prefabs.Guis.DlgStart.prefab";
@@ -47,6 +48,9 @@ public class DlgStart : UIBase
     {
         this.m_Button_Start = this.mRoot.Find("bt_start").GetComponent<Button>();
         this.m_Button_Start.onClick.AddListener(this.OnClickStartButton);
+        this.m_Button_Text = this.mRoot.Find("bt_test").GetComponent<Button>();
+        this.m_Button_Text.onClick.AddListener(this.OnClickTextButton);
+        GuideController.singleton.AddGuideEventButton(this.m_Button_Text.gameObject);
     }
 
     protected override void OnAddListener()
@@ -66,5 +70,9 @@ public class DlgStart : UIBase
     public void OnClickStartButton()
     {
         EventDispatch.Broadcast(Events.DlgLevelShow);
+    }
+    public void OnClickTextButton()
+    {
+        EventDispatch.Broadcast(Events.DlgTextShow);
     }
 }

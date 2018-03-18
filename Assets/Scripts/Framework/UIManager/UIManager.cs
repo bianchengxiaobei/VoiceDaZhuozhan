@@ -13,6 +13,8 @@ namespace CaomaoFramework
             m_dicUIs.Add("DlgLevel", new DlgLevel());
             m_dicUIs.Add("DlgMain", new DlgMain());
             m_dicUIs.Add("DlgLoading", new DlgLoading());
+            m_dicUIs.Add("DlgGuide", new DlgGuide());
+            m_dicUIs.Add("DlgText", new DlgText());
         }
 
         public void Init()

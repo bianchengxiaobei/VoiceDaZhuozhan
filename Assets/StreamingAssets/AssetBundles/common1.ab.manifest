@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3574689934
+CRC: 1712862984
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5d4884bc0bb989997e3b1f1ffb94ed93
+    Hash: d0d043556519b6c12d8080ac4855e641
   TypeTreeHash:
     serializedVersion: 2
     Hash: 460b4f5d62b6facbccf7c01637df8f00
@@ -15,7 +15,7 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/Textures/Common1/moneyIcon.png
-- Assets/Textures/Common1/success.png
+- Assets/Textures/Common1/X.png
 - "Assets/Textures/Common1/\u53EC\u5524\u8BF8\u845B\u7434\u9B54.png"
 - "Assets/Textures/Common1/\u9F99\u4E4B\u65A9.png"
 - "Assets/Textures/Common1/\u6708\u7259\u5929\u51B2.png"
@@ -25,7 +25,7 @@ Assets:
 - Assets/Textures/Common1/ButtonBG.png
 - Assets/Textures/Common1/levelItem.png
 - "Assets/Textures/Common1/\u9501.png"
-- "Assets/Textures/Common1/\u906E\u7F69.png"
+- Assets/Textures/Common1/Mask.png
 - Assets/Textures/Common1/unlock.png
 - "Assets/Textures/Common1/\u98DE\u9E70\u75BE\u88AD.png"
 - Assets/Textures/Common1/levelBg.png
@@ -33,6 +33,7 @@ Assets:
 - Assets/Textures/Common1/moneyBG.png
 - "Assets/Textures/Common1/\u53EC\u5524\u5723\u4E3B\u9AD8\u98DE.png"
 - "Assets/Textures/Common1/\u9F99\u9B42\u4E4B\u7BAD.png"
+- Assets/Textures/Common1/speakBg.png
 - "Assets/Textures/Common1/\u6CE2\u52A8\u62F3.png"
 - Assets/Textures/Common1/levelItemHigh.png
 Dependencies: []

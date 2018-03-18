@@ -21,6 +21,7 @@ public class SkillDetailEditor : EditorWindow
     private ReorderableList demagelist;
     private Vector2 paramsrollPosition;
     private ReorderableList paramlist;
+    private string audioPath;
     public static void OpenWindow(Skill skill)
     {
         m_oSkill = skill;
@@ -224,7 +225,7 @@ public class SkillDetailEditor : EditorWindow
         GUILayout.BeginHorizontal();
         {
             EditorGUILayout.PrefixLabel("技能音频名称");
-            m_oSkill.audioPath = "Assets.Audios.SkillEffects."+EditorGUILayout.TextField(m_oSkill.audioPath);
+            m_oSkill.audioPath = "Assets.Audios.SkillEffects."+EditorGUILayout.TextField(audioPath);
         }
         GUILayout.EndHorizontal();
         GUILayout.Space(10);

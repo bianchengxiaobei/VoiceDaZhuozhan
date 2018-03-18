@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1252487538
+CRC: 3028165785
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a7cd74425d1fb914568e32ab908c79ce
+    Hash: 480009ff62f2cc8c783f64dbfe1be111
   TypeTreeHash:
     serializedVersion: 2
-    Hash: b4b897389b26492d0b4835b241cba544
+    Hash: d7f78f3958a9816a9c05bbcf0ead0382
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -44,9 +44,13 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
+  Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: f9db98c60740638449864eb028fbe7ad, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 973304c984faa284ab7e58929e1712fe, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -60,6 +64,7 @@ ClassTypes:
 Assets:
 - Assets/Prefabs/Guis/DlgTest.prefab
 Dependencies:
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/ed3e39275cb7d58f8c5f64f2c74ac92ab23bb88f.ab
 - E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/c255f37f5d98fca32809bc3e4377a59c04ef9501.ab
 - E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/4857d4ddbe7da8e44cbee1b601c6d3a8175682e9.ab
 - E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/5db8d196a830ec883fa056bfca708c90fb37ca28.ab
