@@ -143,10 +143,11 @@ public class DlgText : UIBase
                 clickButton.onClick.AddListener(()=> 
                 {
                     this.m_List_Skills.SelectItem(item, true);
-                    if (hasLocked)
+                    
+                    if (SkillManager.singleton.GetSkill(item.Id).bLocked)
                     {
                         //进入学习
-                        this.EnterLearn(item.Id);
+                        this.EnterLearn(item.Id,false);
                     }
                     else
                     {
@@ -157,7 +158,7 @@ public class DlgText : UIBase
             }
         }
     }
-    public void EnterLearn(int skillId)
+    public void EnterLearn(int skillId,bool bSelect = true)
     {
         this.SKillView.SetActive(false);
         this.MySelf.SetActive(true);
@@ -169,6 +170,11 @@ public class DlgText : UIBase
             this.m_Text_SkillName.text = skill.skillConfig.skillName;
             this.SkillLearn.SetActive(true);
         }
+        if (!GuideModel.singleton.bIsGuideAllComp && bSelect == false)
+        {
+            GuideModel.singleton.NowTaskId = 6004;
+            EventDispatch.Broadcast(Events.DlgGuideExecuteNextTask);
+        }
     }
     public void GuideToEnterLearn()
     {
@@ -176,13 +182,20 @@ public class DlgText : UIBase
     }
     public void EnterLock(int skillId)
     {
-        if (!GuideModel.singleton.bIsGuideAllComp)
+        if (!GuideModel.singleton.bIsGuideAllComp && GuideModel.singleton.bIsFirstLocked == false)
         {
             if (skillId > 0)
             {
-                SkillManager.singleton.LockSkill(skillId);
-                EventDispatch.Broadcast(Events.DlgGuideExecuteNextTask);
+                if (SkillManager.singleton.LockSkill(skillId))
+                {
+                    this.RefreshSkillItem(skillId);
+                    GuideModel.singleton.bIsFirstLocked = true;
+                }
             }
+        }
+        else
+        {
+            //需要金币解锁
         }
     }
     public void OnSelectSkillItem(XUIListItem list)
@@ -198,15 +211,22 @@ public class DlgText : UIBase
         GameSkillBase skill = SkillManager.singleton.GetSkill(this.selectSkillId);
         //等音频播放结束后,然后角色播放动作
         if (anim != null && skill != null)
-        {         
+        {
+            this.ShowSpeakButton(false); 
             //出现口令
             this.ShowToken(skill.skillConfig.skillToken);
             anim.CrossFade(skill.skillConfig.skillName,0);
             TimerManager.AddTimer(4000, 0, () => 
             {
                 this.ShowToken("", false);
+                this.ShowSpeakButton(true);
             });
         }
+    }
+    private void ShowSpeakButton(bool value)
+    {
+        this.m_Button_Learn.gameObject.SetActive(value);
+        this.m_Button_Test.gameObject.SetActive(value);
     }
     private void ShowToken(string token,bool Visible = true)
     {
@@ -218,6 +238,19 @@ public class DlgText : UIBase
         else
         {
             this.SpeakToken.SetActive(false);
+        }
+    }
+    private void RefreshSkillItem(int itemId)
+    {
+        XUIListItem item = this.m_List_Skills.GetItemById(itemId);
+        GameSkillBase skill = SkillManager.singleton.GetSkill(itemId);
+        if (item != null && skill != null)
+        {
+            bool hasLocked = skill.bLocked;
+            item.GetChild("sp_lock").gameObject.SetActive(!hasLocked);
+            item.toggle.interactable = hasLocked;
+            string btName = hasLocked ? "学习" : "解锁";
+            item.SetText("bt_click/Text", btName);
         }
     }
 }

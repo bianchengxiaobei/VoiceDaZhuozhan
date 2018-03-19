@@ -168,7 +168,7 @@ public class SkillManager : Singleton<SkillManager>
         }
         return null;
     }
-    public void LockSkill(int skillId)
+    public bool LockSkill(int skillId)
     {
         GameSkillBase skill = SkillManager.singleton.GetSkill(skillId);
         if (skill != null)
@@ -184,6 +184,11 @@ public class SkillManager : Singleton<SkillManager>
                 content += "," + skillId;
                 PlayerPrefs.SetString("lockedskills", content);
             }
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

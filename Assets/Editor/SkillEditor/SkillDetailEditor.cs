@@ -22,6 +22,7 @@ public class SkillDetailEditor : EditorWindow
     private Vector2 paramsrollPosition;
     private ReorderableList paramlist;
     private string audioPath;
+    private string levelGold;
     public static void OpenWindow(Skill skill)
     {
         m_oSkill = skill;
@@ -230,6 +231,29 @@ public class SkillDetailEditor : EditorWindow
         {
             EditorGUILayout.PrefixLabel("技能音频名称");
             m_oSkill.audioPath = "Assets.Audios.SkillEffects."+EditorGUILayout.TextField(audioPath);
+        }
+        GUILayout.EndHorizontal();
+        GUILayout.Space(10);
+        GUILayout.BeginHorizontal();
+        {
+            EditorGUILayout.PrefixLabel("技能解锁金币");
+            m_oSkill.lockGold = EditorGUILayout.IntField(m_oSkill.lockGold);
+        }
+        GUILayout.EndHorizontal();
+        GUILayout.Space(10);
+        GUILayout.BeginHorizontal();
+        {
+            EditorGUILayout.PrefixLabel("技能升级金币");
+            this.levelGold = EditorGUILayout.TextField(levelGold);
+            string[] content = this.levelGold.Split(',');
+            m_oSkill.upgradeGold.Clear();
+            if (content != null && content.Length > 0)
+            {
+                foreach (var gold in content)
+                {
+                    m_oSkill.upgradeGold.Add(int.Parse(gold));
+                }
+            }
         }
         GUILayout.EndHorizontal();
         GUILayout.Space(10);

@@ -59,6 +59,8 @@ public class GuideSelectableTask : GuideTaskBase
     {
         EventDispatch.Broadcast(Events.DlgTextEnterLearn);
         this.FinishTask();
+        GuideModel.singleton.NowTaskId = 6004;
+        EventDispatch.Broadcast(Events.DlgGuideExecuteNextTask);
     }
     private void OnClickCaculButton()
     {

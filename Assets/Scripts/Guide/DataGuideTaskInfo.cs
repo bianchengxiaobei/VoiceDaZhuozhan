@@ -22,4 +22,6 @@ public class DataGuideTaskInfo : GameData<DataGuideTaskInfo>
     public string GuideEffectPath { get; set; }
     public int BtnTriggerType { get; set; }
     public int TaskTime { get; set; }
+    public string ShowView { get; set; }
+    public Vector3 ShowViewPos { get; set; }
 }

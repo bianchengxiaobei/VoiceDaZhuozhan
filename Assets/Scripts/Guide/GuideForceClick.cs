@@ -21,6 +21,7 @@ public class GuideForceClick : GuideTaskBase
     private Transform EventButtonTempParent;
     private DataGuideTaskInfo data;
     private int m_iTriggerCount;//触发次数
+    private GameObject ShowView;
     public GuideForceClick(int taskId, EGuideTaskType type, GameObject parent) : base(taskId, type, parent)
     {
 
@@ -125,13 +126,24 @@ public class GuideForceClick : GuideTaskBase
     {
         this.Black = this.mRoot.transform.Find("sp_mask").gameObject;
         this.EventButtonTempParent = EventButton.transform.parent;
-        Vector3 pos = this.EventButton.transform.position;
         EventButton.transform.SetParent(this.Black.transform);
-        EventButton.transform.position = pos;
         if (this.data.BtnPos != null && this.data.BtnPos != Vector3.zero)
         {
             EventButton.transform.localPosition = this.data.BtnPos;
             EventButton.transform.localScale = Vector3.one;
+        }
+        if (!string.IsNullOrEmpty(this.data.ShowView))
+        {
+            this.ShowView = this.EventButtonTempParent.Find(this.data.ShowView).gameObject;
+            if (this.ShowView != null)
+            {
+                this.ShowView.transform.SetParent(this.Black.transform);
+                if (this.data.ShowViewPos != null && this.data.ShowViewPos != Vector3.zero)
+                {
+                    this.ShowView.transform.localPosition = this.data.ShowViewPos;
+                    this.ShowView.transform.localScale = Vector3.one;
+                }
+            }
         }
         if (!this.Black.activeSelf)
         {
@@ -188,7 +200,12 @@ public class GuideForceClick : GuideTaskBase
     public override void FinishTask()
     {
         this.EventButton.transform.SetParent(this.EventButtonTempParent);
+        if (this.ShowView != null)
+        {
+            this.ShowView.transform.SetParent(this.EventButtonTempParent);
+        }
         this.EventButtonTempParent = null;
+
         if (data.BtnTriggerType == (int)EButtonTriggerType.Click)
         {
             Selectable eventBtn = this.EventButton.GetComponent<Selectable>();
@@ -202,6 +219,7 @@ public class GuideForceClick : GuideTaskBase
             }
         }
         this.data = null;
+        this.ShowView = null;
         base.FinishTask();
     }
     public override void ClearTask()

@@ -45,7 +45,7 @@
     <ChildTaskType_l>10</ChildTaskType_l>
     <ChildTaskId_l>10001</ChildTaskId_l>
     <EndTaskChildId_i>10001</EndTaskChildId_i>
-    <NextTaskId_i>6004</NextTaskId_i>
+    <NextTaskId_i>-1</NextTaskId_i>
     <TaskType_i>1001</TaskType_i>
     <Moduleend_b>false</Moduleend_b>
   </GuideModel>

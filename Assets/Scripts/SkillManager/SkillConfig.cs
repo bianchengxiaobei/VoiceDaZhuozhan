@@ -31,6 +31,8 @@ public class Skill
     public EffectBindPos effectPos;//特效出生位置
     public string iconPath;//技能icon名称
     public string audioPath;//音频
+    public int lockGold;//解锁金币
+    public List<int> upgradeGold = new List<int>();//升级金币
 }
 public enum ESkillType
 {
