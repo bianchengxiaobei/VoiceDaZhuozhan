@@ -193,13 +193,11 @@ public class MobileAssetBundleLoader : AssetBundleLoader
         Debug.Log("需要加载的Assetbundle:"+_assetBundleCachedFile);
         if (File.Exists(_assetBundleCachedFile))
         {
-            UnityMonoDriver.s_instance.debugInfo = string.Format("通过持久化目录加载,{0}",_assetBundleCachedFile);
             bundleManager.StartCoroutine(LoadFromCachedFile());
         }
         else
         {
             Debug.Log("不能存在");
-            UnityMonoDriver.s_instance.debugInfo = "通过Steam加载";
             bundleManager.StartCoroutine(LoadFromPackage());
         }           
     }

@@ -1,0 +1,55 @@
+
+jituiyan.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jituiyan_00000
+  rotate: false
+  xy: 2, 84
+  size: 160, 80
+  orig: 160, 80
+  offset: 0, 0
+  index: -1
+jituiyan_00001
+  rotate: false
+  xy: 164, 166
+  size: 160, 80
+  orig: 160, 80
+  offset: 0, 0
+  index: -1
+jituiyan_00002
+  rotate: false
+  xy: 2, 2
+  size: 160, 80
+  orig: 160, 80
+  offset: 0, 0
+  index: -1
+jituiyan_00003
+  rotate: false
+  xy: 164, 84
+  size: 160, 80
+  orig: 160, 80
+  offset: 0, 0
+  index: -1
+jituiyan_00004
+  rotate: false
+  xy: 326, 166
+  size: 160, 80
+  orig: 160, 80
+  offset: 0, 0
+  index: -1
+jituiyan_00005
+  rotate: false
+  xy: 164, 2
+  size: 160, 80
+  orig: 160, 80
+  offset: 0, 0
+  index: -1
+jituiyan_00006
+  rotate: false
+  xy: 2, 166
+  size: 160, 80
+  orig: 160, 80
+  offset: 0, 0
+  index: -1

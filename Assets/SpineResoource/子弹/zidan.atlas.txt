@@ -1,0 +1,55 @@
+
+zidan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bo_00003
+  rotate: false
+  xy: 2, 2
+  size: 160, 128
+  orig: 160, 128
+  offset: 0, 0
+  index: -1
+bo_00004
+  rotate: false
+  xy: 164, 2
+  size: 160, 128
+  orig: 160, 128
+  offset: 0, 0
+  index: -1
+bo_00005
+  rotate: false
+  xy: 326, 2
+  size: 160, 128
+  orig: 160, 128
+  offset: 0, 0
+  index: -1
+bo_00006
+  rotate: false
+  xy: 488, 2
+  size: 160, 128
+  orig: 160, 128
+  offset: 0, 0
+  index: -1
+bo_00007
+  rotate: false
+  xy: 650, 2
+  size: 160, 128
+  orig: 160, 128
+  offset: 0, 0
+  index: -1
+bo_00008
+  rotate: false
+  xy: 812, 2
+  size: 160, 128
+  orig: 160, 128
+  offset: 0, 0
+  index: -1
+zd1_level_2
+  rotate: true
+  xy: 974, 109
+  size: 21, 48
+  orig: 21, 48
+  offset: 0, 0
+  index: -1

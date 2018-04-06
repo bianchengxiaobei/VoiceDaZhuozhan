@@ -33,6 +33,7 @@ namespace CaomaoFramework.GameState
         {
             this.m_dicClientStates.Add("StartState", new StartState());
             this.m_dicClientStates.Add("GameMainState", new GameMainState());
+            this.m_dicClientStates.Add("TestState", new TestState());
             this.CurrentGameState = "Max";
             this.IsInChanging = false;           
         }
@@ -45,7 +46,7 @@ namespace CaomaoFramework.GameState
                 {
                     this.NextGameState = nextGameState;
                     this.m_eCurrentLoadingStyle = loadingStyle;
-                    this.m_aCallBackWhenChangeFinished = (Action)Delegate.Combine(this.m_aCallBackWhenChangeFinished, callBackOnChangeFinished);
+                    this.m_aCallBackWhenChangeFinished += callBackOnChangeFinished;
                     if ("Max" != this.CurrentGameState)
                     {
                         if (ELoadingStyle.DefaultRule == this.m_eCurrentLoadingStyle)
@@ -125,29 +126,37 @@ namespace CaomaoFramework.GameState
         }
         private void SetLoadingVisible(ELoadingStyle dlgType, bool bVisible)
         {
-            switch (dlgType)
+            //switch (dlgType)
+            //{
+            //    case ELoadingStyle.LoadingWait:
+            //        if (bVisible)
+            //        {
+            //            EventDispatch.Broadcast(EventsBase.OnLoadingWaitUIShow);
+            //        }
+            //        else
+            //        {
+            //            EventDispatch.Broadcast(EventsBase.OnLoadingWaitUIHide);
+            //        }
+            //        break;
+            //    case ELoadingStyle.LoadingNormal:
+            //        if (bVisible)
+            //        {
+            //            EventDispatch.Broadcast(Events.DlgLoadingShow);
+            //        }
+            //        else
+            //        {
+            //            EventDispatch.Broadcast(Events.DlgLoadingHide);
+            //        }
+            //        break;
+            //}
+            if (bVisible)
             {
-                case ELoadingStyle.LoadingWait:
-                    if (bVisible)
-                    {
-                        EventDispatch.Broadcast(EventsBase.OnLoadingWaitUIShow);
-                    }
-                    else
-                    {
-                        EventDispatch.Broadcast(EventsBase.OnLoadingWaitUIHide);
-                    }
-                    break;
-                case ELoadingStyle.LoadingNormal:
-                    if (bVisible)
-                    {
-                        EventDispatch.Broadcast(Events.DlgLoadingShow);
-                    }
-                    else
-                    {
-                        EventDispatch.Broadcast(Events.DlgLoadingHide);
-                    }
-                    break;
+                EventDispatch.Broadcast(Events.DlgLoadingShow);
             }
-        }      
+            else
+            {
+                EventDispatch.Broadcast(Events.DlgLoadingHide);
+            }
+        }
     }
 }

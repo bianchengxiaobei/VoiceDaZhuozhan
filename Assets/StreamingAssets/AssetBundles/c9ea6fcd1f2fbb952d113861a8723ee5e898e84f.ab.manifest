@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1829354535
+CRC: 208904019
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 442b22398080a27f5e795e544b6d612e
+    Hash: a64c2ec6c92f357836dcd236f4d27d20
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 2c85cea2c173ff941eae14346c834225
+    Hash: 3fdb49a396237d3d09a0f332f426a0dd
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -23,12 +23,18 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 70
+  Script: {instanceID: 0}
 - Class: 74
+  Script: {instanceID: 0}
+- Class: 82
   Script: {instanceID: 0}
 - Class: 91
   Script: {instanceID: 0}
 - Class: 95
   Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: dbedc0e0f4498964ba98c5e9a1ea5816, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: f9db98c60740638449864eb028fbe7ad, type: 3}
 - Class: 114
@@ -38,5 +44,5 @@ ClassTypes:
 Assets:
 - Assets/Prefabs/Characters/MySelf.prefab
 Dependencies:
-- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/4857d4ddbe7da8e44cbee1b601c6d3a8175682e9.ab
 - E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/5db8d196a830ec883fa056bfca708c90fb37ca28.ab
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/4857d4ddbe7da8e44cbee1b601c6d3a8175682e9.ab

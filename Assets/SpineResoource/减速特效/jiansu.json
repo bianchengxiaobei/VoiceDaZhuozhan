@@ -1,0 +1,99 @@
+{
+"skeleton": { "hash": "FMQwNw+Iw/QSPdMf0os9x2Xu76M", "spine": "3.6.46", "width": 0, "height": 0, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "jiansu", "parent": "root" }
+],
+"slots": [
+	{ "name": "jiansu", "bone": "jiansu" }
+],
+"skins": {
+	"default": {
+		"jiansu": {
+			"jiansu_00000": { "width": 300, "height": 120 },
+			"jiansu_00002": { "width": 300, "height": 120 },
+			"jiansu_00004": { "width": 300, "height": 120 },
+			"jiansu_00006": { "width": 300, "height": 120 },
+			"jiansu_00008": { "width": 300, "height": 120 },
+			"jiansu_00010": { "width": 300, "height": 120 },
+			"jiansu_00012": { "width": 300, "height": 120 },
+			"jiansu_00014": { "width": 300, "height": 120 },
+			"jiansu_00016": { "width": 300, "height": 120 },
+			"jiansu_00018": { "width": 300, "height": 120 },
+			"jiansu_00020": { "width": 300, "height": 120 },
+			"jiansu_00022": { "width": 300, "height": 120 },
+			"jiansu_00024": { "width": 300, "height": 120 },
+			"jiansu_00026": { "width": 300, "height": 120 },
+			"jiansu_00028": { "width": 300, "height": 120 },
+			"jiansu_00030": { "width": 300, "height": 120 },
+			"jiansu_00032": { "width": 300, "height": 120 },
+			"jiansu_00034": { "width": 300, "height": 120 },
+			"jiansu_00036": { "width": 300, "height": 120 },
+			"jiansu_00038": { "width": 300, "height": 120 },
+			"jiansu_00040": { "width": 300, "height": 120 },
+			"jiansu_00042": { "width": 300, "height": 120 },
+			"jiansu_00044": { "width": 300, "height": 120 },
+			"jiansu_00046": { "width": 300, "height": 120 },
+			"jiansu_00048": { "width": 300, "height": 120 },
+			"jiansu_00050": { "width": 300, "height": 120 },
+			"jiansu_00052": { "width": 300, "height": 120 },
+			"jiansu_00054": { "width": 300, "height": 120 },
+			"jiansu_00056": { "width": 300, "height": 120 },
+			"jiansu_00058": { "width": 300, "height": 120 }
+		}
+	}
+},
+"animations": {
+	"jiansu": {
+		"slots": {
+			"jiansu": {
+				"attachment": [
+					{ "time": 0, "name": "jiansu_00000" },
+					{ "time": 0.0667, "name": "jiansu_00002" },
+					{ "time": 0.1333, "name": "jiansu_00004" },
+					{ "time": 0.2, "name": "jiansu_00006" },
+					{ "time": 0.2667, "name": "jiansu_00008" },
+					{ "time": 0.3333, "name": "jiansu_00010" },
+					{ "time": 0.4, "name": "jiansu_00012" },
+					{ "time": 0.4667, "name": "jiansu_00014" },
+					{ "time": 0.5333, "name": "jiansu_00016" },
+					{ "time": 0.6, "name": "jiansu_00018" },
+					{ "time": 0.6667, "name": "jiansu_00020" },
+					{ "time": 0.7333, "name": "jiansu_00022" },
+					{ "time": 0.8, "name": "jiansu_00024" },
+					{ "time": 0.8667, "name": "jiansu_00026" },
+					{ "time": 0.9333, "name": "jiansu_00028" },
+					{ "time": 1, "name": "jiansu_00030" },
+					{ "time": 1.0667, "name": "jiansu_00032" },
+					{ "time": 1.1333, "name": "jiansu_00034" },
+					{ "time": 1.2, "name": "jiansu_00036" },
+					{ "time": 1.2667, "name": "jiansu_00038" },
+					{ "time": 1.3333, "name": "jiansu_00040" },
+					{ "time": 1.4, "name": "jiansu_00042" },
+					{ "time": 1.4667, "name": "jiansu_00044" },
+					{ "time": 1.5333, "name": "jiansu_00046" },
+					{ "time": 1.6, "name": "jiansu_00048" },
+					{ "time": 1.6667, "name": "jiansu_00050" },
+					{ "time": 1.7333, "name": "jiansu_00052" },
+					{ "time": 1.8, "name": "jiansu_00054" },
+					{ "time": 1.8667, "name": "jiansu_00056" },
+					{ "time": 1.9333, "name": "jiansu_00058" },
+					{ "time": 2, "name": "jiansu_00058" }
+				]
+			}
+		},
+		"bones": {
+			"jiansu": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 2 }
+		]
+	}
+}
+}

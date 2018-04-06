@@ -1,0 +1,179 @@
+{
+"skeleton": { "hash": "RZvzu3xKZdSWOCqJujQy7H44nX0", "spine": "3.6.46", "width": 0, "height": 0, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "baozha", "parent": "root" },
+	{ "name": "baozha2", "parent": "root", "x": 97.62, "y": 46.98 },
+	{ "name": "baozha3", "parent": "root", "x": -65.66, "y": 54.32, "scaleX": 0.7, "scaleY": 0.7 }
+],
+"slots": [
+	{ "name": "baozha", "bone": "baozha" },
+	{ "name": "baozha2", "bone": "baozha2" },
+	{ "name": "baozha3", "bone": "baozha3" }
+],
+"skins": {
+	"default": {
+		"baozha": {
+			"baozha_00004": { "width": 300, "height": 300 },
+			"baozha_00006": { "width": 300, "height": 300 },
+			"baozha_00008": { "width": 300, "height": 300 },
+			"baozha_00010": { "width": 300, "height": 300 },
+			"baozha_00012": { "width": 300, "height": 300 },
+			"baozha_00014": { "width": 300, "height": 300 },
+			"baozha_00016": { "width": 300, "height": 300 },
+			"baozha_00018": { "width": 300, "height": 300 },
+			"baozha_00020": { "width": 300, "height": 300 },
+			"baozha_00022": { "width": 300, "height": 300 },
+			"baozha_00024": { "width": 300, "height": 300 },
+			"baozha_00026": { "width": 300, "height": 300 },
+			"baozha_00028": { "width": 300, "height": 300 },
+			"baozha_00030": { "width": 300, "height": 300 },
+			"baozha_00032": { "width": 300, "height": 300 },
+			"baozha_00034": { "width": 300, "height": 300 },
+			"baozha_00036": { "width": 300, "height": 300 },
+			"baozha_00038": { "width": 300, "height": 300 },
+			"baozha_00040": { "width": 300, "height": 300 },
+			"baozha_00042": { "width": 300, "height": 300 },
+			"baozha_00044": { "width": 300, "height": 300 }
+		},
+		"baozha2": {
+			"baozha_00004": { "width": 300, "height": 300 },
+			"baozha_00006": { "width": 300, "height": 300 },
+			"baozha_00008": { "width": 300, "height": 300 },
+			"baozha_00010": { "width": 300, "height": 300 },
+			"baozha_00012": { "width": 300, "height": 300 },
+			"baozha_00014": { "width": 300, "height": 300 },
+			"baozha_00016": { "width": 300, "height": 300 },
+			"baozha_00018": { "width": 300, "height": 300 },
+			"baozha_00020": { "width": 300, "height": 300 },
+			"baozha_00022": { "width": 300, "height": 300 },
+			"baozha_00024": { "width": 300, "height": 300 },
+			"baozha_00026": { "width": 300, "height": 300 },
+			"baozha_00028": { "width": 300, "height": 300 },
+			"baozha_00030": { "width": 300, "height": 300 },
+			"baozha_00032": { "width": 300, "height": 300 },
+			"baozha_00034": { "width": 300, "height": 300 },
+			"baozha_00036": { "width": 300, "height": 300 },
+			"baozha_00038": { "width": 300, "height": 300 },
+			"baozha_00040": { "width": 300, "height": 300 },
+			"baozha_00042": { "width": 300, "height": 300 },
+			"baozha_00044": { "width": 300, "height": 300 }
+		},
+		"baozha3": {
+			"baozha_00004": { "width": 300, "height": 300 },
+			"baozha_00006": { "width": 300, "height": 300 },
+			"baozha_00008": { "width": 300, "height": 300 },
+			"baozha_00010": { "width": 300, "height": 300 },
+			"baozha_00012": { "width": 300, "height": 300 },
+			"baozha_00014": { "width": 300, "height": 300 },
+			"baozha_00016": { "width": 300, "height": 300 },
+			"baozha_00018": { "width": 300, "height": 300 },
+			"baozha_00020": { "width": 300, "height": 300 },
+			"baozha_00022": { "width": 300, "height": 300 },
+			"baozha_00024": { "width": 300, "height": 300 },
+			"baozha_00026": { "width": 300, "height": 300 },
+			"baozha_00028": { "width": 300, "height": 300 },
+			"baozha_00030": { "width": 300, "height": 300 },
+			"baozha_00032": { "width": 300, "height": 300 },
+			"baozha_00034": { "width": 300, "height": 300 },
+			"baozha_00036": { "width": 300, "height": 300 },
+			"baozha_00038": { "width": 300, "height": 300 },
+			"baozha_00040": { "width": 300, "height": 300 },
+			"baozha_00042": { "width": 300, "height": 300 },
+			"baozha_00044": { "width": 300, "height": 300 }
+		}
+	}
+},
+"animations": {
+	"baozha": {
+		"slots": {
+			"baozha": {
+				"attachment": [
+					{ "time": 0, "name": "baozha_00004" },
+					{ "time": 0.0333, "name": "baozha_00006" },
+					{ "time": 0.0667, "name": "baozha_00008" },
+					{ "time": 0.1, "name": "baozha_00010" },
+					{ "time": 0.1333, "name": "baozha_00012" },
+					{ "time": 0.1667, "name": "baozha_00014" },
+					{ "time": 0.2, "name": "baozha_00016" },
+					{ "time": 0.2333, "name": "baozha_00018" },
+					{ "time": 0.2667, "name": "baozha_00020" },
+					{ "time": 0.3, "name": "baozha_00022" },
+					{ "time": 0.3333, "name": "baozha_00024" },
+					{ "time": 0.3667, "name": "baozha_00026" },
+					{ "time": 0.4, "name": "baozha_00028" },
+					{ "time": 0.4333, "name": "baozha_00030" },
+					{ "time": 0.4667, "name": "baozha_00032" },
+					{ "time": 0.5, "name": "baozha_00034" },
+					{ "time": 0.5333, "name": "baozha_00036" },
+					{ "time": 0.5667, "name": "baozha_00038" },
+					{ "time": 0.6, "name": "baozha_00040" },
+					{ "time": 0.6333, "name": "baozha_00042" },
+					{ "time": 0.6667, "name": "baozha_00044" },
+					{ "time": 0.7, "name": null }
+				]
+			},
+			"baozha2": {
+				"attachment": [
+					{ "time": 0.1, "name": "baozha_00004" },
+					{ "time": 0.1333, "name": "baozha_00006" },
+					{ "time": 0.1667, "name": "baozha_00008" },
+					{ "time": 0.2, "name": "baozha_00010" },
+					{ "time": 0.2333, "name": "baozha_00012" },
+					{ "time": 0.2667, "name": "baozha_00014" },
+					{ "time": 0.3, "name": "baozha_00016" },
+					{ "time": 0.3333, "name": "baozha_00018" },
+					{ "time": 0.3667, "name": "baozha_00020" },
+					{ "time": 0.4, "name": "baozha_00022" },
+					{ "time": 0.4333, "name": "baozha_00024" },
+					{ "time": 0.4667, "name": "baozha_00026" },
+					{ "time": 0.5, "name": "baozha_00028" },
+					{ "time": 0.5333, "name": "baozha_00030" },
+					{ "time": 0.5667, "name": "baozha_00032" },
+					{ "time": 0.6, "name": "baozha_00034" },
+					{ "time": 0.6333, "name": "baozha_00036" },
+					{ "time": 0.6667, "name": "baozha_00038" },
+					{ "time": 0.7, "name": "baozha_00040" },
+					{ "time": 0.7333, "name": "baozha_00042" },
+					{ "time": 0.7667, "name": "baozha_00044" },
+					{ "time": 0.8, "name": null }
+				]
+			},
+			"baozha3": {
+				"attachment": [
+					{ "time": 0.2, "name": "baozha_00004" },
+					{ "time": 0.2333, "name": "baozha_00006" },
+					{ "time": 0.2667, "name": "baozha_00008" },
+					{ "time": 0.3, "name": "baozha_00010" },
+					{ "time": 0.3333, "name": "baozha_00012" },
+					{ "time": 0.3667, "name": "baozha_00014" },
+					{ "time": 0.4, "name": "baozha_00016" },
+					{ "time": 0.4333, "name": "baozha_00018" },
+					{ "time": 0.4667, "name": "baozha_00020" },
+					{ "time": 0.5, "name": "baozha_00022" },
+					{ "time": 0.5333, "name": "baozha_00024" },
+					{ "time": 0.5667, "name": "baozha_00026" },
+					{ "time": 0.6, "name": "baozha_00028" },
+					{ "time": 0.6333, "name": "baozha_00030" },
+					{ "time": 0.6667, "name": "baozha_00032" },
+					{ "time": 0.7, "name": "baozha_00034" },
+					{ "time": 0.7333, "name": "baozha_00036" },
+					{ "time": 0.7667, "name": "baozha_00038" },
+					{ "time": 0.8, "name": "baozha_00040" },
+					{ "time": 0.8333, "name": "baozha_00042" },
+					{ "time": 0.8667, "name": "baozha_00044" },
+					{ "time": 0.9, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"baozha": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

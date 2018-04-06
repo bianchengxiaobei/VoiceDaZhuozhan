@@ -60,4 +60,81 @@
     <Moduleend_b>false</Moduleend_b>
     <!--是否是模块的最后一个任务-->
   </GuideModel>
+  <GuideModel detail="强制点击-点击自己说">
+    <id_i>6005</id_i>
+    <ChildTaskType_l>2</ChildTaskType_l>
+    <!--关联到DataGuideTaskInfo的id-->
+    <ChildTaskId_l>2004</ChildTaskId_l>
+    <EndTaskChildId_i>2004</EndTaskChildId_i>
+    <NextTaskId_i>6006</NextTaskId_i>
+    <TaskType_i>1001</TaskType_i>
+    <Moduleend_b>false</Moduleend_b>
+    <!--是否是模块的最后一个任务-->
+  </GuideModel>
+  <GuideModel detail="强制点击-长按">
+    <id_i>6006</id_i>
+    <ChildTaskType_l>2</ChildTaskType_l>
+    <!--关联到DataGuideTaskInfo的id-->
+    <ChildTaskId_l>2005</ChildTaskId_l>
+    <EndTaskChildId_i>2005</EndTaskChildId_i>
+    <NextTaskId_i>-1</NextTaskId_i>
+    <TaskType_i>1001</TaskType_i>
+    <Moduleend_b>false</Moduleend_b>
+    <!--是否是模块的最后一个任务-->
+  </GuideModel>
+  <GuideModel detail="强制点击-再次尝试长按">
+    <id_i>6007</id_i>
+    <ChildTaskType_l>2</ChildTaskType_l>
+    <!--关联到DataGuideTaskInfo的id-->
+    <ChildTaskId_l>2007</ChildTaskId_l>
+    <EndTaskChildId_i>2007</EndTaskChildId_i>
+    <NextTaskId_i>-1</NextTaskId_i>
+    <TaskType_i>1001</TaskType_i>
+    <Moduleend_b>false</Moduleend_b>
+    <!--是否是模块的最后一个任务-->
+  </GuideModel>
+  <GuideModel detail="强制点击-返回">
+    <id_i>6008</id_i>
+    <ChildTaskType_l>2</ChildTaskType_l>
+    <!--关联到DataGuideTaskInfo的id-->
+    <ChildTaskId_l>2008</ChildTaskId_l>
+    <EndTaskChildId_i>2008</EndTaskChildId_i>
+    <NextTaskId_i>6009</NextTaskId_i>
+    <TaskType_i>1001</TaskType_i>
+    <Moduleend_b>false</Moduleend_b>
+    <!--是否是模块的最后一个任务-->
+  </GuideModel>
+  <GuideModel detail="强制点击-返回">
+    <id_i>6009</id_i>
+    <ChildTaskType_l>2</ChildTaskType_l>
+    <!--关联到DataGuideTaskInfo的id-->
+    <ChildTaskId_l>2008</ChildTaskId_l>
+    <EndTaskChildId_i>2008</EndTaskChildId_i>
+    <NextTaskId_i>6010</NextTaskId_i>
+    <TaskType_i>1001</TaskType_i>
+    <Moduleend_b>false</Moduleend_b>
+    <!--是否是模块的最后一个任务-->
+  </GuideModel>
+  <GuideModel detail="强制点击-关闭">
+    <id_i>6010</id_i>
+    <ChildTaskType_l>2</ChildTaskType_l>
+    <!--关联到DataGuideTaskInfo的id-->
+    <ChildTaskId_l>2009</ChildTaskId_l>
+    <EndTaskChildId_i>2009</EndTaskChildId_i>
+    <NextTaskId_i>6011</NextTaskId_i>
+    <TaskType_i>1001</TaskType_i>
+    <Moduleend_b>true</Moduleend_b>
+    <!--是否是模块的最后一个任务-->
+  </GuideModel>
+  <GuideModel detail="强制点击-广告">
+    <id_i>6011</id_i>
+    <ChildTaskType_l>2</ChildTaskType_l>
+    <!--关联到DataGuideTaskInfo的id-->
+    <ChildTaskId_l>2006</ChildTaskId_l>
+    <EndTaskChildId_i>2006</EndTaskChildId_i>
+    <NextTaskId_i>-1</NextTaskId_i>
+    <TaskType_i>1002</TaskType_i>
+    <Moduleend_b>true</Moduleend_b>
+    <!--是否是模块的最后一个任务-->
+  </GuideModel>
 </root>

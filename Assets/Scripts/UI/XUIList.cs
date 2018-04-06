@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using System.Collections.Generic;
+using System.Collections;
 /*----------------------------------------------------------------
 // 模块名：XUIList
 // 创建者：chen
@@ -121,6 +122,17 @@ public class XUIList : MonoBehaviour
         if (this.m_eventHandlerOnUnSelect != null && bTrigerEvent)
         {
             this.m_eventHandlerOnUnSelect(listItem);
+        }
+    }
+    public void UnSelectAllItems(bool bTrigerEvent)
+    {
+        for (int i = 0; i < this.m_listXUIListItemSelected.Count; i++)
+        {
+            this.m_listXUIListItemSelected.RemoveAt(i);
+            if (this.m_eventHandlerOnUnSelect != null && bTrigerEvent)
+            {
+                this.m_eventHandlerOnUnSelect(this.m_listXUIListItemSelected[i]);
+            }
         }
     }
     public bool DelItemByIndex(int nIndex)

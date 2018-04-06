@@ -21,44 +21,45 @@
   </EntityList>
   <EntityList>
     <Id_i>2</Id_i>
-    <Name> 纹身男</Name>
+    <Name>纹身男</Name>
     <ModelFile_s>Assets.Prefabs.Characters.WenShenNan.prefab</ModelFile_s>
     <EntityInfo>风间</EntityInfo>
   </EntityList>
   <EntityList>
     <Id_i>3</Id_i>
     <Name>胖子男</Name>
-    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <ModelFile_s>Assets.Prefabs.Characters.PangZiNan.prefab</ModelFile_s>
     <EntityInfo>风间</EntityInfo>
   </EntityList>
   <EntityList>
     <Id_i>4</Id_i>
     <Name>跳跳男</Name>
-    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <ModelFile_s>Assets.Prefabs.Characters.TiaoTiaoNan.prefab</ModelFile_s>
     <EntityInfo>风间</EntityInfo>
   </EntityList>
   <EntityList>
     <Id_i>5</Id_i>
     <Name>飞机男</Name>
-    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <ModelFile_s>Assets.Prefabs.Characters.FeiJiNan.prefab</ModelFile_s>
     <EntityInfo>风间</EntityInfo>
   </EntityList>
-  <EntityList>
+  <!--<EntityList>
     <Id_i>6</Id_i>
     <Name>挖掘机</Name>
-    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <ModelFile_s>Assets.Prefabs.Characters.WaJueJi.prefab</ModelFile_s>
     <EntityInfo>风间</EntityInfo>
   </EntityList>
   <EntityList>
     <Id_i>7</Id_i>
     <Name>瞬移怪</Name>
-    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <ModelFile_s>Assets.Prefabs.Characters.ShunYiGuai.prefab</ModelFile_s>
     <EntityInfo>风间</EntityInfo>
   </EntityList>
   <EntityList>
     <Id_i>8</Id_i>
     <Name>匍匐怪</Name>
-    <ModelFile_s>Assets.Prefabs.Characters.Myself.prefab</ModelFile_s>
+    <ModelFile_s>Assets.Prefabs.Characters.PuFuGuai.prefab</ModelFile_s>
     <EntityInfo>风间</EntityInfo>
   </EntityList>
+  -->
 </root>

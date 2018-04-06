@@ -1,37 +1,23 @@
 ManifestFileVersion: 0
-CRC: 3607938740
+CRC: 1474994648
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 483e14b3205bbeb725f5c9d4419544ec
+    Hash: 48b5d8c15020c40b698263833b97cb7d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 1d26ac7cf0f650373366a57096268de4
+    Hash: 204af5d35762b734522f4229a1a791c5
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
-- Class: 4
-  Script: {instanceID: 0}
-- Class: 21
-  Script: {instanceID: 0}
-- Class: 23
-  Script: {instanceID: 0}
-- Class: 28
-  Script: {instanceID: 0}
-- Class: 33
-  Script: {instanceID: 0}
-- Class: 48
-  Script: {instanceID: 0}
 - Class: 114
-  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
+  Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
 - Class: 115
   Script: {instanceID: 0}
-- Class: 128
+- Class: 213
   Script: {instanceID: 0}
 - Class: 222
   Script: {instanceID: 0}
@@ -40,6 +26,4 @@ ClassTypes:
 Assets:
 - Assets/Prefabs/Guis/DlgLoading.prefab
 Dependencies:
-- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/c255f37f5d98fca32809bc3e4377a59c04ef9501.ab
-- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/4857d4ddbe7da8e44cbee1b601c6d3a8175682e9.ab
-- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/5db8d196a830ec883fa056bfca708c90fb37ca28.ab
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/common1.ab

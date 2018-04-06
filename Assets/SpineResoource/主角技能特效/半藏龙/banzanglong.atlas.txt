@@ -1,0 +1,13 @@
+
+banzanglong.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+long
+  rotate: false
+  xy: 2, 2
+  size: 561, 176
+  orig: 561, 176
+  offset: 0, 0
+  index: -1

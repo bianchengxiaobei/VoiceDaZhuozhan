@@ -1,0 +1,76 @@
+
+cd.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CD_00000
+  rotate: false
+  xy: 2, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+CD_00001
+  rotate: false
+  xy: 2, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+CD_00002
+  rotate: false
+  xy: 204, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+CD_00003
+  rotate: false
+  xy: 204, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+CD_00004
+  rotate: false
+  xy: 406, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+CD_00005
+  rotate: false
+  xy: 406, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+CD_00006
+  rotate: false
+  xy: 608, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+CD_00007
+  rotate: false
+  xy: 608, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+CD_00008
+  rotate: false
+  xy: 810, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+CD_00009
+  rotate: false
+  xy: 810, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1

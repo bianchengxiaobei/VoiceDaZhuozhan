@@ -14,16 +14,16 @@ public class GameSkillBase
 {
     public bool bLocked = false;
     public Skill skillConfig;
-    public int level;
+    public int level = 1;
     public SkillActor actor;
-
+    public bool Test = false;
     public void Init(Skill skill)
     {
         this.skillConfig = skill;
     }
-    public virtual void Enter(EntityParent theOwner)
+    public virtual void Enter(EntityParent theOwner,bool test = false)
     {
-
+        SkillManager.singleton.runningSkills.Add(this);
     }
     public virtual void OnUpdate()
     {
@@ -38,5 +38,11 @@ public class GameSkillBase
         {
             PlayerManager.singleton.MySelf.Idle();
         }
+        if (actor != null)
+        {
+            actor.Exit();
+            actor = null;
+        }
+        SkillManager.singleton.runningSkills.Remove(this);
     }
 }

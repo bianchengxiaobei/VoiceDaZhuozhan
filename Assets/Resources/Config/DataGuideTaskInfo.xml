@@ -17,7 +17,7 @@ public static string fileName = "DataGuideTaskInfo";
     <GuideText_s>点击此处进入练功房学习技能吧！</GuideText_s>
     <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
     <BtnName_s>bt_test</BtnName_s>
-    <InfoPos_v>220,108,0</InfoPos_v>
+    <InfoPos_v>233,145,0</InfoPos_v>
     <GuideEffectPath_s>Assets.Prefabs.Effects.UI.UITipHand.prefab</GuideEffectPath_s>
     <BtnTriggerType_i>0</BtnTriggerType_i>
     <TaskTime_i>1</TaskTime_i>
@@ -41,6 +41,66 @@ public static string fileName = "DataGuideTaskInfo";
     <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
     <BtnName_s>bt_speakTest</BtnName_s>
     <InfoPos_v>220,108,0</InfoPos_v>
+    <GuideEffectPath_s>Assets.Prefabs.Effects.UI.UITipHand.prefab</GuideEffectPath_s>
+    <BtnTriggerType_i>0</BtnTriggerType_i>
+    <TaskTime_i>1</TaskTime_i>
+  </TaskInfo>
+  <TaskInfo>
+    <id_i>2004</id_i>
+    <GuideText_s>然后自己说,练习发音吧！</GuideText_s>
+    <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
+    <BtnName_s>bt_learn</BtnName_s>
+    <InfoPos_v>220,108,0</InfoPos_v>
+    <GuideEffectPath_s>Assets.Prefabs.Effects.UI.UITipHand.prefab</GuideEffectPath_s>
+    <BtnTriggerType_i>0</BtnTriggerType_i>
+    <TaskTime_i>1</TaskTime_i>
+  </TaskInfo>
+  <TaskInfo>
+    <id_i>2005</id_i>
+    <GuideText_s>长按说话按钮,然后说出口令,松手就结束讲话,快试试吧!</GuideText_s>
+    <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
+    <BtnName_s>bt_voice</BtnName_s>
+    <InfoPos_v>220,108,0</InfoPos_v>
+    <GuideEffectPath_s>Assets.Prefabs.Effects.UI.UITipHand.prefab</GuideEffectPath_s>
+    <BtnTriggerType_i>0</BtnTriggerType_i>
+    <TaskTime_i>1</TaskTime_i>
+  </TaskInfo>
+  <TaskInfo>
+    <id_i>2006</id_i>
+    <GuideText_s>观看广告能获得额外的金币哦!</GuideText_s>
+    <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
+    <BtnName_s>bt_ads</BtnName_s>
+    <InfoPos_v>220,108,0</InfoPos_v>
+    <GuideEffectPath_s>Assets.Prefabs.Effects.UI.UITipHand.prefab</GuideEffectPath_s>
+    <BtnTriggerType_i>0</BtnTriggerType_i>
+    <TaskTime_i>1</TaskTime_i>
+  </TaskInfo>
+ <TaskInfo>
+    <id_i>2007</id_i>
+    <GuideText_s>识别失败,没关系，再尝试一次吧!</GuideText_s>
+    <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
+    <BtnName_s>bt_voice</BtnName_s>
+    <InfoPos_v>220,108,0</InfoPos_v>
+    <GuideEffectPath_s>Assets.Prefabs.Effects.UI.UITipHand.prefab</GuideEffectPath_s>
+    <BtnTriggerType_i>0</BtnTriggerType_i>
+    <TaskTime_i>1</TaskTime_i>
+  </TaskInfo>
+  <TaskInfo>
+    <id_i>2008</id_i>
+    <GuideText_s>点击返回!</GuideText_s>
+    <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
+    <BtnName_s>bt_back</BtnName_s>
+    <InfoPos_v>220,108,0</InfoPos_v>
+    <GuideEffectPath_s>Assets.Prefabs.Effects.UI.UITipHand.prefab</GuideEffectPath_s>
+    <BtnTriggerType_i>0</BtnTriggerType_i>
+    <TaskTime_i>1</TaskTime_i>
+  </TaskInfo>
+  <TaskInfo>
+    <id_i>2009</id_i>
+    <GuideText_s>点击关闭,返回菜单!</GuideText_s>
+    <UIInfoFrame_s>Assets.Prefabs.Guis.sp_tipInfo.prefab</UIInfoFrame_s>
+    <BtnName_s>bt_close</BtnName_s>
+    <InfoPos_v>-180,-100,0</InfoPos_v>
     <GuideEffectPath_s>Assets.Prefabs.Effects.UI.UITipHand.prefab</GuideEffectPath_s>
     <BtnTriggerType_i>0</BtnTriggerType_i>
     <TaskTime_i>1</TaskTime_i>

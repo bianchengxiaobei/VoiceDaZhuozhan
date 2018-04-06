@@ -1,0 +1,36 @@
+{
+"skeleton": { "hash": "MpaLH71g0WuOPG+GWhgPEO+7too", "spine": "3.6.46", "width": 181, "height": 153, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "fx", "parent": "root", "y": 65.1 }
+],
+"slots": [
+	{ "name": "bodongquan", "bone": "fx", "attachment": "bodongquan" }
+],
+"skins": {
+	"default": {
+		"bodongquan": {
+			"bodongquan": { "width": 181, "height": 153 }
+		}
+	}
+},
+"animations": {
+	"bodongquan": {
+		"slots": {
+			"bodongquan": {
+				"attachment": [
+					{ "time": 0, "name": "bodongquan" }
+				]
+			}
+		},
+		"bones": {
+			"fx": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

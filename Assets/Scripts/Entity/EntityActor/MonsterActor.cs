@@ -24,6 +24,21 @@ public class MonsterActor : EntityActor
     }
     private void Update()
     {
-        entity.Transform.Translate(moveDir * Time.deltaTime * 1.5f);
+        if (entity.CurrentMotionState.Equals(MotionState.WALKING))
+        {
+            entity.Transform.Translate(moveDir * Time.deltaTime * this.entity.speedRate);
+        }
+        if (this.entity != null && this.entity.fsmMotion != null)
+        {
+            this.entity.fsmMotion.Execute(this.entity);
+        }
+        if (PlayerManager.singleton.MySelf == null || PlayerManager.singleton.MySelf.bIsDead)
+        {
+            return;
+        }
+        if (Vector2.Distance(entity.Transform.position, PlayerManager.singleton.MySelf.Transform.position) <= 4)
+        {
+            entity.Attack();
+        }
     }
 }

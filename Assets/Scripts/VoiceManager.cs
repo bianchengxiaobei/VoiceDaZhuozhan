@@ -18,8 +18,8 @@ public class VoiceManager : MonoBehaviour
     public string appId;
 
     AndroidJavaObject jo;
-    public string text;
     public Action<string> speedEndCallback;
+    public Action<string> speedEndError;
     private void Awake()
     {
         Instance = this;
@@ -34,6 +34,7 @@ public class VoiceManager : MonoBehaviour
             return;
         }
         jo.Call("CreateAppId", appId);
+        this.StartSpeech();
     }
     public void StartSpeech()
     {
@@ -75,6 +76,10 @@ public class VoiceManager : MonoBehaviour
     public void OnSpeechError(string error)
     {
         Debug.LogError("Error:" + error);
+        if (this.speedEndError != null)
+        {
+            this.speedEndError(error);
+        }
     }
     public void OnEvent(string args)
     {
@@ -82,7 +87,6 @@ public class VoiceManager : MonoBehaviour
     }
     public void OnResult(string speechContent)
     {
-        text = speechContent;
         if (this.speedEndCallback != null)
         {
             this.speedEndCallback(speechContent);
@@ -96,18 +100,30 @@ public class VoiceManager : MonoBehaviour
     {
         Debug.Log("valueChange:" + args);
     }
-    public void RegisterCallback(Action<string> call)
+    public void RegisterCallback(Action<string> call,Action<string> error = null)
     {
+        if (this.speedEndCallback != null)
+        {
+            this.speedEndCallback = null;
+        }
         if (this.speedEndCallback == null)
         {
             this.speedEndCallback = call;
         }
-    }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (error != null)
         {
-            Application.Quit();
+            this.speedEndError = error;
+        }
+    }
+    public void UnRegisterCallback()
+    {
+        if (this.speedEndCallback != null)
+        {
+            this.speedEndCallback = null;
+        }
+        if (this.speedEndError != null)
+        {
+            this.speedEndError = null;
         }
     }
 }

@@ -75,9 +75,31 @@ public class MasterEditor : EditorWindow
         r.xMin = r.xMax + GAP;
         r.xMax = r.xMax + 200;
         master.maxHp = EditorGUI.IntField(r, "血量", master.maxHp);
+        switch (master.type)
+        {
+            case EntityType.纹身男:
+                master.maxHp = 50;
+                break;
+        }
         r.xMin = r.xMax + GAP;
         r.xMax = r.xMax + 200;
         master.demage = EditorGUI.IntField(r, "攻击伤害", master.demage);
+        switch (master.type)
+        {
+            case EntityType.纹身男:
+                master.demage = 10;
+                break;
+            case EntityType.跳跳男:
+                master.demage = 20;
+                break;
+            case EntityType.胖子男:
+                master.demage = 15;
+                break;
+            case EntityType.飞机男:
+                master.demage = 40;
+                break;
+
+        }
     }
     public void OnListHeaderGuiCallback(Rect rect)
     {

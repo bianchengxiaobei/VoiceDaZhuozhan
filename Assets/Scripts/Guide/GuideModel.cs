@@ -17,6 +17,7 @@ public class GuideModel : Singleton<GuideModel>
     public bool bIsGuideAllComp;
     public bool bIsGuideBattle = false;
     public bool bIsFirstLocked = false;
+    public bool bIsSelfSpeaked = false;
     public DataGuideParentTaskInfo TaskMrgData;
     public EGuideStepInfo CurrentTaskModelId;//现在的任务模块Id
     /// <summary>

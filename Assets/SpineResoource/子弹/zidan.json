@@ -1,0 +1,74 @@
+{
+"skeleton": { "hash": "u4oboI6g5w1aUjBRRRRvqirgFq4", "spine": "3.6.46", "width": 103.71, "height": 19.5, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "zidan", "parent": "root" },
+	{ "name": "bo", "parent": "zidan" },
+	{ "name": "zidan11", "parent": "zidan", "rotation": -90, "scaleX": 0.75, "scaleY": 1.729 }
+],
+"slots": [
+	{ "name": "zidan11", "bone": "zidan11", "attachment": "zd1_level_2" },
+	{ "name": "bo", "bone": "bo" }
+],
+"skins": {
+	"default": {
+		"bo": {
+			"bo_00003": { "width": 200, "height": 160 },
+			"bo_00004": { "width": 200, "height": 160 },
+			"bo_00005": { "width": 200, "height": 160 },
+			"bo_00006": { "width": 200, "height": 160 },
+			"bo_00007": { "width": 200, "height": 160 },
+			"bo_00008": { "width": 200, "height": 160 }
+		},
+		"zidan11": {
+			"zd1_level_2": { "width": 26, "height": 60 }
+		}
+	}
+},
+"animations": {
+	"zidan": {
+		"slots": {
+			"bo": {
+				"color": [
+					{ "time": 0, "color": "ffffffd3" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "bo_00003" },
+					{ "time": 0.0667, "name": "bo_00004" },
+					{ "time": 0.1333, "name": "bo_00005" },
+					{ "time": 0.2, "name": "bo_00006" },
+					{ "time": 0.2667, "name": "bo_00007" },
+					{ "time": 0.3333, "name": "bo_00008" },
+					{ "time": 0.4, "name": "bo_00008" }
+				]
+			},
+			"zidan11": {
+				"attachment": [
+					{ "time": 0, "name": "zd1_level_2" },
+					{ "time": 0.4, "name": "zd1_level_2" }
+				]
+			}
+		},
+		"bones": {
+			"bo": {
+				"translate": [
+					{ "time": 0, "x": -43.92, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.329, "y": 0.487 }
+				]
+			},
+			"zidan": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.4, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 0.4 }
+		]
+	}
+}
+}

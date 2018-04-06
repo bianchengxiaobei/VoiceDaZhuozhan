@@ -94,9 +94,13 @@ public class DlgLevel : UIBase
         {
             return;
         }
+        //如果还没有解锁
+        if (!LevelManager.singleton.dicLevels[item.Id].valid)
+        {
+            return;
+        }
         this.selectLevelId = item.Id;
         this.m_Button_EnterGame.interactable = true;
-        //根据id判断是否解锁
     }
     public void ShowLevel()
     {
@@ -115,7 +119,7 @@ public class DlgLevel : UIBase
             if (item != null)
             {
                 item.Id = level.levelId;
-                if (LevelManager.singleton.HasLockedLevel(level))
+                if (level.valid)
                 {
                     item.sprite.sprite = WWWResourceManager.Instance.LoadSpriteFormAtla("common1.ab", "levelItem");
                     item.SetText("lb_name", level.levelName);

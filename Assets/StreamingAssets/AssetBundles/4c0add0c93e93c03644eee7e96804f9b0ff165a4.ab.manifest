@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3015126834
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 17668a8e40856806ed10dc741af22cf8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Audios/Musics/Default.mp3
+Dependencies: []

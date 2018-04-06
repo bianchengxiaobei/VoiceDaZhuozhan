@@ -8,6 +8,8 @@ TagManager:
   - Middle
   - Top
   - SuperTop
+  - Mu
+  - UICamera
   layers:
   - Default
   - TransparentFX
@@ -18,9 +20,9 @@ TagManager:
   - 
   - 
   - Player
-  - 
-  - 
-  - 
+  - Mu
+  - Floor
+  - Enemy
   - 
   - 
   - 

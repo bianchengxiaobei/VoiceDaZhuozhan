@@ -28,6 +28,7 @@ public class StateIdle : IEntityState
             return;
         }
         theOwner.SetSpeed(0);
+        theOwner.entityActor.moveDir = Vector3.zero;
     }
     public void Execute(EntityParent theOwner)
     {

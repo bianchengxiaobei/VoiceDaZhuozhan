@@ -85,7 +85,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.2392157, g: 0.11764707, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -96,7 +96,7 @@ MonoBehaviour:
     m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 40
+    m_MinSize: 25
     m_MaxSize: 50
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u70B9\u51FB\u6B64\u5904\u8FDB\u5165\u7EC3\u529F\u623F\u5B66\u4E60\u6280\u80FD\u5427\uFF01"
+  m_Text: 
 --- !u!222 &222933427824402360
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -131,10 +131,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 128.7, y: 116}
-  m_SizeDelta: {x: 504.4, y: 207.6}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 230, y: 124}
+  m_SizeDelta: {x: 400, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224478758792040612
 RectTransform:

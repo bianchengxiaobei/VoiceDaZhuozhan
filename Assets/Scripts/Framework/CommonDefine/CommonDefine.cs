@@ -8,7 +8,23 @@ namespace CaomaoFramework
     {
         //public static readonly string VersionPath = Application.persistentDataPath + "/version.xml";
         //public static readonly string ServerVersionPath = Application.persistentDataPath + "/server_version.xml";
-        public static string ResourcePath = Application.persistentDataPath + "/Assetbundle";    
+        public static string ResourcePath = Application.persistentDataPath + "/Assetbundle";
+        public static string VictoryAudioPath = "Assets.Audios.Musics.Victory.mp3";
+        public static string DefaultAudioPath = "Assets.Audios.Musics.Default.mp3";
+        public static string BindCenter = "Center";
+        public static string BindRightHand = "RightHandPos";
+        public static string BindRightFoot = "RightFootPos";
+        public static string BindQiangkou = "Qiangkou";
+        public static string RegexFormat = "[一-龥]*";
+        public static string GuideFinish = "guidefinish";
+        public static string LockedSkills = "lockedskills";
+        public static string Money = "money";
+        public static string Ads = "Ads";
+        public static string LockedLevel = "lockedlevels";
+        public static int AdsTime = 5;
+        public static string SlowEffectPath = "Assets.Prefabs.Effects.Slow.SlowEffect.prefab";
+        public static string LineEffectPath = "Assets.Prefabs.Effects.Line.LineEffect.prefab";
+        public static string TargetEffectPath = "Assets.Prefabs.Effects.Target.TargetEffect.prefab";
     }
     public enum GraphicsQuality
     {

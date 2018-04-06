@@ -1,0 +1,38 @@
+{
+"skeleton": { "hash": "R+M8dVOxmastwaDUEXyr9hTm4bM", "spine": "3.6.46", "width": 0, "height": 0, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "FX", "parent": "root" },
+	{ "name": "dizoubo", "parent": "FX", "x": 31.5, "y": 162, "scaleX": 3, "scaleY": 3 }
+],
+"slots": [
+	{ "name": "dizoubo", "bone": "dizoubo" }
+],
+"skins": {
+	"default": {
+		"dizoubo": {
+			"dizoubo0001": { "width": 143, "height": 114 },
+			"dizoubo0002": { "width": 143, "height": 114 },
+			"dizoubo0003": { "width": 143, "height": 114 }
+		}
+	}
+},
+"animations": {
+	"dizoubo": {
+		"slots": {
+			"dizoubo": {
+				"attachment": [
+					{ "time": 0, "name": "dizoubo0001" },
+					{ "time": 0.0667, "name": "dizoubo0002" },
+					{ "time": 0.1333, "name": "dizoubo0003" },
+					{ "time": 0.2, "name": "dizoubo0003" }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 0.2 }
+		]
+	}
+}
+}

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3337140272
+CRC: 3905267573
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 58a0c43e6f4d01529150864597486b0e
+    Hash: ec5a4065a2c67908dd8ee48b129bc50d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 21f0dc8ebad690f009368069428e0a1a
@@ -24,6 +24,8 @@ Assets:
 - "Assets/Textures/Common1/\u70C8\u706B\u5251\u6CD5.png"
 - Assets/Textures/Common1/ButtonBG.png
 - Assets/Textures/Common1/levelItem.png
+- Assets/Textures/Common1/speak.png
+- Assets/Textures/Common1/loading.png
 - "Assets/Textures/Common1/\u9501.png"
 - Assets/Textures/Common1/Mask.png
 - Assets/Textures/Common1/unlock.png

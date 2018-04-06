@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 2579257300
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cb9a8b64a1584f79c0196e0b518fd3fa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3a64b9037dd0428f4edd496b245f82d4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 973304c984faa284ab7e58929e1712fe, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/Guis/DlgFlyText.prefab
+Dependencies:
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/a30371000fd01b78455361c07352f03c4a87eb1b.ab

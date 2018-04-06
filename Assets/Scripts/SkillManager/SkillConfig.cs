@@ -30,9 +30,12 @@ public class Skill
     public string effectPath;//特效路劲
     public EffectBindPos effectPos;//特效出生位置
     public string iconPath;//技能icon名称
-    public string audioPath;//音频
+    public int effectAudioPathIndex;//特效音频
+    public string tokenAudioPath;//token特效
     public int lockGold;//解锁金币
     public List<int> upgradeGold = new List<int>();//升级金币
+    public OnHitEffectType hitType = OnHitEffectType.白色;//受击特效类型
+    public bool HasActor = false;//是否会产生特效
 }
 public enum ESkillType
 {
@@ -52,6 +55,13 @@ public enum EffectBindPos
     左脚,
     右脚,
     枪口
+}
+public enum OnHitEffectType
+{
+    橙色,
+    白色,
+    紫色,
+    红色
 }
 [System.Serializable]
 public class CD

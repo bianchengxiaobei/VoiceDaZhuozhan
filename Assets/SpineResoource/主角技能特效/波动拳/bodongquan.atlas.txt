@@ -1,0 +1,13 @@
+
+bodongquan.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bodongquan
+  rotate: false
+  xy: 2, 2
+  size: 181, 153
+  orig: 181, 153
+  offset: 0, 0
+  index: -1

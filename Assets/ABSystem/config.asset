@@ -28,3 +28,6 @@ MonoBehaviour:
   - valid: 1
     path: Assets/Prefabs/Effects
     filter: '*.prefab'
+  - valid: 1
+    path: Assets/Audios/Musics
+    filter: '*.mp3'

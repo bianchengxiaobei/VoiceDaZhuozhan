@@ -19,6 +19,10 @@ public class StartState : ClientStateBase
     }
     public override void OnLeave()
     {
+        if (ClientGameStateManager.singleton.ENextGameState.Equals("TestState"))
+        {
+            return;
+        }
         EventDispatch.Broadcast(Events.DlgStartHide);
         EventDispatch.Broadcast(Events.DlgLevelHide);
     }

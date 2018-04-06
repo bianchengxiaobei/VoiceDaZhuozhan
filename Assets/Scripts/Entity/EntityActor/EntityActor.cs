@@ -14,6 +14,9 @@ public class EntityActor : MonoBehaviour
 {
     public EntityParent entity;
     public Vector3 moveDir = Vector3.zero;
+    public float forceValue = 30;
+    public int Id = -1;
+    public string state;
     private void Awake()
     {
 
@@ -25,5 +28,10 @@ public class EntityActor : MonoBehaviour
     public virtual void Idle()
     {
 
+    }
+    private void Update()
+    {
+        if (entity != null)
+        state = entity.CurrentMotionState;
     }
 }

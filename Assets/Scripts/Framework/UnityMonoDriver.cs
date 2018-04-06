@@ -12,7 +12,6 @@ namespace CaomaoFramework
 
         public UIManager uiManager = UIManager.singleton;
 
-        public string debugInfo = "";
         public bool ReleaseMode = false;
         private void Awake()
         {
@@ -25,10 +24,9 @@ namespace CaomaoFramework
                 DontDestroyOnLoad(base.transform.parent);
             }
             InvokeRepeating("Tick",0f, 0.01f);
-            //NetworkManager.singleton.Init();
             clientGameStateManager.m_oClientStateMachine.Init();
             sdkManager.Init();
-            //AdsManager.singleton.Init();
+            AdsManager.singleton.Init();
         }
         public void LaterInit()
         {
@@ -36,10 +34,11 @@ namespace CaomaoFramework
             {
                 uiManager.Init();
                 //Login.singleton.RequestAnnouncement();
-                UserPrefsBase.Singleton.LoadUserConfig();
+                UserPrefsBase.singleton.LoadUserConfig();
                 LevelManager.singleton.LoadLevel();
                 SkillManager.singleton.LoadSkill();
-                GuideController.singleton.GuideFinishModelList(UserPrefsBase.Singleton.guideFinishedId);
+                ResourcePoolManager.singleton.Init();
+                ResourcePoolManager.singleton.PreLoad();
                 WWWResourceManager.Instance.SetAllLoadFinishedEventHandler((ok) =>
                 {
                     clientGameStateManager.EnterDefaultState();
@@ -62,9 +61,7 @@ namespace CaomaoFramework
             //LocalEffectManager.singleton.OnUpdate();
             //Analyzer.singleton.Update();
             uiManager.Update(Time.deltaTime);
-            if (Input.GetKeyDown(KeyCode.Escape))
-                this.ApplicationQuit();
-            //NetworkManager.singleton.FixedUpdate();
+            SkillManager.singleton.Update();
         }
         private void OnGUI()
         {
@@ -82,8 +79,20 @@ namespace CaomaoFramework
             //uiManager.OnGUI();
         }
         private void FixedUpdate()
-        {         
+        {
             //ReConnect.singleton.FixedUpdate();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                EventDispatch.Broadcast(Events.DlgFlyTextShow);
+                EventDispatch.Broadcast<string, Action, Action>(Events.DlgAddDoubleSystemInfo,"是否退出游戏 ?",() =>
+                {
+                    Application.Quit();
+                }, 
+                () => 
+                {
+                    return;
+                }); 
+            }
         }
         private void Tick()
         {
@@ -94,14 +103,9 @@ namespace CaomaoFramework
         {
             TimerManager.AddTimer(0, 0, action);
         }
-        private void ApplicationQuit()
+        private void OnApplicationQuit()
         {
-            //EventDispatch.Broadcast(Events.DlgFlyTextShow);
-            //EventDispatch.Broadcast<string, Action, Action>(Events.DlgAddDoubleSystemInfo, "确定要退出游戏", () =>
-            //{
-            //    Application.Quit();
-            //}, 
-            //null);
+            UserPrefsBase.singleton.SaveUserConfig();
         }
     }
 }

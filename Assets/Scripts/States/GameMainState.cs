@@ -18,9 +18,15 @@ public class GameMainState : ClientStateBase
         PlayerManager.singleton.LoadAllEntity();
         SceneManager.singleton.LoadScene();
         EventDispatch.Broadcast(Events.DlgMainShow);
+        AudioManagerBase.Instance.PlayMusic("Assets.Audios.Musics.Main.mp3");
     }
     public override void OnLeave()
     {
-        
+        BattleController.singleton.LeaveGameMain();
+        PlayerManager.singleton.UnloadAllEntity();
+        EventDispatch.Broadcast(Events.DlgMainHide);
+        SceneManager.singleton.Clear();
+        SceneManager.singleton.ClearLater();
+        AudioManagerBase.Instance.StopMusic();
     }
 }

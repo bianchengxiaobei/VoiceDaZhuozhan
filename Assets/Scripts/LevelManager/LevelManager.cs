@@ -49,6 +49,41 @@ public class LevelManager : Singleton<LevelManager>
         {
             this.AddLevel(level);
         }
+        if (!PlayerPrefs.HasKey(CommonDefineBase.LockedLevel))
+        {
+            PlayerPrefs.SetString(CommonDefineBase.LockedLevel, "1");
+        }
+        string[] levelsContent = PlayerPrefs.GetString(CommonDefineBase.LockedLevel).Split(',');
+        foreach (var id in levelsContent)
+        {
+            int levelId = int.Parse(id);
+            if (this.dicLevels.ContainsKey(levelId))
+            {
+                this.dicLevels[levelId].valid = true;
+            }
+        }
+    }
+    /// <summary>
+    /// 解锁下一关
+    /// </summary>
+    public void LockedNextLevel()
+    {
+        int nextId = this.currLevelId + 1;
+        if (!this.dicLevels.ContainsKey(nextId))
+        {
+            //说明已经是超出最后一关
+            Debug.LogError("超出最后一关");
+            return;
+        }
+        this.currLevelId++;
+        if (!this.dicLevels[this.currLevelId].valid)
+        {
+            string locked = PlayerPrefs.GetString(CommonDefineBase.LockedLevel);
+            locked += "," + nextId.ToString();
+            PlayerPrefs.SetString(CommonDefineBase.LockedLevel, locked);
+            Level level = dicLevels[nextId];
+            level.valid = true;
+        }    
     }
     public Level GetCurLevel()
     {
@@ -67,22 +102,21 @@ public class LevelManager : Singleton<LevelManager>
         }
         return 0;
     }
-    public bool HasLockedLevel(Level level)
-    {
-        return true;
-    }
     public float GetRandomSpawTime()
     {
         return Random.Range(minSpaw, maxSpaw);
     }
-    public void EndWave(Level level)
+    //public void EndWave(Level level)
+    //{
+    //    this.curWaveIndex++;
+    //    if (this.curWaveIndex == level.waves.Count)
+    //    {
+    //        return;
+    //    }
+    //    PlayerManager.singleton.EndWave();
+    //}
+    public void Clear()
     {
-        this.curWaveIndex++;
-        if (this.curWaveIndex == level.waves.Count)
-        {
-            return;
-        }
-        PlayerManager.singleton.EndWave();
-
+        this.curWaveIndex = int.MinValue;
     }
 }

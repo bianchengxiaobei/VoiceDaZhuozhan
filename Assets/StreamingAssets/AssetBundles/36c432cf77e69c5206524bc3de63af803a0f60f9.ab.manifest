@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 2426921492
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9667ec91a04e80f62fafc34515d52da2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 42a1dfbb610a8ad760303f917f97b13e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 58
+  Script: {instanceID: 0}
+- Class: 102
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 55a2b5b1dbe1fbf4eb5d8462a6a9f8d7, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/Effects/Target/TargetEffect.prefab
+Dependencies:
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/c255f37f5d98fca32809bc3e4377a59c04ef9501.ab

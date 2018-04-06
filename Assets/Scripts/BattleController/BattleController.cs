@@ -21,4 +21,8 @@ public class BattleController : Singleton<BattleController>
         SceneManager.singleton.CreateScene(levelId, new SceneBase());
         VoiceManager.Instance.RegisterCallback(PlayerManager.singleton.MySelf.CastSkill);
     }
+    public void LeaveGameMain()
+    {
+        VoiceManager.Instance.UnRegisterCallback();
+    }
 }

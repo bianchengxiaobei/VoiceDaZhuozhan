@@ -1,0 +1,40 @@
+{
+"skeleton": { "hash": "mNJ44V1gnk5ImFQoVp3A6NulfVs", "spine": "3.6.46", "width": 460, "height": 480, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "FX", "parent": "root" },
+	{ "name": "heiyueya", "parent": "FX", "y": 241.29, "scaleX": 2, "scaleY": 2 }
+],
+"slots": [
+	{ "name": "heiyuya", "bone": "heiyueya", "attachment": "heiyueya0001" }
+],
+"skins": {
+	"default": {
+		"heiyuya": {
+			"heiyueya0001": { "width": 230, "height": 240 },
+			"heiyueya0003": { "width": 230, "height": 240 },
+			"heiyueya0005": { "width": 230, "height": 240 },
+			"heiyueya0007": { "width": 230, "height": 240 }
+		}
+	}
+},
+"animations": {
+	"heiyueya": {
+		"slots": {
+			"heiyuya": {
+				"attachment": [
+					{ "time": 0, "name": "heiyueya0001" },
+					{ "time": 0.0667, "name": "heiyueya0003" },
+					{ "time": 0.1333, "name": "heiyueya0005" },
+					{ "time": 0.2, "name": "heiyueya0007" },
+					{ "time": 0.2667, "name": "heiyueya0007" }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 0.2667 }
+		]
+	}
+}
+}

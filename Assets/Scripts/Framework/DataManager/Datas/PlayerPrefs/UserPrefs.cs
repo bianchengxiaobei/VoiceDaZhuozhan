@@ -5,7 +5,7 @@ using UnityEngine;
 using System.Collections.Generic;
 namespace CaomaoFramework
 {
-    public class UserPrefsBase
+    public class UserPrefsBase : Singleton<UserPrefsBase>
     {
         private bool m_bHasSet = false;
         private bool m_bMuteSound = false;
@@ -14,27 +14,14 @@ namespace CaomaoFramework
         private float m_fBGSoundValue = 1f;
         private float m_fSoundValue = 1f;
         private float m_fVoiceValue = 1f;
+        private int money = 0;
         public List<int> guideFinishedId = new List<int>();
         private GraphicsQuality m_eGraphicsQuality = GraphicsQuality.Medium;
-        private static UserPrefsBase s_instance = null;
-        private IXLog m_log = XLog.GetLog<UserPrefsBase>();
-        public static UserPrefsBase Singleton
+        public int Money
         {
             get
             {
-                if (UserPrefsBase.s_instance == null)
-                {
-                    UserPrefsBase.s_instance = new UserPrefsBase();
-                    UserPrefsBase.s_instance.Init();
-                }
-                return UserPrefsBase.s_instance;
-            }
-        }
-        public bool HasSet
-        {
-            get
-            {
-                return this.m_bHasSet;
+                return this.money;
             }
         }
         public bool IsMute
@@ -102,130 +89,102 @@ namespace CaomaoFramework
             get { return this.m_bEnableEffect; }
             set { this.m_bEnableEffect = value; }
         }
-        public UserPrefsBase()
+        public void SaveUserConfig()
         {
-               
+            if (this.m_bHasSet == false)
+                return;
+            PlayerPrefs.SetInt("mutesound", this.IsMute ? 1 : 0);
+            PlayerPrefs.SetFloat("bgsoundvalue", this.BGSoundValue);
+            PlayerPrefs.SetFloat("voicevalue", this.VoiceValue);
+            PlayerPrefs.SetFloat("soundvalue", this.SoundValue);
+            PlayerPrefs.SetInt("enablemusic", this.EnableMusic ? 1 : 0);
+            PlayerPrefs.SetInt("enableeffect", this.EnableEffect ? 1 : 0);
+            PlayerPrefs.SetInt(CommonDefineBase.Money, this.money);
+            PlayerPrefs.Save();
         }
-        public virtual void Init()
+        public void LoadUserConfig()
         {
-            try
+            if (!PlayerPrefs.HasKey("mutesound"))
             {
-                this.LoadUserConfig();
+                PlayerPrefs.SetInt("mutesound", 0);
             }
-            catch (Exception ex)
+            else
             {
-                this.m_log.Fatal(ex.ToString());
+                this.m_bMuteSound = PlayerPrefs.GetInt("mutesound") != 0;
             }
-        }
-        public virtual void SaveUserConfig()
-        {
-            string fullPath = Application.dataPath + "/Resources/Config/UserConfig.xml";
-            XmlDocument xmlDocument = new XmlDocument();
-            XmlDeclaration newChild = xmlDocument.CreateXmlDeclaration("1.0", "UTF-8", null);
-            xmlDocument.AppendChild(newChild);
-            XmlElement xmlElement = xmlDocument.CreateElement("root");
-            xmlDocument.AppendChild(xmlElement);
-            XmlElement xmlElement7 = xmlDocument.CreateElement("element");
-            xmlElement7.SetAttribute("id", "mutesound");
-            xmlElement7.SetAttribute("value", this.m_bMuteSound ? 1.ToString() : 0.ToString());
-            xmlElement.AppendChild(xmlElement7);
-            XmlElement xmlElement8 = xmlDocument.CreateElement("element");
-            xmlElement8.SetAttribute("id", "bgsoundvalue");
-            xmlElement8.SetAttribute("value", this.m_fBGSoundValue.ToString("f2"));
-            xmlElement.AppendChild(xmlElement8);
-            XmlElement xmlElement10 = xmlDocument.CreateElement("element");
-            xmlElement10.SetAttribute("id", "soundvalue");
-            xmlElement10.SetAttribute("value", this.m_fSoundValue.ToString("f2"));
-            xmlElement.AppendChild(xmlElement10);
-            XmlElement xmlElement11 = xmlDocument.CreateElement("element");
-            xmlElement11.SetAttribute("id", "voicevalue");
-            xmlElement11.SetAttribute("value", this.m_fVoiceValue.ToString("f2"));
-            xmlElement.AppendChild(xmlElement11);
-            XmlElement xmlElement12 = xmlDocument.CreateElement("element");
-            xmlElement12.SetAttribute("id", "qualitysetting");
-            xmlElement12.SetAttribute("value", string.Format("{0}", (int)this.m_eGraphicsQuality));
-            xmlElement.AppendChild(xmlElement12);
-            XmlElement xmlElement13 = xmlDocument.CreateElement("element");
-            xmlElement13.SetAttribute("id", "enablemusic");
-            xmlElement13.SetAttribute("value", this.m_bEnableMusic ? 1.ToString() : 0.ToString());
-            xmlElement.AppendChild(xmlElement13);
-            XmlElement xmlElement14 = xmlDocument.CreateElement("element");
-            xmlElement14.SetAttribute("id", "enableeffect");
-            xmlElement14.SetAttribute("value", this.m_bEnableEffect ? 1.ToString() : 0.ToString());
-            xmlElement.AppendChild(xmlElement14);
-            XmlElement xmlElement15 = xmlDocument.CreateElement("element");         
-            if (GuideModel.singleton.GuideFinishedList.Count > 0)
+            if (!PlayerPrefs.HasKey("bgsoundvalue"))
             {
-                string content = "";
-                foreach (var guide in GuideModel.singleton.GuideFinishedList)
+                PlayerPrefs.SetFloat("bgsoundvalue", 1);
+            }
+            else
+            {
+                this.m_fBGSoundValue = PlayerPrefs.GetFloat("bgsoundvalue");
+            }
+            if (!PlayerPrefs.HasKey("soundvalue"))
+            {
+                PlayerPrefs.SetFloat("soundvalue", 1);
+            }
+            else
+            {
+                this.m_fSoundValue = PlayerPrefs.GetFloat("soundvalue");
+            }
+            if (!PlayerPrefs.HasKey("voicevalue"))
+            {
+                PlayerPrefs.SetFloat("voicevalue", 1);
+            }
+            else
+            {
+                this.m_fSoundValue = PlayerPrefs.GetFloat("voicevalue");
+            }
+            if (!PlayerPrefs.HasKey("enablemusic"))
+            {
+                PlayerPrefs.SetInt("enablemusic", 1);
+            }
+            else
+            {
+                this.m_bEnableMusic = PlayerPrefs.GetInt("enablemusic") != 0;
+            }
+            if (!PlayerPrefs.HasKey("enableeffect"))
+            {
+                PlayerPrefs.SetInt("enableeffect", 1);
+            }
+            else
+            {
+                this.m_bEnableEffect = PlayerPrefs.GetInt("enableeffect") != 0;
+            }
+            if (!PlayerPrefs.HasKey(CommonDefineBase.Money))
+            {
+                this.money = 0;
+                PlayerPrefs.SetInt(CommonDefineBase.Money, this.money);
+            }
+            else
+            {
+                this.money = PlayerPrefs.GetInt(CommonDefineBase.Money);
+            }
+            if (!PlayerPrefs.HasKey(CommonDefineBase.GuideFinish))
+            {
+                GuideModel.singleton.bIsGuideAllComp = false;
+            }
+            else
+            {
+                if (PlayerPrefs.GetString(CommonDefineBase.GuideFinish).Contains("ok"))
                 {
-                    content += guide + ",";
+                    GuideModel.singleton.bIsGuideAllComp = true;
+                    return;
                 }
-                content.Remove(content.LastIndexOf(","));
-                xmlElement14.SetAttribute("id", "guidefinish");
-                xmlElement14.SetAttribute("value", content);
-                xmlElement.AppendChild(xmlElement14);
-            }       
-            xmlDocument.Save(fullPath);
-        }
-        public virtual void LoadUserConfig()
-        {
-            string fullPath = Application.dataPath + "/Resources/Config/UserConfig.xml";
-            if (File.Exists(fullPath))
-            {
-                using (XmlReader xmlReader = XmlReader.Create(fullPath))
+                string[] content = PlayerPrefs.GetString(CommonDefineBase.GuideFinish).Split(',');
+                foreach (var id in content)
                 {
-                    if (null != xmlReader)
-                    {
-                        this.m_bHasSet = true;
-                        while (xmlReader.Read())
-                        {
-                            if (xmlReader.Name == "element" && xmlReader.NodeType == XmlNodeType.Element)
-                            {
-                                string text = xmlReader.GetAttribute("id").ToLower();
-                                string attribute = xmlReader.GetAttribute("value");
-                                string text2 = text;
-                                switch (text2)
-                                {
-                                    case "mutesound":
-                                        this.m_bMuteSound = (Convert.ToInt32(attribute) != 0);
-                                        break;
-                                    case "bgsoundvalue":
-                                        this.m_fBGSoundValue = (float)Convert.ToDouble(attribute);
-                                        break;
-                                    case "soundvalue":
-                                        this.m_fSoundValue = (float)Convert.ToDouble(attribute);
-                                        break;
-                                    case "voicevalue":
-                                        this.m_fVoiceValue = (float)Convert.ToDouble(attribute);
-                                        break;
-                                    case "qualitysetting":
-                                        this.m_eGraphicsQuality = (GraphicsQuality)Convert.ToInt32(attribute);
-                                        break;
-                                    case "enablemusic":
-                                        this.m_bEnableMusic = (Convert.ToInt32(attribute) != 0);
-                                        break;
-                                    case "enableeffect":
-                                        this.m_bEnableEffect = (Convert.ToInt32(attribute) != 0);
-                                        break;
-                                    case "guidefinish":
-                                        if (attribute.Equals("null"))
-                                        {
-                                            GuideModel.singleton.bIsGuideAllComp = false;
-                                            break;
-                                        }
-                                        string[] content = attribute.Split(',');
-                                        foreach (var id in content)
-                                        {
-                                            this.guideFinishedId.Add(Convert.ToInt32(id));
-                                        }
-                                        break;                             
-                                }
-                            }
-                        }
-                    }
+                    this.guideFinishedId.Add(Convert.ToInt32(id));
                 }
             }
+            this.m_bHasSet = true;
+        }
+        public void AddMoney(int money)
+        {
+            this.money += money;
+            //刷新主界面
+            EventDispatch.Broadcast(Events.DlgStartMoneyUpdate);
         }
     }
 }

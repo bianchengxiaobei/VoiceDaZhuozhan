@@ -1,0 +1,104 @@
+
+renzhe.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+111
+  rotate: false
+  xy: 2, 4
+  size: 240, 250
+  orig: 240, 250
+  offset: 0, 0
+  index: -1
+222
+  rotate: true
+  xy: 244, 74
+  size: 180, 280
+  orig: 180, 280
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 526, 143
+  size: 111, 189
+  orig: 111, 189
+  offset: 0, 0
+  index: -1
+foot1
+  rotate: false
+  xy: 726, 86
+  size: 42, 56
+  orig: 42, 56
+  offset: 0, 0
+  index: -1
+foot2
+  rotate: true
+  xy: 684, 74
+  size: 67, 40
+  orig: 67, 40
+  offset: 0, 0
+  index: -1
+hand1
+  rotate: false
+  xy: 993, 168
+  size: 29, 44
+  orig: 29, 44
+  offset: 0, 0
+  index: -1
+hand11
+  rotate: false
+  xy: 426, 18
+  size: 59, 54
+  orig: 59, 54
+  offset: 0, 0
+  index: -1
+hand111
+  rotate: true
+  xy: 244, 26
+  size: 46, 105
+  orig: 46, 105
+  offset: 0, 0
+  index: -1
+hand22
+  rotate: true
+  xy: 912, 214
+  size: 40, 106
+  orig: 40, 106
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 839, 165
+  size: 71, 89
+  orig: 71, 89
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: true
+  xy: 526, 2
+  size: 139, 156
+  orig: 139, 156
+  offset: 0, 0
+  index: -1
+leg11
+  rotate: true
+  xy: 351, 11
+  size: 61, 73
+  orig: 61, 73
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: true
+  xy: 717, 144
+  size: 110, 120
+  orig: 110, 120
+  offset: 0, 0
+  index: -1
+leg22
+  rotate: true
+  xy: 912, 151
+  size: 61, 79
+  orig: 61, 79
+  offset: 0, 0
+  index: -1

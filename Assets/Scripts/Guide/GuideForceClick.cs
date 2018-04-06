@@ -20,8 +20,8 @@ public class GuideForceClick : GuideTaskBase
     private GameObject Black;//黑色遮罩
     private Transform EventButtonTempParent;
     private DataGuideTaskInfo data;
-    private int m_iTriggerCount;//触发次数
     private GameObject ShowView;
+    private VoiceController controller;
     public GuideForceClick(int taskId, EGuideTaskType type, GameObject parent) : base(taskId, type, parent)
     {
 
@@ -168,6 +168,15 @@ public class GuideForceClick : GuideTaskBase
                         {
                             (click as Toggle).onValueChanged.AddListener(this.OnSelect);
                         }
+                        else
+                        {
+                            controller = EventButton.GetComponent<VoiceController>();
+                            if (controller != null)
+                            {
+                                controller.onClickDown += this.OnClickDown;
+                                controller.onClickUp += this.OnClickUp;
+                            }
+                        }
                     }
                 }
             }
@@ -175,27 +184,25 @@ public class GuideForceClick : GuideTaskBase
     }
     private void OnClick()
     {
-        this.m_iTriggerCount++;
-        if (this.m_iTriggerCount >= this.data.TaskTime)
-        {
-            this.FinishTask();
-        }
+        this.FinishTask();
+    }
+    public void OnClickDown()
+    {
+        this.bTaskCoolDown = true;
+        this.m_fTaskTime = Time.realtimeSinceStartup;
+        this.m_fTaskCDtime = 1;
+    }
+    public void OnClickUp()
+    {
+        this.bTaskCoolDown = false;
     }
     private void OnSelect(bool value)
     {
-        this.m_iTriggerCount++;
-        if (this.m_iTriggerCount >= this.data.TaskTime)
-        {
-            this.FinishTask();
-        }
+       this.FinishTask();
     }
     private void OnDrag()
     {
-        this.m_iTriggerCount++;
-        if (this.m_iTriggerCount >= this.data.TaskTime)
-        {
-            this.FinishTask();
-        }
+       this.FinishTask();
     }
     public override void FinishTask()
     {
@@ -209,15 +216,31 @@ public class GuideForceClick : GuideTaskBase
         if (data.BtnTriggerType == (int)EButtonTriggerType.Click)
         {
             Selectable eventBtn = this.EventButton.GetComponent<Selectable>();
-            if (eventBtn is Button)
+            if (eventBtn != null)
             {
-                (eventBtn as Button).onClick.RemoveListener(this.OnClick);
+                if (eventBtn is Button)
+                {
+                    (eventBtn as Button).onClick.RemoveListener(this.OnClick);
+                }
+                else
+                {
+                    (eventBtn as Toggle).onValueChanged.RemoveListener(this.OnSelect);
+                }
             }
             else
             {
-                (eventBtn as Toggle).onValueChanged.RemoveListener(this.OnSelect);
+                if (controller != null)
+                {
+                    controller.onClickDown -= this.OnClick;
+                    controller.onClickUp -= this.OnClickUp;
+                    controller.onClickDown = null;
+                    controller.onClickUp = null;
+                    VoiceManager.Instance.StartSpeech();
+                    EventDispatch.Broadcast<bool>(Events.DlgTextShowMask, true);
+                }
             }
         }
+        this.controller = null;
         this.data = null;
         this.ShowView = null;
         base.FinishTask();
@@ -240,6 +263,18 @@ public class GuideForceClick : GuideTaskBase
         if (obj.name == data.BtnName)
         {
             ShowGuide();
+        }
+    }
+    public override void ExcuseTask()
+    {
+        if (!bTaskCoolDown)
+        {
+            return;
+        }
+        if (Time.realtimeSinceStartup - m_fTaskTime >= m_fTaskCDtime)
+        {
+            bTaskCoolDown = false;
+            this.FinishTask();
         }
     }
 }

@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 3223382144
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: baf545aad9b29897c511b16bffea3145
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9935070bcb8e8cefc5d61fa7b89b5f3f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8b34068df4b284f60add5d301695f152, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/Effects/Line/LineEffect.prefab
+Dependencies: []

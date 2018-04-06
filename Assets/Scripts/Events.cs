@@ -15,6 +15,7 @@ public class Events : EventsBase
 {
     public static readonly string DlgStartShow = "DlgStartShow";
     public static readonly string DlgStartHide = "DlgStartHide";
+    public static readonly string DlgStartMoneyUpdate = "DlgStartMoneyUpdate";
 
     public static readonly string DlgLoadingShow = "DlgLoadingShow";
     public static readonly string DlgLoadingHide = "DlgLoadingHide";
@@ -26,6 +27,8 @@ public class Events : EventsBase
     public static readonly string DlgMainShow = "DlgMainShow";
     public static readonly string DlgMainHide = "DlgMainHide";
     public static readonly string DlgMainShowMask = "DlgMainShowMask";
+    public static readonly string DlgMainEndLevel = "DlgMainEndLevel";
+    public static readonly string DlgMainRefresh = "DlgMainRefresh";
 
     public static readonly string DlgPlayGuideShow = "DlgPlayGuideShow";
     public static readonly string DlgPlayGuideHide = "DlgPlayGuideHide";
@@ -36,4 +39,11 @@ public class Events : EventsBase
     public static readonly string DlgTextShow = "DlgTextShow";
     public static readonly string DlgTextHide = "DlgTextHide";
     public static readonly string DlgTextEnterLearn = "DlgTextEnterLearn";
+    public static readonly string DlgTextShowMask = "DlgTextShowMask";
+
+    public static readonly string DlgFlyTextShow = "DlgFlyTextShow";
+    public static readonly string DlgFlyTextHide = "DlgFlyTextHide";
+    public static readonly string DlgAddSingleSystemInfo = "DlgAddSingleSystemInfo";
+    public static readonly string DlgAddDoubleSystemInfo = "DlgAddDoubleSystemInfo";
+    public static readonly string DlgAddSingleActionSystemInfo = "DlgAddSingleActionSystemInfo";
 }

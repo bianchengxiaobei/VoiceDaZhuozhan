@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 public class UnityTool : UnityToolBase
 {
     private static Camera m_oUICamera = null;
-
+    private static CameraShake m_mainCamera = null;
     public static Camera UICamera
     {
         get
@@ -17,6 +17,17 @@ public class UnityTool : UnityToolBase
                 m_oUICamera = GameObject.FindGameObjectWithTag("UICamera").GetComponent<Camera>(); 
             }
             return m_oUICamera;
+        }
+    }
+    public static CameraShake CameraShake
+    {
+        get
+        {
+            if (m_mainCamera == null)
+            {
+                m_mainCamera = Camera.main.transform.GetComponent<CameraShake>();               
+            }
+            return m_mainCamera;
         }
     }
     /// <summary>
@@ -240,15 +251,17 @@ public class UnityTool : UnityToolBase
         {
             return sourceList;
         }
-        List<T> random = new List<T>(sourceList.Count);
+        List<T> temp = new List<T>();
+        temp.AddRange(sourceList);
+        List<T> random = new List<T>(temp.Count);
         do
         {
-            int index = Random.Range(0, sourceList.Count);
-            T target = sourceList[index];
-            sourceList.Remove(target);
+            int index = Random.Range(0, temp.Count);
+            T target = temp[index];
+            temp.Remove(target);
             random.Add(target);
 
-        } while (sourceList.Count > 0);
+        } while (temp.Count > 0);
 
         return random;
 

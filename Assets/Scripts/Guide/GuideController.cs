@@ -94,9 +94,8 @@ public class GuideController : Singleton<GuideController>
         //如果完成的任务是模块的最后一个任务，告诉服务器
         if (GuideModel.singleton.TaskMrgData.Moduleend)
         {
-            //NetworkManager.singleton.SendGuideModuleComp(GuideModel.singleton.TaskMrgData.TaskType);
             //保存下
-            string finished = PlayerPrefs.GetString("guidefinish");
+            string finished = PlayerPrefs.GetString(CommonDefineBase.GuideFinish);
             if (string.IsNullOrEmpty(finished))
             {
                 finished = GuideModel.singleton.TaskMrgData.TaskType.ToString();
@@ -105,13 +104,16 @@ public class GuideController : Singleton<GuideController>
             {
                 finished += "," + GuideModel.singleton.TaskMrgData.TaskType;
             }
-            PlayerPrefs.SetString("guidefinish",finished);
+            PlayerPrefs.SetString(CommonDefineBase.GuideFinish,finished);
             if ((EGuideStepInfo)GuideModel.singleton.TaskMrgData.TaskType == EGuideStepInfo.WatchAds)
             {
                 //结束
                 GuideModel.singleton.bIsGuideAllComp = true;
                 GuideModel.singleton.bIsGuideBattle = false;
                 GuideModel.singleton.ClearData();
+                string finished2 = PlayerPrefs.GetString(CommonDefineBase.GuideFinish);
+                finished2 += ",ok";
+                PlayerPrefs.SetString(CommonDefineBase.GuideFinish, finished2);
             }
         }
         if (GuideModel.singleton.bIsGuideAllComp)

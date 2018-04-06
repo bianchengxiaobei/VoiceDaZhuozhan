@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 2360028579
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ca43ac7ffe93198a40951604a147f839
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fb382e0343bf4b4dfc62f6430d348a0b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 50
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c871201d16e2e0d4493952235cb6610c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- "Assets/Prefabs/Effects/Skill/\u6CE2\u52A8\u62F3.prefab"
+Dependencies:
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/6f90ad6c4fdb267dc7e5debbb0f0a3afbd9076e4.ab
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/568cfea69bfcff4fa7bf2e370220c63b9c8b9549.ab
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/4d5d10624f050a2796d18a0d894d7feac82964be.ab
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/5db8d196a830ec883fa056bfca708c90fb37ca28.ab

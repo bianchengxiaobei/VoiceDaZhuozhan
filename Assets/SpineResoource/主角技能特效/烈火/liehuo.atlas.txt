@@ -1,0 +1,62 @@
+
+liehuo.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dihuo0001
+  rotate: false
+  xy: 2, 2
+  size: 84, 96
+  orig: 84, 96
+  offset: 0, 0
+  index: -1
+dihuo0002
+  rotate: false
+  xy: 88, 2
+  size: 84, 96
+  orig: 84, 96
+  offset: 0, 0
+  index: -1
+dihuo0003
+  rotate: false
+  xy: 174, 2
+  size: 84, 96
+  orig: 84, 96
+  offset: 0, 0
+  index: -1
+dihuo0004
+  rotate: false
+  xy: 260, 2
+  size: 84, 96
+  orig: 84, 96
+  offset: 0, 0
+  index: -1
+dihuo0005
+  rotate: false
+  xy: 346, 2
+  size: 84, 96
+  orig: 84, 96
+  offset: 0, 0
+  index: -1
+dihuo0006
+  rotate: false
+  xy: 432, 2
+  size: 84, 96
+  orig: 84, 96
+  offset: 0, 0
+  index: -1
+dihuo0007
+  rotate: false
+  xy: 518, 2
+  size: 84, 96
+  orig: 84, 96
+  offset: 0, 0
+  index: -1
+dihuo0008
+  rotate: false
+  xy: 604, 2
+  size: 84, 96
+  orig: 84, 96
+  offset: 0, 0
+  index: -1

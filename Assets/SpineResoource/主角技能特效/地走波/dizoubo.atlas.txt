@@ -1,0 +1,27 @@
+
+dizoubo.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dizoubo0001
+  rotate: false
+  xy: 2, 2
+  size: 143, 114
+  orig: 143, 114
+  offset: 0, 0
+  index: -1
+dizoubo0002
+  rotate: false
+  xy: 147, 2
+  size: 143, 114
+  orig: 143, 114
+  offset: 0, 0
+  index: -1
+dizoubo0003
+  rotate: false
+  xy: 292, 2
+  size: 143, 114
+  orig: 143, 114
+  offset: 0, 0
+  index: -1

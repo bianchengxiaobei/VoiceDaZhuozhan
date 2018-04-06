@@ -20,7 +20,7 @@ public class DlgGuide : UIBase
 
     public override void OnDisable()
     {
-        EventDispatch.RemoveListener<EGuideTaskType, int>(Events.DlgGuideChildTaskFinished, this.OnFinishChildTask);
+        
     }
 
     public override void OnEnable()
@@ -36,9 +36,7 @@ public class DlgGuide : UIBase
 
     protected override void InitWidget()
     {
-        this.mRoot.Find("sp_mask").gameObject.SetActive(true);
-        EventDispatch.AddListener(Events.DlgGuideExecuteNextTask, this.ExecuteNextGuide);
-        EventDispatch.AddListener<EGuideTaskType, int>(Events.DlgGuideChildTaskFinished, this.OnFinishChildTask);
+        this.mRoot.Find("sp_mask").gameObject.SetActive(true);      
         if (GuideModel.singleton.GuideTaskExecuteList.Count == 0)
         {
             this.ExecuteNextGuide();
@@ -47,12 +45,13 @@ public class DlgGuide : UIBase
 
     protected override void OnAddListener()
     {
-        
+        EventDispatch.AddListener(Events.DlgGuideExecuteNextTask, this.ExecuteNextGuide);
+        EventDispatch.AddListener<EGuideTaskType, int>(Events.DlgGuideChildTaskFinished, this.OnFinishChildTask);
     }
 
     protected override void OnRemoveListener()
     {
-        
+        EventDispatch.RemoveListener<EGuideTaskType, int>(Events.DlgGuideChildTaskFinished, this.OnFinishChildTask);
     }
 
     protected override void RealseWidget()
@@ -96,6 +95,7 @@ public class DlgGuide : UIBase
     }
     private void OnFinishChildTask(EGuideTaskType type, int taskId)
     {
+        Debug.Log(type.ToString());
         GuideController.singleton.OnFinishedChildTask(type, taskId);
     }
     public override void Update(float deltaTime)

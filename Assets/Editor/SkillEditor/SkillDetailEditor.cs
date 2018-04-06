@@ -22,6 +22,7 @@ public class SkillDetailEditor : EditorWindow
     private Vector2 paramsrollPosition;
     private ReorderableList paramlist;
     private string audioPath;
+    private string token;
     private string levelGold;
     public static void OpenWindow(Skill skill)
     {
@@ -222,6 +223,13 @@ public class SkillDetailEditor : EditorWindow
         GUILayout.Space(10);
         GUILayout.BeginHorizontal();
         {
+            EditorGUILayout.PrefixLabel("技能是否产生特效");
+            m_oSkill.HasActor = EditorGUILayout.Toggle(m_oSkill.HasActor);
+        }
+        GUILayout.EndHorizontal();
+        GUILayout.Space(10);
+        GUILayout.BeginHorizontal();
+        {
             EditorGUILayout.PrefixLabel("技能特效路径");
             m_oSkill.effectPath = EditorGUILayout.TextField(m_oSkill.effectPath);
         }
@@ -229,8 +237,15 @@ public class SkillDetailEditor : EditorWindow
         GUILayout.Space(10);
         GUILayout.BeginHorizontal();
         {
-            EditorGUILayout.PrefixLabel("技能音频名称");
-            m_oSkill.audioPath = "Assets.Audios.SkillEffects."+EditorGUILayout.TextField(audioPath);
+            EditorGUILayout.PrefixLabel("技能音频");
+            m_oSkill.effectAudioPathIndex = EditorGUILayout.IntField(m_oSkill.effectAudioPathIndex);
+        }
+        GUILayout.EndHorizontal();
+        GUILayout.Space(10);
+        GUILayout.BeginHorizontal();
+        {
+            EditorGUILayout.PrefixLabel("技能Token音频名称");
+            m_oSkill.tokenAudioPath = EditorGUILayout.TextField(m_oSkill.tokenAudioPath);
         }
         GUILayout.EndHorizontal();
         GUILayout.Space(10);
@@ -245,13 +260,16 @@ public class SkillDetailEditor : EditorWindow
         {
             EditorGUILayout.PrefixLabel("技能升级金币");
             this.levelGold = EditorGUILayout.TextField(levelGold);
-            string[] content = this.levelGold.Split(',');
-            m_oSkill.upgradeGold.Clear();
-            if (content != null && content.Length > 0)
+            if (!string.IsNullOrEmpty(this.levelGold))
             {
-                foreach (var gold in content)
+                string[] content = this.levelGold.Split(',');
+                m_oSkill.upgradeGold.Clear();
+                if (content != null && content.Length > 0)
                 {
-                    m_oSkill.upgradeGold.Add(int.Parse(gold));
+                    foreach (var gold in content)
+                    {
+                        m_oSkill.upgradeGold.Add(int.Parse(gold));
+                    }
                 }
             }
         }
@@ -269,7 +287,7 @@ public class SkillDetailEditor : EditorWindow
                 m_oSkill.type = (ESkillType)EditorGUILayout.EnumPopup(m_oSkill.type);
             }
             GUILayout.EndHorizontal();
-            if (m_oSkill.type == ESkillType.直线有范围 || m_oSkill.type == ESkillType.固定区域 || m_oSkill.type == ESkillType.全屏 || m_oSkill.type == ESkillType.锁定)
+            if (m_oSkill.type == ESkillType.直线有范围 || m_oSkill.type == ESkillType.固定区域 || m_oSkill.type == ESkillType.全屏 || m_oSkill.type == ESkillType.锁定 || m_oSkill.type == ESkillType.选择方向)
             {
                 GUILayout.Space(10);
                 paramsrollPosition = GUILayout.BeginScrollView(paramsrollPosition);
@@ -278,7 +296,7 @@ public class SkillDetailEditor : EditorWindow
                 }
                 GUILayout.EndScrollView();
             }
-            if (m_oSkill.type == ESkillType.直线)
+            if (m_oSkill.type != ESkillType.全屏)
             {
                 GUILayout.Space(10);
                 GUILayout.BeginHorizontal();

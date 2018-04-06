@@ -24,6 +24,7 @@ public class DlgLoading : UIBase
     {
         EventDispatch.AddListener(Events.DlgLoadingShow, this.Show);
         EventDispatch.AddListener(Events.DlgLoadingHide, this.Hide);
+        EventDispatch.AddListener(Events.DlgLoadingAllFinished, this.OnLoadAllFinished);
     }
 
     public override void OnDisable()
@@ -38,7 +39,7 @@ public class DlgLoading : UIBase
 
     public override void Realse()
     {
-        
+        EventDispatch.RemoveListener(Events.DlgLoadingAllFinished, this.OnLoadAllFinished);
     }
 
     protected override void InitWidget()
@@ -48,12 +49,12 @@ public class DlgLoading : UIBase
 
     protected override void OnAddListener()
     {
-        EventDispatch.AddListener(Events.DlgLoadingAllFinished, this.OnLoadAllFinished);
+        
     }
 
     protected override void OnRemoveListener()
     {
-        //EventDispatch.RemoveListener(Events.DlgLoadingAllFinished, this.OnLoadAllFinished);
+
     }
 
     protected override void RealseWidget()

@@ -56,7 +56,7 @@ namespace CaomaoFramework
             set
             {
                 this.m_fVolumeVoice = value;
-                UserPrefsBase.Singleton.VoiceValue = this.m_fVolumeVoice;
+                UserPrefsBase.singleton.VoiceValue = this.m_fVolumeVoice;
             }
         }
         /// <summary>
@@ -76,7 +76,7 @@ namespace CaomaoFramework
             set
             {
                 this.m_bEnableMusic = value;
-                UserPrefsBase.Singleton.EnableMusic = value;
+                UserPrefsBase.singleton.EnableMusic = value;
                 if (this.m_curMusicAudioSource != null)
                 {
                     this.m_curMusicAudioSource.enabled = value;
@@ -92,7 +92,7 @@ namespace CaomaoFramework
             set
             {
                 this.m_bEnableEffect = value;
-                UserPrefsBase.Singleton.EnableEffect = value;
+                UserPrefsBase.singleton.EnableEffect = value;
             }
         }
         public static AudioManagerBase Instance
@@ -120,9 +120,9 @@ namespace CaomaoFramework
             this.m_curMusicAudioSource = this.m_gameObjectCached.AddComponent<AudioSource>();
             this.m_curUiEffectAudioSource = this.m_gameObjectCached.AddComponent<AudioSource>();
             this.m_curReportEffectAudioSource = this.m_gameObjectCached.AddComponent<AudioSource>();
-            this.IsMuted = UserPrefsBase.Singleton.IsMute;
-            this.VolumeBgMusic = UserPrefsBase.Singleton.BGSoundValue;
-            this.VolumeEffect = UserPrefsBase.Singleton.SoundValue;
+            this.IsMuted = UserPrefsBase.singleton.IsMute;
+            this.VolumeBgMusic = UserPrefsBase.singleton.BGSoundValue;
+            this.VolumeEffect = UserPrefsBase.singleton.SoundValue;
             AddListeners();
         }
         public void AddListeners()
@@ -170,6 +170,7 @@ namespace CaomaoFramework
                 {
                     this.m_assetRequestMusic.Release();
                     this.m_assetRequestMusic = null;
+                    this.m_strCurMusicFile = string.Empty;
                 }
             }
         }
@@ -286,7 +287,7 @@ namespace CaomaoFramework
                 return;
             }
             gameObjectAudioSource.clip = clip;
-            gameObjectAudioSource.volume = this.VolumeEffect;
+            //gameObjectAudioSource.volume = this.VolumeEffect;
             gameObjectAudioSource.loop = isLoop;
             gameObjectAudioSource.Play();
         }

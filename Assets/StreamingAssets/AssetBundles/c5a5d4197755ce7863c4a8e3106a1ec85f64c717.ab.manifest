@@ -1,0 +1,53 @@
+ManifestFileVersion: 0
+CRC: 1089044669
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1b962a1c55562053a63beb46a04b8b73
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ec05bbede72d00587eb90637305e718c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0f72d6b3b5030624f87df6a92a8df298, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f9db98c60740638449864eb028fbe7ad, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c1f1239a5b808c2498637df4b042b185, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/Characters/FeiJiNan.prefab
+Dependencies:
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/5db8d196a830ec883fa056bfca708c90fb37ca28.ab

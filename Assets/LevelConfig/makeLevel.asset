@@ -22,44 +22,24 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
-        demage: 0
-        num: 5
+        maxHp: 50
+        demage: 10
+        num: 1
       duration: 59.999996
       name: "\u6CE2\u65701"
       index: 1
-    - entitys:
-      - type: 2
-        duration: 1
-        speed: 100
-        maxHp: 0
-        demage: 0
-        num: 5
-      duration: 59.999996
-      name: "\u6CE2\u65702"
-      index: 2
-    - entitys:
-      - type: 2
-        duration: 1
-        speed: 100
-        maxHp: 0
-        demage: 0
-        num: 5
-      duration: 0
-      name: "\u6CE2\u65703"
-      index: 3
   - levelId: 2
-    valid: 1
+    valid: 0
     levelName: "\u5173\u53612"
     levelPath: Assets/LevelConfig
     waves:
     - entitys:
       - type: 2
-        duration: 10
+        duration: 0
         speed: 1
-        maxHp: 0
-        demage: 0
-        num: 0
+        maxHp: 50
+        demage: 10
+        num: 2
       duration: 59.999996
       name: "\u6CE2\u65701"
       index: 1
@@ -67,9 +47,9 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
-        demage: 0
-        num: 10
+        maxHp: 50
+        demage: 10
+        num: 2
       duration: 59.999996
       name: "\u6CE2\u65702"
       index: 2
@@ -77,14 +57,14 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
-        demage: 0
-        num: 10
+        maxHp: 50
+        demage: 20
+        num: 2
       duration: 0
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 3
-    valid: 1
+    valid: 0
     levelName: "\u5173\u53613"
     levelPath: Assets/LevelConfig
     waves:
@@ -92,14 +72,14 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
-        demage: 0
-        num: 10
+        maxHp: 50
+        demage: 10
+        num: 2
       - type: 3
         duration: 0
         speed: 50
         maxHp: 0
-        demage: 0
+        demage: 15
         num: 1
       duration: 59.999996
       name: "\u6CE2\u65701"
@@ -137,7 +117,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 4
-    valid: 1
+    valid: 0
     levelName: "\u5173\u53614"
     levelPath: Assets/LevelConfig
     waves:
@@ -145,14 +125,14 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
-        demage: 0
+        maxHp: 50
+        demage: 10
         num: 15
       - type: 3
         duration: 5
         speed: 50
-        maxHp: 0
-        demage: 0
+        maxHp: 100
+        demage: 15
         num: 2
       duration: 59.999996
       name: "\u6CE2\u65701"
@@ -161,14 +141,14 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
-        demage: 0
+        maxHp: 50
+        demage: 10
         num: 15
       - type: 3
         duration: 5
         speed: 50
         maxHp: 0
-        demage: 0
+        demage: 15
         num: 2
       duration: 59.999996
       name: "\u6CE2\u65702"
@@ -177,20 +157,20 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
-        demage: 0
+        maxHp: 50
+        demage: 10
         num: 15
       - type: 3
         duration: 5
         speed: 50
         maxHp: 0
-        demage: 0
+        demage: 15
         num: 4
       duration: 0
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 5
-    valid: 1
+    valid: 0
     levelName: "\u5173\u53615"
     levelPath: Assets/LevelConfig
     waves:
@@ -243,7 +223,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 6
-    valid: 1
+    valid: 0
     levelName: "\u5173\u53616"
     levelPath: Assets/LevelConfig
     waves:
@@ -251,7 +231,7 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
+        maxHp: 50
         demage: 0
         num: 15
       - type: 3
@@ -267,7 +247,7 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
+        maxHp: 50
         demage: 0
         num: 15
       - type: 3
@@ -283,7 +263,7 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
+        maxHp: 50
         demage: 0
         num: 20
       - type: 3
@@ -296,7 +276,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 7
-    valid: 1
+    valid: 0
     levelName: "\u5173\u53617"
     levelPath: Assets/LevelConfig
     waves:
@@ -304,7 +284,7 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
+        maxHp: 50
         demage: 0
         num: 15
       - type: 3
@@ -367,7 +347,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 8
-    valid: 1
+    valid: 0
     levelName: "\u5173\u53618"
     levelPath: Assets/LevelConfig
     waves:
@@ -438,7 +418,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 9
-    valid: 1
+    valid: 0
     levelName: "\u5173\u53619"
     levelPath: Assets/LevelConfig
     waves:
@@ -509,7 +489,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 10
-    valid: 1
+    valid: 0
     levelName: "\u5173\u536110"
     levelPath: Assets/LevelConfig
     waves:
@@ -598,7 +578,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 11
-    valid: 1
+    valid: 0
     levelName: "\u5173\u536111"
     levelPath: Assets/LevelConfig
     waves:
@@ -687,7 +667,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 12
-    valid: 1
+    valid: 0
     levelName: "\u5173\u536112"
     levelPath: Assets/LevelConfig
     waves:
@@ -696,13 +676,13 @@ MonoBehaviour:
         duration: 5
         speed: 50
         maxHp: 0
-        demage: 0
+        demage: 15
         num: 5
       - type: 4
         duration: 2
         speed: 100
         maxHp: 0
-        demage: 0
+        demage: 20
         num: 15
       duration: 0
       name: "\u6CE2\u65701"
@@ -746,7 +726,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 13
-    valid: 1
+    valid: 0
     levelName: "\u5173\u536113"
     levelPath: Assets/LevelConfig
     waves:
@@ -823,7 +803,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 14
-    valid: 1
+    valid: 0
     levelName: "\u5173\u536114"
     levelPath: Assets/LevelConfig
     waves:
@@ -900,7 +880,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 15
-    valid: 1
+    valid: 0
     levelName: "\u5173\u536115"
     levelPath: Assets/LevelConfig
     waves:
@@ -908,20 +888,20 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 0
-        demage: 0
+        maxHp: 50
+        demage: 10
         num: 20
       - type: 4
         duration: 3
         speed: 100
         maxHp: 0
-        demage: 0
+        demage: 20
         num: 15
       - type: 5
         duration: 8
         speed: 100
         maxHp: 0
-        demage: 0
+        demage: 40
         num: 4
       - type: 6
         duration: 8

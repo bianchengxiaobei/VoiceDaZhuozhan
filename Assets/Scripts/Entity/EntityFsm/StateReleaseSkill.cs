@@ -15,6 +15,7 @@ using CaomaoFramework.EntityFsm;
 public class StateReleaseSkill : IEntityState
 {
     GameSkillBase skill;
+    private int curSkillId;
     /// <summary>
     ///  进入该状态
     /// </summary>
@@ -29,22 +30,26 @@ public class StateReleaseSkill : IEntityState
     public void Exit(EntityParent theOwner, params object[] args)
     {
         skill = null;
+        this.curSkillId = 0;
     }
 
     // 状态处理
     public void Process(EntityParent theOwner, params object[] args)
     {
         skill = (GameSkillBase)args[0];
+        if (SkillManager.singleton.IsSkillInRunning(skill.skillConfig.skillId))
+        {
+            Debug.Log("runing:" + skill.skillConfig.skillName);
+            return;
+        }
         if (skill != null && skill.skillConfig != null)
         {
             skill.Enter(theOwner);
+            this.curSkillId = skill.skillConfig.skillId;
         }
     }
     public void Execute(EntityParent theOwner)
     {
-        if (skill != null)
-        {
-            skill.OnUpdate();
-        }
+        
     }
 }

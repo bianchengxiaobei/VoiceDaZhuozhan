@@ -42,14 +42,14 @@ public class GuideTaskBase
     /// </summary>
     public virtual void ExcuseTask()
     {
-        if (!bTaskCoolDown)
-        {
-            return;
-        }
-        if (Time.realtimeSinceStartup - m_fTaskTime >= m_fTaskCDtime)
-        {
-            bTaskCoolDown = false;
-        }
+        //if (!bTaskCoolDown)
+        //{
+        //    return;
+        //}
+        //if (Time.realtimeSinceStartup - m_fTaskTime >= m_fTaskCDtime)
+        //{
+        //    bTaskCoolDown = false;
+        //}
     }
 
     //任务结束广播消息

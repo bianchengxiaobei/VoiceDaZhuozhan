@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 842182018
+CRC: 3502278713
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 54f496047d32d5cd9e59ef57eaf8fcee
+    Hash: 0781f3a95f43a7333e4b016a22dbfff5
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 5f5598505e7c80b72bb3610532a2e156
+    Hash: 54ee59b4fce4d24a3ba2b92b058197a6
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -23,12 +23,16 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
 - Class: 74
   Script: {instanceID: 0}
 - Class: 91
   Script: {instanceID: 0}
 - Class: 95
   Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: dbedc0e0f4498964ba98c5e9a1ea5816, type: 3}
 - Class: 114
   Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
@@ -45,6 +49,8 @@ ClassTypes:
   Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
   Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 75dff2e252b303245a98204b46199269, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: f9db98c60740638449864eb028fbe7ad, type: 3}
 - Class: 114
@@ -66,6 +72,6 @@ Assets:
 Dependencies:
 - E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/ed3e39275cb7d58f8c5f64f2c74ac92ab23bb88f.ab
 - E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/c255f37f5d98fca32809bc3e4377a59c04ef9501.ab
-- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/4857d4ddbe7da8e44cbee1b601c6d3a8175682e9.ab
 - E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/5db8d196a830ec883fa056bfca708c90fb37ca28.ab
+- E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/4857d4ddbe7da8e44cbee1b601c6d3a8175682e9.ab
 - E:/Unity5Plugin/VoiceDaZuoZhan/Assets/StreamingAssets/AssetBundles/common1.ab

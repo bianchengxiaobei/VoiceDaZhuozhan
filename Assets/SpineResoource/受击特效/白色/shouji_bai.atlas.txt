@@ -1,0 +1,34 @@
+
+shouji_bai.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shouji0001
+  rotate: false
+  xy: 2, 2
+  size: 134, 148
+  orig: 134, 148
+  offset: 0, 0
+  index: -1
+shouji0002
+  rotate: false
+  xy: 138, 2
+  size: 134, 148
+  orig: 134, 148
+  offset: 0, 0
+  index: -1
+shouji0003
+  rotate: false
+  xy: 274, 2
+  size: 134, 148
+  orig: 134, 148
+  offset: 0, 0
+  index: -1
+shouji0004
+  rotate: false
+  xy: 410, 2
+  size: 134, 148
+  orig: 134, 148
+  offset: 0, 0
+  index: -1
