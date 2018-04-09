@@ -21,7 +21,8 @@ public class Skill
     public int skillId;
     public string skillName;
     public string skillInfo;
-    public string skillToken;//口令
+    public string skillToken;//部分口令
+    public string skillRealToken;//实际口令
     public ESkillType type;
     public List<Param> param = new List<Param>();//参数
     public List<CD> cds = new List<CD>();//根据等级

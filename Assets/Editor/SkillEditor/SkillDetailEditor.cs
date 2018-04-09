@@ -191,8 +191,15 @@ public class SkillDetailEditor : EditorWindow
         GUILayout.EndHorizontal();
         GUILayout.BeginHorizontal();
         {
-            EditorGUILayout.PrefixLabel("技能口令");
+            EditorGUILayout.PrefixLabel("技能部分口令");
             m_oSkill.skillToken = EditorGUILayout.TextField(m_oSkill.skillToken);
+        }
+        GUILayout.EndHorizontal();
+        GUILayout.Space(10);
+        GUILayout.BeginHorizontal();
+        {
+            EditorGUILayout.PrefixLabel("技能实际口令（完整）");
+            m_oSkill.skillRealToken = EditorGUILayout.TextField(m_oSkill.skillRealToken);
         }
         GUILayout.EndHorizontal();
         GUILayout.Space(10);

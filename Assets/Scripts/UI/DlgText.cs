@@ -278,7 +278,7 @@ public class DlgText : UIBase
         {
             this.ShowSpeakButton(false); 
             //出现口令
-            this.ShowToken(skill.skillConfig.skillToken);
+            this.ShowToken(skill.skillConfig.skillRealToken);
             skill.Enter(this.entity,true);
             TimerManager.AddTimer(4000, 0, () => 
             {
