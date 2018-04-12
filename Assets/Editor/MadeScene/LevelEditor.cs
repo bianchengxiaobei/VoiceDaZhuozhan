@@ -18,7 +18,7 @@ using CaomaoFramework;
 /// </summary>
 public class LevelEditor : EditorWindow
 {
-    private LevelConfig config;
+    public static LevelConfig config;
     private ReorderableList list;
     private Vector2 srollPosition;
     private const string savePath = "Assets/LevelConfig/makeLevel.asset";
@@ -64,6 +64,31 @@ public class LevelEditor : EditorWindow
             }
             GUILayout.EndHorizontal();
             GUILayout.Space(10);
+            GUILayout.BeginHorizontal();
+            {
+                EditorGUILayout.PrefixLabel("主角血量");
+                config.SelfMaxHp = EditorGUILayout.IntField(config.SelfMaxHp);
+                EditorGUILayout.PrefixLabel("纹身男血量");
+                config.WenShenMaxHp = EditorGUILayout.IntField(config.WenShenMaxHp);
+                EditorGUILayout.PrefixLabel("胖子男血量");
+                config.PangziMaxHp = EditorGUILayout.IntField(config.PangziMaxHp);
+                EditorGUILayout.PrefixLabel("飞机男血量");
+                config.FeijiMaxHp = EditorGUILayout.IntField(config.FeijiMaxHp);
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(10);
+            GUILayout.BeginHorizontal();
+            {
+                EditorGUILayout.PrefixLabel("跳跳男血量");
+                config.TiaoTiaoMaxHp  = EditorGUILayout.IntField(config.TiaoTiaoMaxHp );
+                EditorGUILayout.PrefixLabel("瞬移怪血量");
+                config.ShunxiMaxHp  = EditorGUILayout.IntField(config.ShunxiMaxHp);
+                EditorGUILayout.PrefixLabel("匍匐怪血量");
+                config.PufuMaxHp  = EditorGUILayout.IntField(config.PufuMaxHp );
+                EditorGUILayout.PrefixLabel("挖掘机血量");
+                config.WajuejiMaxHp  = EditorGUILayout.IntField(config.WajuejiMaxHp);
+            }
+            GUILayout.EndHorizontal();
             srollPosition = GUILayout.BeginScrollView(srollPosition);
             {
                 list.DoLayoutList();
@@ -93,13 +118,13 @@ public class LevelEditor : EditorWindow
     }
     public void DeleteLevel(ReorderableList list)
     {
-        this.config.levels.RemoveAt(list.index);
+        config.levels.RemoveAt(list.index);
         this.Sort();
     }
     private void Sort()
     {
         int index = 0;
-        foreach (var level in this.config.levels)
+        foreach (var level in config.levels)
         {
             level.levelId = ++index;
             level.levelName = string.Format("关卡{0}", index);
@@ -183,9 +208,9 @@ public class LevelEditor : EditorWindow
     }
     public void ExportLevel()
     {
-        if (this.config.exprotFormat == Format.Json)
+        if (config.exprotFormat == Format.Json)
         {
-            string json = JsonConvert.SerializeObject(this.config);
+            string json = JsonConvert.SerializeObject(config);
             if (!string.IsNullOrEmpty(json))
             {
                 XMLParser.SaveText(Application.dataPath + "/Resources/levels.txt", json);

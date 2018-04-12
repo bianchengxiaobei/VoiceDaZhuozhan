@@ -15,6 +15,14 @@ using CaomaoFramework;
 public class LevelConfig : ScriptableObject
 {
     public Format exprotFormat = Format.Json;
+    public int SelfMaxHp;
+    public int PangziMaxHp;
+    public int TiaoTiaoMaxHp;
+    public int WenShenMaxHp;
+    public int FeijiMaxHp;
+    public int WajuejiMaxHp;
+    public int ShunxiMaxHp;
+    public int PufuMaxHp;
     public List<Level> levels = new List<Level>();
 }
 

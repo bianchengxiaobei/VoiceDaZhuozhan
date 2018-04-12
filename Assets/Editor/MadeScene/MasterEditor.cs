@@ -75,11 +75,36 @@ public class MasterEditor : EditorWindow
         r.xMin = r.xMax + GAP;
         r.xMax = r.xMax + 200;
         master.maxHp = EditorGUI.IntField(r, "血量", master.maxHp);
-        switch (master.type)
+        if (LevelEditor.config != null)
         {
-            case EntityType.纹身男:
-                master.maxHp = 50;
-                break;
+            switch (master.type)
+            {
+                case EntityType.纹身男:
+                    master.maxHp = LevelEditor.config.WenShenMaxHp;
+                    break;
+                case EntityType.胖子男:
+                    master.maxHp = LevelEditor.config.PangziMaxHp;
+                    break;
+                case EntityType.飞机男:
+                    master.maxHp = LevelEditor.config.FeijiMaxHp;
+                    break;
+                case EntityType.跳跳男:
+                    master.maxHp = LevelEditor.config.TiaoTiaoMaxHp;
+                    break;
+                case EntityType.匍匐怪:
+                    master.maxHp = LevelEditor.config.PufuMaxHp;
+                    break;
+                case EntityType.挖掘机:
+                    master.maxHp = LevelEditor.config.WajuejiMaxHp;
+                    break;
+                case EntityType.瞬移怪:
+                    master.maxHp = LevelEditor.config.ShunxiMaxHp;
+                    break;
+            }
+        }
+        else
+        {
+            Debug.LogError("Config == null");
         }
         r.xMin = r.xMax + GAP;
         r.xMax = r.xMax + 200;
