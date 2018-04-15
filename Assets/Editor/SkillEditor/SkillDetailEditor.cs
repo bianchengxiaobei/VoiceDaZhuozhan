@@ -21,9 +21,10 @@ public class SkillDetailEditor : EditorWindow
     private ReorderableList demagelist;
     private Vector2 paramsrollPosition;
     private ReorderableList paramlist;
+    private Vector2 levelUpgradesrollPosition;
+    private ReorderableList levelUpgradelist;
     private string audioPath;
     private string token;
-    private string levelGold;
     public static void OpenWindow(Skill skill)
     {
         m_oSkill = skill;
@@ -48,7 +49,21 @@ public class SkillDetailEditor : EditorWindow
         {
             this.InitParamListGui();
         }
+        if (levelUpgradelist == null)
+        {
+            this.InitUpgradeListGui();
+        }
         this.ShowDetailInfo();
+        GUILayout.BeginVertical();
+        {
+            GUILayout.Space(10);
+            levelUpgradesrollPosition = GUILayout.BeginScrollView(levelUpgradesrollPosition);
+            {
+                levelUpgradelist.DoLayoutList();
+            }
+            GUILayout.EndScrollView();
+        }
+        GUILayout.EndVertical();
         GUILayout.BeginVertical();
         {
             GUILayout.Space(10);
@@ -96,6 +111,15 @@ public class SkillDetailEditor : EditorWindow
         paramlist.draggable = true;
         paramlist.elementHeight = 22;
         paramlist.onAddCallback = (list) => AddParam();
+    }
+    public void InitUpgradeListGui()
+    {
+        levelUpgradelist = new ReorderableList(m_oSkill.upgradeGold, typeof(int));
+        levelUpgradelist.drawElementCallback = this.UpgradeListDrawCallback;
+        levelUpgradelist.drawHeaderCallback = this.OnUpgradeHeaderGuiCallback;
+        levelUpgradelist.draggable = true;
+        levelUpgradelist.elementHeight = 22;
+        levelUpgradelist.onAddCallback = (list) => AddUpgrade();
     }
     public void CDListDrawCallback(Rect rect, int index, bool isactive, bool isfocused)
     {
@@ -151,7 +175,25 @@ public class SkillDetailEditor : EditorWindow
         r.xMax = r.xMax + 200;
         param.param = EditorGUI.FloatField(r, "参数数值", param.param);
     }
-
+    public void UpgradeListDrawCallback(Rect rect, int index, bool isactive, bool isfocused)
+    {
+        rect.y++;
+        Rect r = rect;
+        r.width = 200;
+        r.height = 18;
+        m_oSkill.upgradeGold[index] = EditorGUI.IntField(r, "升级金币", m_oSkill.upgradeGold[index]);
+    }
+    public void OnUpgradeHeaderGuiCallback(Rect rect)
+    {
+        EditorGUI.LabelField(rect, "升级金币编辑");
+    }
+    public void AddUpgrade()
+    {
+        if (m_oSkill != null)
+        {
+            m_oSkill.upgradeGold.Add(0);
+        }
+    }
     public void AddCD()
     {
         CD cd = new CD();
@@ -263,24 +305,6 @@ public class SkillDetailEditor : EditorWindow
         }
         GUILayout.EndHorizontal();
         GUILayout.Space(10);
-        GUILayout.BeginHorizontal();
-        {
-            EditorGUILayout.PrefixLabel("技能升级金币");
-            this.levelGold = EditorGUILayout.TextField(levelGold);
-            if (!string.IsNullOrEmpty(this.levelGold))
-            {
-                string[] content = this.levelGold.Split(',');
-                m_oSkill.upgradeGold.Clear();
-                if (content != null && content.Length > 0)
-                {
-                    foreach (var gold in content)
-                    {
-                        m_oSkill.upgradeGold.Add(int.Parse(gold));
-                    }
-                }
-            }
-        }
-        GUILayout.EndHorizontal();
         GUILayout.Space(10);
         this.ShowShapeType();
     }
