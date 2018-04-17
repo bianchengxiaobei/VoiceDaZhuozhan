@@ -222,6 +222,9 @@ public class LevelEditor : EditorWindow
             LevelDetailEditor.OpenWindow(level);
         }
         r.xMin = r.xMax + GAP;
+        r.width = 200;
+        level.levelGold = EditorGUI.IntField(r, "关卡奖励", level.levelGold);
+        r.xMin = r.xMax + GAP;
         r.xMax = rect.xMax;
         level.levelName = GUI.TextField(r, level.levelName);
     }

@@ -20,6 +20,7 @@ public class LevelConfig
 public class Level
 {
     public int levelId;
+    public int levelGold;
     public bool valid = false;
     public string levelName = string.Empty;
     public string levelPath = string.Empty;
