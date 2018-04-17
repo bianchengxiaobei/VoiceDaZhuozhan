@@ -179,6 +179,53 @@ public class DlgText : UIBase
                         this.EnterLock(item.Id);
                     }
                 });
+                if (soreSkills[i].skillConfig.skillId == 1)
+                {
+                    Debug.Log("fefe");
+                }
+                //升级按钮
+                Button upGrade = item.GetButton("bt_upgrade");
+                upGrade.onClick.AddListener(()=> 
+                {
+                    this.UpgradeSkill(item.Id,upGrade.gameObject);
+                });
+                int level = soreSkills[i].level;
+                bool bIsMaxGrade = soreSkills[i].skillConfig.upgradeGold.Count > 0 && level <= soreSkills[i].skillConfig.upgradeGold.Count;
+                if (soreSkills[i].bLocked && bIsMaxGrade && UserPrefsBase.singleton.Money >= soreSkills[i].skillConfig.upgradeGold[level - 1])
+                {
+                    upGrade.gameObject.SetActive(true);
+                }
+                else
+                {
+                    upGrade.gameObject.SetActive(false);
+                }
+            }
+        }
+    }
+    public void UpgradeSkill(int skillId,GameObject upGrade)
+    {
+        GameSkillBase skill = SkillManager.singleton.GetSkill(skillId);
+        if (skill != null)
+        {
+            int level = skill.level;
+            if (skill.skillConfig.upgradeGold.Contains(level))
+            {
+                skill.level = level + 1;
+                //播放升级的动画？减少金币
+                EventDispatch.Broadcast(Events.DlgFlyTextShow);
+                EventDispatch.Broadcast<string>(Events.DlgAddSingleSystemInfo, "成功升级该技能");
+                int upGradeGold = skill.skillConfig.upgradeGold[level];
+                UserPrefsBase.singleton.AddMoney(-upGradeGold);
+                if (!skill.skillConfig.upgradeGold.Contains(level + 1))
+                {
+                    //已经是最打等级
+                    //隐藏
+                    upGrade.SetActive(false);
+                }
+            }
+            else
+            {
+                Debug.LogError("已经是最打等级");
             }
         }
     }

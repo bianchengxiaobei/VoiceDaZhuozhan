@@ -30,7 +30,7 @@ MonoBehaviour:
       - type: 2
         duration: 1
         speed: 100
-        maxHp: 50
+        maxHp: 0
         demage: 10
         num: 3
       duration: 59.999996
