@@ -208,7 +208,7 @@ public class DlgText : UIBase
         if (skill != null)
         {
             int level = skill.level;
-            if (skill.skillConfig.upgradeGold.Contains(level))
+            if (level <= skill.skillConfig.upgradeGold.Count)
             {
                 skill.level = level + 1;
                 //播放升级的动画？减少金币
@@ -216,7 +216,7 @@ public class DlgText : UIBase
                 EventDispatch.Broadcast<string>(Events.DlgAddSingleSystemInfo, "成功升级该技能");
                 int upGradeGold = skill.skillConfig.upgradeGold[level];
                 UserPrefsBase.singleton.AddMoney(-upGradeGold);
-                if (!skill.skillConfig.upgradeGold.Contains(level + 1))
+                if (level + 1 >= skill.skillConfig.upgradeGold.Count)
                 {
                     //已经是最打等级
                     //隐藏

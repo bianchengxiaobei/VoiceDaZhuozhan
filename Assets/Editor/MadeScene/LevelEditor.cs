@@ -89,6 +89,29 @@ public class LevelEditor : EditorWindow
                 config.WajuejiMaxHp  = EditorGUILayout.IntField(config.WajuejiMaxHp);
             }
             GUILayout.EndHorizontal();
+            GUILayout.Space(10);
+            GUILayout.BeginHorizontal();
+            {
+                EditorGUILayout.PrefixLabel("纹身男速度");
+                config.WenShenSpeed = EditorGUILayout.FloatField(config.WenShenSpeed);
+                EditorGUILayout.PrefixLabel("胖子男速度");
+                config.PangziSpeed = EditorGUILayout.FloatField(config.PangziSpeed);
+                EditorGUILayout.PrefixLabel("飞机男速度");
+                config.FeijiSpeed = EditorGUILayout.FloatField(config.FeijiSpeed);
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.BeginHorizontal();
+            {
+                EditorGUILayout.PrefixLabel("跳跳男速度");
+                config.TiaoTiaoSpeed = EditorGUILayout.FloatField(config.TiaoTiaoSpeed);
+                EditorGUILayout.PrefixLabel("瞬移怪速度");
+                config.ShunxiSpeed = EditorGUILayout.FloatField(config.ShunxiSpeed);
+                EditorGUILayout.PrefixLabel("匍匐怪速度");
+                config.PufuSpeed = EditorGUILayout.FloatField(config.PufuSpeed);
+                EditorGUILayout.PrefixLabel("挖掘机速度");
+                config.WajuejiSpeed = EditorGUILayout.FloatField(config.WajuejiSpeed);
+            }
+            GUILayout.EndHorizontal();
             srollPosition = GUILayout.BeginScrollView(srollPosition);
             {
                 list.DoLayoutList();

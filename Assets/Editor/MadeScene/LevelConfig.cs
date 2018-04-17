@@ -23,6 +23,13 @@ public class LevelConfig : ScriptableObject
     public int WajuejiMaxHp;
     public int ShunxiMaxHp;
     public int PufuMaxHp;
+    public float PangziSpeed;
+    public float TiaoTiaoSpeed;
+    public float WenShenSpeed;
+    public float FeijiSpeed;
+    public float WajuejiSpeed;
+    public float ShunxiSpeed;
+    public float PufuSpeed;
     public List<Level> levels = new List<Level>();
 }
 

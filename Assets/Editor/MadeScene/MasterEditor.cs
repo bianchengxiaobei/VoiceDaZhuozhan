@@ -65,7 +65,37 @@ public class MasterEditor : EditorWindow
         master.type = (EntityType)EditorGUI.EnumPopup(r,"怪物类型",master.type);
         r.xMin = r.xMax + GAP;
         r.xMax = r.xMax + 200;
-        master.speed = EditorGUI.FloatField(r, "怪物移动速度",master.speed);
+        if (LevelEditor.config != null)
+        {
+            switch (master.type)
+            {
+                case EntityType.纹身男:
+                    master.speed = LevelEditor.config.WenShenSpeed;
+                    break;
+                case EntityType.胖子男:
+                    master.speed = LevelEditor.config.PangziSpeed;
+                    break;
+                case EntityType.飞机男:
+                    master.speed = LevelEditor.config.FeijiSpeed;
+                    break;
+                case EntityType.跳跳男:
+                    master.speed = LevelEditor.config.TiaoTiaoSpeed;
+                    break;
+                case EntityType.匍匐怪:
+                    master.speed = LevelEditor.config.PufuSpeed;
+                    break;
+                case EntityType.挖掘机:
+                    master.speed = LevelEditor.config.WajuejiSpeed;
+                    break;
+                case EntityType.瞬移怪:
+                    master.speed = LevelEditor.config.ShunxiSpeed;
+                    break;
+            }
+        }
+        else
+        {
+            Debug.LogError("Config == null");
+        }
         r.xMin = r.xMax + GAP;
         r.xMax = r.xMax + 200;
         master.duration = EditorGUI.FloatField(r, "下个怪物生成时间", master.duration);
@@ -74,7 +104,6 @@ public class MasterEditor : EditorWindow
         master.num = EditorGUI.IntField(r, "数量", master.num);
         r.xMin = r.xMax + GAP;
         r.xMax = r.xMax + 200;
-        master.maxHp = EditorGUI.IntField(r, "血量", master.maxHp);
         if (LevelEditor.config != null)
         {
             switch (master.type)
