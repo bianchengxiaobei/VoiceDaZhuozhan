@@ -1,0 +1,34 @@
+
+guoguan.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+di
+  rotate: false
+  xy: 2, 2
+  size: 234, 227
+  orig: 234, 227
+  offset: 0, 0
+  index: -1
+guan
+  rotate: false
+  xy: 382, 173
+  size: 48, 56
+  orig: 48, 56
+  offset: 0, 0
+  index: -1
+guo
+  rotate: false
+  xy: 238, 113
+  size: 95, 55
+  orig: 95, 55
+  offset: 0, 0
+  index: -1
+qian
+  rotate: false
+  xy: 238, 170
+  size: 142, 59
+  orig: 142, 59
+  offset: 0, 0
+  index: -1

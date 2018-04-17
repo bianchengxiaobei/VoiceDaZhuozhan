@@ -87,7 +87,7 @@ public class DlgMain : UIBase
                 skillItem.Id = skill.skillConfig.skillId;
                 SkillView skillView = skillItem.GetComponent<SkillView>();
                 skillView.skillIcon.sprite = WWWResourceManager.Instance.LoadSpriteFormAtla("common1.ab", skill.skillConfig.iconPath);
-                skillView.SetSkillNameAndId(skill.skillConfig.skillName, skill.skillConfig.skillId);
+                skillView.SetSkillNameAndId(skill.skillConfig.skillId);
                 this.skills.Add(skillView);
             }
             index++;

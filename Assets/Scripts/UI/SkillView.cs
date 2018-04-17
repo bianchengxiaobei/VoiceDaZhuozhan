@@ -8,7 +8,6 @@ public class SkillView : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 {
     public Text cd;
     public GameObject mask;
-    public Text skillName;
     public Image skillIcon;
     private int skillId = int.MinValue;
     void Start ()
@@ -21,12 +20,8 @@ public class SkillView : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
     {
 		
 	}
-    public void SetSkillNameAndId(string skillName,int skillId)
+    public void SetSkillNameAndId(int skillId)
     {
-        if (this.skillName != null)
-        {
-            this.skillName.text = skillName;
-        }
         this.skillId = skillId;
     }
     public void OnPointerDown(PointerEventData eventData)

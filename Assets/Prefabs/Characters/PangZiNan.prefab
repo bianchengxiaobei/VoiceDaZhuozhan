@@ -269,6 +269,7 @@ MonoBehaviour:
   moveDir: {x: 0, y: 0, z: 0}
   forceValue: 30
   Id: -1
+  state: 
 --- !u!114 &114640732646745702
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -49,6 +49,7 @@
     <ModelFile_s>Assets.Prefabs.Characters.WaJueJi.prefab</ModelFile_s>
     <EntityInfo>风间</EntityInfo>
   </EntityList>
+    -->
   <EntityList>
     <Id_i>7</Id_i>
     <Name>瞬移怪</Name>
@@ -61,5 +62,5 @@
     <ModelFile_s>Assets.Prefabs.Characters.PuFuGuai.prefab</ModelFile_s>
     <EntityInfo>风间</EntityInfo>
   </EntityList>
-  -->
+
 </root>
