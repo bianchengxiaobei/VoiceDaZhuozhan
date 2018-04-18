@@ -29,6 +29,7 @@ MonoBehaviour:
   PufuSpeed: 0
   levels:
   - levelId: 1
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u53611"
     levelPath: Assets/LevelConfig
@@ -44,6 +45,7 @@ MonoBehaviour:
       name: "\u6CE2\u65701"
       index: 1
   - levelId: 2
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u53612"
     levelPath: Assets/LevelConfig
@@ -79,6 +81,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 3
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u53613"
     levelPath: Assets/LevelConfig
@@ -126,6 +129,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 4
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u53614"
     levelPath: Assets/LevelConfig
@@ -179,6 +183,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 5
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u53615"
     levelPath: Assets/LevelConfig
@@ -232,6 +237,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 6
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u53616"
     levelPath: Assets/LevelConfig
@@ -285,6 +291,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 7
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u53617"
     levelPath: Assets/LevelConfig
@@ -292,21 +299,21 @@ MonoBehaviour:
     - entitys:
       - type: 2
         duration: 1
-        speed: 100
+        speed: 0
         maxHp: 50
-        demage: 10
+        demage: 1
         num: 15
       - type: 3
         duration: 5
-        speed: 50
-        maxHp: 0
-        demage: 15
+        speed: 0
+        maxHp: 200
+        demage: 1
         num: 3
       - type: 5
         duration: 8
-        speed: 100
-        maxHp: 0
-        demage: 40
+        speed: 0
+        maxHp: 100
+        demage: 1
         num: 1
       duration: 59.999996
       name: "\u6CE2\u65701"
@@ -356,6 +363,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 8
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u53618"
     levelPath: Assets/LevelConfig
@@ -427,6 +435,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 9
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u53619"
     levelPath: Assets/LevelConfig
@@ -498,6 +507,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 10
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536110"
     levelPath: Assets/LevelConfig
@@ -587,6 +597,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 11
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536111"
     levelPath: Assets/LevelConfig
@@ -676,6 +687,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 12
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536112"
     levelPath: Assets/LevelConfig
@@ -735,6 +747,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 13
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536113"
     levelPath: Assets/LevelConfig
@@ -812,6 +825,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 14
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536114"
     levelPath: Assets/LevelConfig
@@ -889,6 +903,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 15
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536115"
     levelPath: Assets/LevelConfig
@@ -984,6 +999,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 16
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536116"
     levelPath: Assets/LevelConfig
@@ -1079,6 +1095,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 17
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536117"
     levelPath: Assets/LevelConfig
@@ -1086,33 +1103,33 @@ MonoBehaviour:
     - entitys:
       - type: 2
         duration: 1
-        speed: 100
+        speed: 0
         maxHp: 50
-        demage: 10
+        demage: 1
         num: 15
       - type: 3
         duration: 5
-        speed: 50
+        speed: 0
         maxHp: 200
-        demage: 15
+        demage: 1
         num: 0
       - type: 4
         duration: 3
-        speed: 100
+        speed: 0
         maxHp: 50
-        demage: 20
+        demage: 1
         num: 0
       - type: 5
         duration: 8
-        speed: 100
+        speed: 0
         maxHp: 100
-        demage: 40
+        demage: 1
         num: 0
       - type: 7
         duration: 3
-        speed: 100
+        speed: 0
         maxHp: 100
-        demage: 0
+        demage: 1
         num: 0
       duration: 0
       name: "\u6CE2\u65701"
@@ -1186,6 +1203,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 18
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536118"
     levelPath: Assets/LevelConfig
@@ -1195,31 +1213,31 @@ MonoBehaviour:
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       duration: 0
       name: "\u6CE2\u65701"
@@ -1293,6 +1311,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 19
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536119"
     levelPath: Assets/LevelConfig
@@ -1302,37 +1321,37 @@ MonoBehaviour:
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       duration: 0
       name: "\u6CE2\u65701"
@@ -1418,6 +1437,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 20
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536120"
     levelPath: Assets/LevelConfig
@@ -1427,37 +1447,37 @@ MonoBehaviour:
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       duration: 0
       name: "\u6CE2\u65701"
@@ -1543,6 +1563,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 21
+    levelGold: 0
     valid: 0
     levelName: "\u5173\u536121"
     levelPath: Assets/LevelConfig
@@ -1552,37 +1573,37 @@ MonoBehaviour:
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       duration: 0
       name: "\u6CE2\u65701"
@@ -1592,37 +1613,37 @@ MonoBehaviour:
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       - type: 0
         duration: 0
         speed: 0
         maxHp: 0
-        demage: 0
+        demage: 1
         num: 0
       duration: 0
       name: "\u6CE2\u65702"

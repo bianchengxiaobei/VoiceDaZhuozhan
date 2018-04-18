@@ -16,6 +16,7 @@ public class StartState : ClientStateBase
     public override void OnEnter()
     {
         EventDispatch.Broadcast(Events.DlgStartShow);
+        AudioManagerBase.Instance.PlayMusic("Assets.Audios.Musics.Main.mp3");
     }
     public override void OnLeave()
     {

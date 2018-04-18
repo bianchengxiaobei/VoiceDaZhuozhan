@@ -29,6 +29,7 @@ public class Events : EventsBase
     public static readonly string DlgMainShowMask = "DlgMainShowMask";
     public static readonly string DlgMainEndLevel = "DlgMainEndLevel";
     public static readonly string DlgMainRefresh = "DlgMainRefresh";
+    public static readonly string DlgMainStartCd = "DlgMainStartCd";
 
     public static readonly string DlgPlayGuideShow = "DlgPlayGuideShow";
     public static readonly string DlgPlayGuideHide = "DlgPlayGuideHide";

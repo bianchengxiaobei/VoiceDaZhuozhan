@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23476270995420484}
   - component: {fileID: 95590683531701488}
   - component: {fileID: 114942791577556866}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ShunYiGuai
   m_TagString: Untagged
   m_Icon: {fileID: 0}
