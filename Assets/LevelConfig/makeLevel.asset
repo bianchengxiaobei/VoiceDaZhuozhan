@@ -20,13 +20,13 @@ MonoBehaviour:
   WajuejiMaxHp: 500
   ShunxiMaxHp: 100
   PufuMaxHp: 50
-  PangziSpeed: 0
-  TiaoTiaoSpeed: 0
-  WenShenSpeed: 0
-  FeijiSpeed: 0
-  WajuejiSpeed: 0
-  ShunxiSpeed: 0
-  PufuSpeed: 0
+  PangziSpeed: 50
+  TiaoTiaoSpeed: 100
+  WenShenSpeed: 100
+  FeijiSpeed: 100
+  WajuejiSpeed: 50
+  ShunxiSpeed: 100
+  PufuSpeed: 200
   levels:
   - levelId: 1
     levelGold: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
       name: "\u6CE2\u65701"
       index: 1
   - levelId: 2
-    levelGold: 0
+    levelGold: 10
     valid: 0
     levelName: "\u5173\u53612"
     levelPath: Assets/LevelConfig
@@ -81,7 +81,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 3
-    levelGold: 0
+    levelGold: 20
     valid: 0
     levelName: "\u5173\u53613"
     levelPath: Assets/LevelConfig
@@ -129,7 +129,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 4
-    levelGold: 0
+    levelGold: 30
     valid: 0
     levelName: "\u5173\u53614"
     levelPath: Assets/LevelConfig
@@ -183,7 +183,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 5
-    levelGold: 0
+    levelGold: 50
     valid: 0
     levelName: "\u5173\u53615"
     levelPath: Assets/LevelConfig
@@ -237,7 +237,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 6
-    levelGold: 0
+    levelGold: 50
     valid: 0
     levelName: "\u5173\u53616"
     levelPath: Assets/LevelConfig
@@ -291,7 +291,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 7
-    levelGold: 0
+    levelGold: 50
     valid: 0
     levelName: "\u5173\u53617"
     levelPath: Assets/LevelConfig
@@ -363,7 +363,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 8
-    levelGold: 0
+    levelGold: 50
     valid: 0
     levelName: "\u5173\u53618"
     levelPath: Assets/LevelConfig
@@ -435,7 +435,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 9
-    levelGold: 0
+    levelGold: 50
     valid: 0
     levelName: "\u5173\u53619"
     levelPath: Assets/LevelConfig
@@ -507,7 +507,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 10
-    levelGold: 0
+    levelGold: 60
     valid: 0
     levelName: "\u5173\u536110"
     levelPath: Assets/LevelConfig
@@ -597,7 +597,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 11
-    levelGold: 0
+    levelGold: 60
     valid: 0
     levelName: "\u5173\u536111"
     levelPath: Assets/LevelConfig
@@ -687,7 +687,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 12
-    levelGold: 0
+    levelGold: 60
     valid: 0
     levelName: "\u5173\u536112"
     levelPath: Assets/LevelConfig
@@ -747,7 +747,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 13
-    levelGold: 0
+    levelGold: 60
     valid: 0
     levelName: "\u5173\u536113"
     levelPath: Assets/LevelConfig
@@ -825,7 +825,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 14
-    levelGold: 0
+    levelGold: 60
     valid: 0
     levelName: "\u5173\u536114"
     levelPath: Assets/LevelConfig
@@ -903,7 +903,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 15
-    levelGold: 0
+    levelGold: 60
     valid: 0
     levelName: "\u5173\u536115"
     levelPath: Assets/LevelConfig
@@ -999,7 +999,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 16
-    levelGold: 0
+    levelGold: 60
     valid: 0
     levelName: "\u5173\u536116"
     levelPath: Assets/LevelConfig
@@ -1095,7 +1095,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 17
-    levelGold: 0
+    levelGold: 60
     valid: 0
     levelName: "\u5173\u536117"
     levelPath: Assets/LevelConfig
@@ -1203,7 +1203,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 18
-    levelGold: 0
+    levelGold: 60
     valid: 0
     levelName: "\u5173\u536118"
     levelPath: Assets/LevelConfig
@@ -1311,7 +1311,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 19
-    levelGold: 0
+    levelGold: 60
     valid: 0
     levelName: "\u5173\u536119"
     levelPath: Assets/LevelConfig
@@ -1437,7 +1437,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 20
-    levelGold: 0
+    levelGold: 70
     valid: 0
     levelName: "\u5173\u536120"
     levelPath: Assets/LevelConfig
@@ -1563,7 +1563,7 @@ MonoBehaviour:
       name: "\u6CE2\u65703"
       index: 3
   - levelId: 21
-    levelGold: 0
+    levelGold: 70
     valid: 0
     levelName: "\u5173\u536121"
     levelPath: Assets/LevelConfig
