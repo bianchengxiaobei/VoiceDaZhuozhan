@@ -95,7 +95,7 @@ public class DlgLevel : UIBase
             return;
         }
         //如果还没有解锁
-        if (!LevelManager.singleton.dicLevels[item.Id].valid)
+        if (!LevelManager.singleton.dicLevels[item.Id].valid && UnityMonoDriver.s_instance.ReleaseMode)
         {
             return;
         }
@@ -128,6 +128,10 @@ public class DlgLevel : UIBase
                 {
                     item.sprite.sprite = WWWResourceManager.Instance.LoadSpriteFormAtla("common1.ab", "unlock");
                     item.GetChild("lb_name").gameObject.SetActive(false);
+                    if (UnityMonoDriver.s_instance.ReleaseMode)
+                    {
+                        item.toggle.interactable = false;
+                    }
                 }
             }
             index++;

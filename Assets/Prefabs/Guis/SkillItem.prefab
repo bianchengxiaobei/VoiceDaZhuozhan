@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -101,7 +101,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2e8d4a466e2e62d47b34fc2265c5176b, type: 3}
-    m_FontSize: 18
+    m_FontSize: 24
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
@@ -124,10 +124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 002109f88045bb04cbd0bb1b5bc881e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cd: {fileID: 114128055139751050}
-  mask: {fileID: 1127162626929362}
-  skillName: {fileID: 0}
+  m_cdNumText: {fileID: 114128055139751050}
+  mask: {fileID: 114274040250031776}
   skillIcon: {fileID: 114896679574595702}
+  m_fCdNum: 0
 --- !u!114 &114274040250031776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,7 +148,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: ee5aabe7efd0f5d49b41998a7b854307, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -236,8 +236,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.2999744, y: 4.1000023}
-  m_SizeDelta: {x: 41.31, y: 31.43}
+  m_AnchoredPosition: {x: -3.045, y: 4.1}
+  m_SizeDelta: {x: 41.31, y: 36.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224255177806257784
 RectTransform:

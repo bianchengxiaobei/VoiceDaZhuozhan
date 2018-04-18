@@ -66,14 +66,14 @@ public class LevelManager : Singleton<LevelManager>
     /// <summary>
     /// 解锁下一关
     /// </summary>
-    public void LockedNextLevel()
+    public bool LockedNextLevel()
     {
         int nextId = this.currLevelId + 1;
         if (!this.dicLevels.ContainsKey(nextId))
         {
             //说明已经是超出最后一关
             Debug.LogError("超出最后一关");
-            return;
+            return false;
         }
         this.currLevelId++;
         if (!this.dicLevels[this.currLevelId].valid)
@@ -83,13 +83,18 @@ public class LevelManager : Singleton<LevelManager>
             PlayerPrefs.SetString(CommonDefineBase.LockedLevel, locked);
             Level level = dicLevels[nextId];
             level.valid = true;
-        }    
+        }
+        return true;
     }
     public Level GetCurLevel()
     {
-        if (this.currLevelId > 0 && this.dicLevels.ContainsKey(this.currLevelId))
+        return this.GetLevel(this.currLevelId);
+    }
+    public Level GetLevel(int levelId)
+    {
+        if (levelId > 0 && this.dicLevels.ContainsKey(levelId))
         {
-            return this.dicLevels[this.currLevelId];
+            return this.dicLevels[levelId];
         }
         return null;
     }

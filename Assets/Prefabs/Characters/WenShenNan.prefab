@@ -318,3 +318,4 @@ MonoBehaviour:
   moveDir: {x: -1, y: 0, z: 0}
   forceValue: 30
   Id: -1
+  state: 

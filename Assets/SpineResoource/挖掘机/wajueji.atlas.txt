@@ -1,0 +1,55 @@
+
+wajueji.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bi1
+  rotate: false
+  xy: 398, 199
+  size: 107, 131
+  orig: 107, 131
+  offset: 0, 0
+  index: -1
+bi2
+  rotate: true
+  xy: 398, 332
+  size: 176, 94
+  orig: 176, 94
+  offset: 0, 0
+  index: -1
+bi3
+  rotate: false
+  xy: 277, 166
+  size: 119, 342
+  orig: 119, 342
+  offset: 0, 0
+  index: -1
+bi4
+  rotate: false
+  xy: 190, 20
+  size: 132, 144
+  orig: 132, 144
+  offset: 0, 0
+  index: -1
+lun
+  rotate: false
+  xy: 2, 2
+  size: 186, 186
+  orig: 186, 186
+  offset: 0, 0
+  index: -1
+shen
+  rotate: false
+  xy: 2, 190
+  size: 273, 318
+  orig: 273, 318
+  offset: 0, 0
+  index: -1
+yan
+  rotate: false
+  xy: 324, 69
+  size: 95, 95
+  orig: 95, 95
+  offset: 0, 0
+  index: -1

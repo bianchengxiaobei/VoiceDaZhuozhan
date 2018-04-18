@@ -238,7 +238,7 @@ public class DlgText : UIBase
         if (skill != null)
         {
             this.m_Iamge_SkillIcon.sprite = WWWResourceManager.Instance.LoadSpriteFormAtla("common1.ab", skill.skillConfig.skillName);
-            this.m_Text_SkillInfo.text = skill.skillConfig.skillInfo;
+            this.m_Text_SkillInfo.text = skill.skillConfig.skillInfo + "\n <color=red>口令:" + skill.skillConfig.skillToken+"</color>";
             this.m_Text_SkillName.text = skill.skillConfig.skillName;
             this.SkillLearn.SetActive(true);
         }

@@ -43,13 +43,12 @@
     <ModelFile_s>Assets.Prefabs.Characters.FeiJiNan.prefab</ModelFile_s>
     <EntityInfo>风间</EntityInfo>
   </EntityList>
-  <!--<EntityList>
+  <EntityList>
     <Id_i>6</Id_i>
     <Name>挖掘机</Name>
     <ModelFile_s>Assets.Prefabs.Characters.WaJueJi.prefab</ModelFile_s>
     <EntityInfo>风间</EntityInfo>
   </EntityList>
-    -->
   <EntityList>
     <Id_i>7</Id_i>
     <Name>瞬移怪</Name>

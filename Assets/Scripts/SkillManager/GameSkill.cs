@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using CaomaoFramework;
 /*----------------------------------------------------------------
 // 模块名：GameSkill
 // 创建者：chen
@@ -34,6 +35,7 @@ public class GameSkillBase
     }
     public virtual void Exit()
     {
+        EventDispatch.Broadcast<int>(Events.DlgMainStartCd, this.skillConfig.skillId);
         if (PlayerManager.singleton.MySelf != null)
         {
             PlayerManager.singleton.MySelf.Idle();
