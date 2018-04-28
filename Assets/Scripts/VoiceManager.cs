@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System.Runtime.InteropServices;
 using System;
 /*----------------------------------------------------------------
 // 模块名：VoiceManager
@@ -15,15 +16,17 @@ using System;
 public class VoiceManager : MonoBehaviour
 {
     public static VoiceManager Instance;
-    public string appId;
 
-    AndroidJavaObject jo;
+
     public Action<string> speedEndCallback;
     public Action<string> speedEndError;
     private void Awake()
     {
         Instance = this;
     }
+#if UNITY_ANDROID
+    AndroidJavaObject jo;
+    private string appId = "5a65ea92";
     private void Start()
     {
         AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
@@ -57,6 +60,40 @@ public class VoiceManager : MonoBehaviour
             jo.Call("CancelSpeech");
         }
     }
+#elif UNITY_IOS
+    [DllImport("__Internal")]
+    public static extern void _StartSpeech();
+    [DllImport("__Internal")]
+    public static extern void _CreateAppId(string appId);
+    [DllImport("__Internal")]
+    public static extern void _StopSpeech();
+    [DllImport("__Internal")]
+    public static extern void _CancelSpeech();
+
+    private string appId = "5acc46b3";
+    private void Start()
+    {
+        if (string.IsNullOrEmpty(appId))
+        {
+            Debug.LogError("AppId == null");
+            return;
+        }
+        _CreateAppId(appId);
+        _StartSpeech();
+    }
+    public void StartSpeech_IOS()
+    {
+        _StartSpeech();
+    }
+    public void StopSpeech_IOS()
+    {
+        _StopSpeech();
+    }
+    public void CancelSpeech_IOS()
+    {
+        _CancelSpeech();
+    }
+#endif
     public void OnInit(string errorCode)
     {
         Debug.Log("OnInit:" + errorCode);

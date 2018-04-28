@@ -24,7 +24,11 @@ public class VoiceController : MonoBehaviour, IPointerUpHandler,IPointerDownHand
             onClickDown();
             return;
         }
-        VoiceManager.Instance.StartSpeech();
+#if UNITY_ANDROID
+                    VoiceManager.Instance.StartSpeech();
+#elif UNITY_IOS
+        VoiceManager.Instance.StartSpeech_IOS();
+#endif
         EventDispatch.Broadcast<bool>(Events.DlgMainShowMask, true);
         EventDispatch.Broadcast<bool>(Events.DlgTextShowMask, true);
     }
@@ -36,7 +40,11 @@ public class VoiceController : MonoBehaviour, IPointerUpHandler,IPointerDownHand
             onClickUp();
             return;
         }
-        VoiceManager.Instance.StopSpeech();
+#if UNITY_ANDROID
+                    VoiceManager.Instance.StopSpeech();
+#elif UNITY_IOS
+        VoiceManager.Instance.StopSpeech_IOS();
+#endif
         EventDispatch.Broadcast<bool>(Events.DlgMainShowMask, false);
         EventDispatch.Broadcast<bool>(Events.DlgTextShowMask, false);
     }

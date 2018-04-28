@@ -235,7 +235,11 @@ public class GuideForceClick : GuideTaskBase
                     controller.onClickUp -= this.OnClickUp;
                     controller.onClickDown = null;
                     controller.onClickUp = null;
+#if UNITY_ANDROID
                     VoiceManager.Instance.StartSpeech();
+#elif UNITY_IOS
+                    VoiceManager.Instance.StartSpeech_IOS();
+#endif
                     EventDispatch.Broadcast<bool>(Events.DlgTextShowMask, true);
                 }
             }
